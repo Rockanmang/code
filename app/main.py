@@ -18,6 +18,8 @@ from app.schemas import FileUploadResponse, LiteratureListResponse, LiteratureLi
 from jose import jwt
 from datetime import datetime, timedelta
 import logging
+from fastapi.responses import FileResponse
+from app.utils.auth_helper import verify_literature_access, get_literature_with_permission, verify_file_exists, get_content_type
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -498,3 +500,155 @@ async def cleanup_storage(
     except Exception as e:
         logger.error(f"存储清理失败: {e}")
         raise HTTPException(status_code=500, detail=f"存储清理失败: {str(e)}")
+    
+@app.get("/literature/view/file/{literature_id}")
+async def view_literature_file(
+    literature_id: str,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    查看/下载文献文件
+    提供文献文件的安全下载和流式传输
+    """
+    try:
+        # 1. 获取文献信息并验证权限
+        literature = get_literature_with_permission(literature_id, current_user.id, db)
+        
+        # 2. 验证文件是否存在
+        if not verify_file_exists(literature.file_path):
+            log_error("file_view", Exception("文件不存在"), current_user.id, {
+                "literature_id": literature_id,
+                "file_path": literature.file_path
+            })
+            raise HTTPException(status_code=404, detail="文件不存在，可能已被移动或删除")
+        
+        # 3. 获取正确的Content-Type
+        content_type = get_content_type(literature.file_path)
+        
+        # 4. 记录访问日志
+        log_success("file_view", current_user.id, {
+            "literature_id": literature_id,
+            "filename": literature.filename,
+            "file_type": literature.file_type
+        })
+        
+        # 5. 返回文件响应
+        return FileResponse(
+            path=literature.file_path,
+            media_type=content_type,
+            filename=literature.filename,
+            headers={
+                "Content-Disposition": f"inline; filename*=UTF-8''{literature.filename}",
+                "Cache-Control": "private, max-age=3600"  # 缓存1小时
+            }
+        )
+        
+    except HTTPException:
+        # 重新抛出HTTP异常
+        raise
+    except Exception as e:
+        log_error("file_view", e, current_user.id, {"literature_id": literature_id})
+        raise HTTPException(status_code=500, detail="文件访问失败")
+
+@app.get("/literature/detail/{literature_id}")
+async def get_literature_detail(
+    literature_id: str,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    获取文献详细信息
+    返回文献的详细元数据，用于前端显示和处理决策
+    """
+    try:
+        # 1. 获取文献信息并验证权限
+        literature = get_literature_with_permission(literature_id, current_user.id, db)
+        
+        # 2. 获取上传用户信息
+        uploader = db.query(User).filter(User.id == literature.uploaded_by).first()
+        uploader_name = uploader.username if uploader else "未知用户"
+        
+        # 3. 获取研究组信息
+        group = db.query(ResearchGroup).filter(ResearchGroup.id == literature.research_group_id).first()
+        group_name = group.name if group else "未知研究组"
+        
+        # 4. 检查文件是否存在
+        file_exists = verify_file_exists(literature.file_path)
+        
+        # 5. 构建响应数据
+        detail_info = {
+            "id": literature.id,
+            "title": literature.title,
+            "filename": literature.filename,
+            "file_type": literature.file_type,
+            "file_size": literature.file_size,
+            "upload_time": literature.upload_time.isoformat() if literature.upload_time else None,
+            "uploaded_by": literature.uploaded_by,
+            "uploader_name": uploader_name,
+            "research_group_id": literature.research_group_id,
+            "group_name": group_name,
+            "status": literature.status,
+            "file_exists": file_exists,
+            "can_view": file_exists and literature.status == 'active',
+            "content_type": get_content_type(literature.file_path) if file_exists else None
+        }
+        
+        # 6. 记录访问日志
+        log_success("literature_detail", current_user.id, {
+            "literature_id": literature_id,
+            "title": literature.title
+        })
+        
+        return detail_info
+        
+    except HTTPException:
+        # 重新抛出HTTP异常
+        raise
+    except Exception as e:
+        log_error("literature_detail", e, current_user.id, {"literature_id": literature_id})
+        raise HTTPException(status_code=500, detail="获取文献详情失败")
+
+@app.get("/literature/download/{literature_id}")
+async def download_literature_file(
+    literature_id: str,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    下载文献文件
+    强制下载文件而不是在浏览器中打开
+    """
+    try:
+        # 1. 获取文献信息并验证权限
+        literature = get_literature_with_permission(literature_id, current_user.id, db)
+        
+        # 2. 验证文件是否存在
+        if not verify_file_exists(literature.file_path):
+            raise HTTPException(status_code=404, detail="文件不存在，可能已被移动或删除")
+        
+        # 3. 获取正确的Content-Type
+        content_type = get_content_type(literature.file_path)
+        
+        # 4. 记录下载日志
+        log_success("file_download", current_user.id, {
+            "literature_id": literature_id,
+            "filename": literature.filename,
+            "file_type": literature.file_type
+        })
+        
+        # 5. 返回文件响应（强制下载）
+        return FileResponse(
+            path=literature.file_path,
+            media_type=content_type,
+            filename=literature.filename,
+            headers={
+                "Content-Disposition": f"attachment; filename*=UTF-8''{literature.filename}"
+            }
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("file_download", e, current_user.id, {"literature_id": literature_id})
+        raise HTTPException(status_code=500, detail="文件下载失败")

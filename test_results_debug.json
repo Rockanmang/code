@@ -1,0 +1,81 @@
+[
+  {
+    "test": "根路径",
+    "success": true,
+    "message": "根路径访问正常",
+    "details": null,
+    "timestamp": "2025-05-25T18:03:10.503570"
+  },
+  {
+    "test": "健康检查",
+    "success": true,
+    "message": "健康检查正常",
+    "details": null,
+    "timestamp": "2025-05-25T18:03:10.511812"
+  },
+  {
+    "test": "用户登录",
+    "success": true,
+    "message": "登录成功",
+    "details": {
+      "token_type": "bearer"
+    },
+    "timestamp": "2025-05-25T18:03:11.074265"
+  },
+  {
+    "test": "获取研究组",
+    "success": true,
+    "message": "找到研究组: 文献测试组",
+    "details": {
+      "id": "46207cd5-6425-4df7-8258-3fcb2aa84f73"
+    },
+    "timestamp": "2025-05-25T18:03:11.098664"
+  },
+  {
+    "test": "获取测试文献",
+    "success": true,
+    "message": "找到测试文献: 人工智能研究进展测试文档",
+    "details": {
+      "id": "c7d8eda8-99ef-4d38-a5f7-61f214c932a8"
+    },
+    "timestamp": "2025-05-25T18:03:11.131139"
+  },
+  {
+    "test": "文献详情接口",
+    "success": true,
+    "message": "成功获取文献详情",
+    "details": {
+      "title": "人工智能研究进展测试文档",
+      "file_type": ".pdf",
+      "file_exists": true,
+      "can_view": true
+    },
+    "timestamp": "2025-05-25T18:03:11.159711"
+  },
+  {
+    "test": "文件查看接口",
+    "success": true,
+    "message": "成功获取文件",
+    "details": {
+      "content_type": "application/pdf",
+      "content_length": "153",
+      "is_inline": true,
+      "content_disposition": "inline; filename*=UTF-8''test_document.pdf"
+    },
+    "timestamp": "2025-05-25T18:03:11.185045"
+  },
+  {
+    "test": "权限控制-无效ID",
+    "success": true,
+    "message": "正确拒绝无效文献ID",
+    "details": null,
+    "timestamp": "2025-05-25T18:03:11.205129"
+  },
+  {
+    "test": "权限控制-无token",
+    "success": true,
+    "message": "正确拒绝无token访问",
+    "details": null,
+    "timestamp": "2025-05-25T18:03:11.210878"
+  }
+]
