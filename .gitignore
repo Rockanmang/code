@@ -27,12 +27,12 @@ venv/
 env/
 ENV/
 
-# Database
-*.db
-*.sqlite3
+# Database - 注释掉以允许上传数据库文件
+# *.db
+# *.sqlite3
 
-# Logs
-*.log
+# Logs - 注释掉以允许上传日志文件
+# *.log
 
 # OS generated files
 .DS_Store
@@ -49,8 +49,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Uploads directory (if contains user data)
-uploads/
+# Uploads directory - 注释掉以允许上传uploads目录
+# uploads/
 
 # Environment variables
 .env

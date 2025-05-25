@@ -1,0 +1,5 @@
+2025-05-25 14:35:41,477 - app.utils.error_handler - INFO - 操作成功: {'operation': 'test_operation', 'user_id': 'test_user_123', 'status': 'success', 'test_data': '这是一个测试', 'timestamp': '2025-05-25'}
+2025-05-25 14:35:41,477 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'test_error', 'error_type': 'Exception', 'error_message': '这是一个测试异常', 'user_id': 'test_user_123', 'error_context': '测试错误处理'}
+2025-05-25 14:35:41,477 - app.utils.error_handler - INFO - 直接使用logger记录信息
+2025-05-25 14:35:41,477 - app.utils.error_handler - WARNING - 这是一个警告消息
+2025-05-25 14:35:41,511 - app.utils.error_handler - ERROR - 这是一个错误消息
