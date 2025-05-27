@@ -81,17 +81,17 @@ class StorageManagementTester:
         try:
             with open(tmp_file_path, "rb") as f:
                 files = {"file": ("test_storage.pdf", f, "application/pdf")}
-                data = {
-                    "group_id": self.group_id,
-                    "title": "存储管理测试文档"
-                }
-                
-                response = requests.post(
-                    f"{BASE_URL}/literature/upload",
-                    files=files,
-                    data=data,
-                    headers=self.get_headers()
-                )
+            data = {
+                "group_id": self.group_id,
+                "title": "存储管理测试文档"
+            }
+            
+            response = requests.post(
+                f"{BASE_URL}/literature/upload",
+                files=files,
+                data=data,
+                headers=self.get_headers()
+            )
             
             if response.status_code == 200:
                 result = response.json()
@@ -112,7 +112,7 @@ class StorageManagementTester:
                     import time
                     time.sleep(0.1)
                     try:
-                        os.unlink(tmp_file_path)
+                os.unlink(tmp_file_path)
                     except:
                         pass  # 如果还是删除不了，就忽略
     

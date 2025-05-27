@@ -278,7 +278,7 @@ class VectorStore:
         except Exception as e:
             logger.error(f"查询搜索失败: {e}")
             return []
-
+    
     def search_similar_chunks(
         self, 
         query_embedding: List[float], 

@@ -21,6 +21,7 @@ from jose import jwt
 from datetime import datetime, timedelta
 from fastapi.responses import FileResponse
 from app.utils.auth_helper import verify_literature_access, get_literature_with_permission, verify_file_exists, get_content_type
+from app.routers import ai_chat
 
 # 配置日志
 logging.basicConfig(
@@ -34,6 +35,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="文献管理系统", description="AI驱动的协作文献管理平台", version="1.0.0")
+
+# 注册路由
+app.include_router(ai_chat.router)
 
 # JWT 配置
 SECRET_KEY = "your-secret-key"  # 替换为随机字符串，例如 "mysecretkey123"
