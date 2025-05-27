@@ -8,16 +8,49 @@ import shutil
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 import logging
+import sys
 from datetime import datetime
-from app.config import config
 
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('literature_system.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 logger = logging.getLogger(__name__)
+
+from app.config import config
 
 class StorageManager:
     """存储管理器"""
     
     def __init__(self):
         self.upload_root = Path(config.UPLOAD_ROOT_DIR)
+        logger.info(f"初始化存储管理器，上传根目录: {self.upload_root}")
+        self._ensure_upload_root()
+    
+    def _ensure_upload_root(self):
+        """确保上传根目录存在并有正确的权限"""
+        try:
+            self.upload_root.mkdir(parents=True, exist_ok=True)
+            logger.info(f"确保上传根目录存在: {self.upload_root}")
+            
+            # 测试写入权限
+            test_file = self.upload_root / ".write_test"
+            try:
+                test_file.touch()
+                test_file.unlink()
+                logger.info("上传根目录写入权限正常")
+            except Exception as e:
+                logger.error(f"上传根目录写入权限测试失败: {e}")
+                raise
+                
+        except Exception as e:
+            logger.error(f"创建上传根目录失败: {e}")
+            raise
     
     def ensure_group_directory(self, group_id: str) -> str:
         """
@@ -29,11 +62,26 @@ class StorageManager:
         Returns:
             str: 目录路径
         """
-        group_dir = self.upload_root / group_id
-        group_dir.mkdir(parents=True, exist_ok=True)
-        
-        logger.info(f"确保研究组目录存在: {group_dir}")
-        return str(group_dir)
+        try:
+            group_dir = self.upload_root / group_id
+            group_dir.mkdir(parents=True, exist_ok=True)
+            logger.info(f"确保研究组目录存在: {group_dir}")
+            
+            # 测试写入权限
+            test_file = group_dir / ".write_test"
+            try:
+                test_file.touch()
+                test_file.unlink()
+                logger.info(f"研究组目录 {group_id} 写入权限正常")
+            except Exception as e:
+                logger.error(f"研究组目录 {group_id} 写入权限测试失败: {e}")
+                raise
+            
+            return str(group_dir)
+            
+        except Exception as e:
+            logger.error(f"创建研究组目录失败: {e}")
+            raise
     
     def get_group_directory_info(self, group_id: str) -> Dict:
         """
@@ -90,34 +138,42 @@ class StorageManager:
         Returns:
             str: 唯一的文件名
         """
-        group_dir = self.upload_root / group_id
-        file_path = Path(original_filename)
-        name_stem = file_path.stem
-        suffix = file_path.suffix
-        
-        # 如果文件不存在，直接返回原始文件名
-        target_path = group_dir / original_filename
-        if not target_path.exists():
-            return original_filename
-        
-        # 文件存在，生成带数字后缀的文件名
-        counter = 1
-        while True:
-            new_filename = f"{name_stem}_{counter}{suffix}"
-            target_path = group_dir / new_filename
+        try:
+            group_dir = self.upload_root / group_id
+            file_path = Path(original_filename)
+            name_stem = file_path.stem
+            suffix = file_path.suffix
             
+            logger.info(f"生成唯一文件名: {original_filename} in {group_id}")
+            
+            # 如果文件不存在，直接返回原始文件名
+            target_path = group_dir / original_filename
             if not target_path.exists():
-                logger.info(f"生成唯一文件名: {original_filename} -> {new_filename}")
-                return new_filename
+                logger.info(f"文件名 {original_filename} 可直接使用")
+                return original_filename
             
-            counter += 1
-            
-            # 防止无限循环
-            if counter > 1000:
-                import uuid
-                unique_filename = f"{name_stem}_{uuid.uuid4().hex[:8]}{suffix}"
-                logger.warning(f"文件名冲突过多，使用UUID: {unique_filename}")
-                return unique_filename
+            # 文件存在，生成带数字后缀的文件名
+            counter = 1
+            while True:
+                new_filename = f"{name_stem}_{counter}{suffix}"
+                target_path = group_dir / new_filename
+                
+                if not target_path.exists():
+                    logger.info(f"生成新文件名: {original_filename} -> {new_filename}")
+                    return new_filename
+                
+                counter += 1
+                
+                # 防止无限循环
+                if counter > 1000:
+                    import uuid
+                    unique_filename = f"{name_stem}_{uuid.uuid4().hex[:8]}{suffix}"
+                    logger.warning(f"文件名冲突过多，使用UUID: {unique_filename}")
+                    return unique_filename
+                    
+        except Exception as e:
+            logger.error(f"生成唯一文件名失败: {e}")
+            raise
     
     def get_storage_statistics(self) -> Dict:
         """
@@ -217,24 +273,24 @@ class StorageManager:
         }
 
 # 创建全局存储管理器实例
-storage_manager = StorageManager()
+_storage_manager = StorageManager()
 
 def ensure_group_directory(group_id: str) -> str:
-    """确保研究组目录存在的便捷函数"""
-    return storage_manager.ensure_group_directory(group_id)
+    """确保研究组目录存在"""
+    return _storage_manager.ensure_group_directory(group_id)
 
 def get_unique_filename(group_id: str, filename: str) -> str:
-    """获取唯一文件名的便捷函数"""
-    return storage_manager.generate_unique_filename(group_id, filename)
+    """生成唯一的文件名"""
+    return _storage_manager.generate_unique_filename(group_id, filename)
 
 def get_storage_stats() -> Dict:
-    """获取存储统计的便捷函数"""
-    return storage_manager.get_storage_statistics()
+    """获取存储统计信息"""
+    return _storage_manager.get_storage_statistics()
 
 def cleanup_storage() -> List[str]:
-    """清理存储的便捷函数"""
-    return storage_manager.cleanup_empty_directories()
+    """清理存储"""
+    return _storage_manager.cleanup_empty_directories()
 
 def validate_storage() -> Dict:
-    """验证存储的便捷函数"""
-    return storage_manager.validate_storage_integrity()
+    """验证存储完整性"""
+    return _storage_manager.validate_storage_integrity()

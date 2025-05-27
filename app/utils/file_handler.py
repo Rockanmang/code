@@ -26,7 +26,9 @@ def validate_file_type(filename: str) -> bool:
         bool: 是否为允许的文件类型
     """
     file_ext = Path(filename).suffix.lower()
-    return file_ext in config.ALLOWED_FILE_TYPES
+    is_allowed = file_ext in config.ALLOWED_FILE_TYPES
+    logger.info(f"验证文件类型: {filename} -> {file_ext} -> {'允许' if is_allowed else '不允许'}")
+    return is_allowed
 
 def validate_file_size(file_size: int) -> bool:
     """
@@ -40,7 +42,7 @@ def validate_file_size(file_size: int) -> bool:
     """
     return file_size <= config.MAX_FILE_SIZE
 
-def generate_file_path(group_id: str, filename: str) -> str:
+def generate_file_path(group_id: str, filename: str) -> Tuple[str, str]:
     """
     生成文件存储路径（使用存储管理器）
     
@@ -49,7 +51,7 @@ def generate_file_path(group_id: str, filename: str) -> str:
         filename: 文件名
         
     Returns:
-        str: 完整的文件路径
+        Tuple[str, str]: (完整路径, 相对路径)
     """
     # 确保研究组目录存在
     group_dir = ensure_group_directory(group_id)
@@ -57,8 +59,13 @@ def generate_file_path(group_id: str, filename: str) -> str:
     # 生成唯一文件名以避免冲突
     unique_filename = get_unique_filename(group_id, filename)
     
-    # 返回完整路径
-    return os.path.join(group_dir, unique_filename)
+    # 生成相对路径（相对于上传根目录）
+    relative_path = os.path.join(group_id, unique_filename)
+    
+    # 生成完整路径
+    full_path = os.path.join(group_dir, unique_filename)
+    
+    return full_path, relative_path
 
 def save_uploaded_file(file: UploadFile, file_path: str) -> bool:
     """
@@ -97,14 +104,19 @@ def validate_upload_file(file: UploadFile) -> Tuple[bool, Optional[str]]:
     Returns:
         Tuple[bool, Optional[str]]: (是否有效, 错误信息)
     """
+    logger.info(f"开始验证文件: {file.filename}")
+    
     # 检查文件是否为空
     if not file.filename:
+        logger.warning("文件名为空")
         return False, "文件名不能为空"
     
     # 检查文件类型
     if not validate_file_type(file.filename):
         allowed_types = ", ".join(config.ALLOWED_FILE_TYPES)
-        return False, f"不支持的文件类型。允许的类型: {allowed_types}"
+        error_msg = f"不支持的文件类型。允许的类型: {allowed_types}"
+        logger.warning(f"文件类型验证失败: {error_msg}")
+        return False, error_msg
     
     # 检查文件大小
     file.file.seek(0, 2)  # 移动到文件末尾
@@ -113,11 +125,15 @@ def validate_upload_file(file: UploadFile) -> Tuple[bool, Optional[str]]:
     
     if not validate_file_size(file_size):
         max_size_mb = config.MAX_FILE_SIZE // (1024 * 1024)
-        return False, f"文件过大。最大允许大小: {max_size_mb}MB"
+        error_msg = f"文件过大。最大允许大小: {max_size_mb}MB"
+        logger.warning(f"文件大小验证失败: {error_msg}")
+        return False, error_msg
     
     if file_size == 0:
+        logger.warning("文件内容为空")
         return False, "文件不能为空"
     
+    logger.info(f"文件验证通过: {file.filename}")
     return True, None
 
 def get_file_info(file: UploadFile) -> dict:
@@ -128,7 +144,7 @@ def get_file_info(file: UploadFile) -> dict:
         file: 上传的文件对象
         
     Returns:
-        dict: 文件信息
+        dict: 文件信息，包含file_size和file_type字段
     """
     # 获取文件大小
     file.file.seek(0, 2)
@@ -140,8 +156,8 @@ def get_file_info(file: UploadFile) -> dict:
     
     return {
         "filename": file.filename,
-        "size": file_size,
-        "type": file_ext,
+        "file_size": file_size,
+        "file_type": file_ext,
         "content_type": file.content_type
     }
 

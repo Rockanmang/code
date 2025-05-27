@@ -15,14 +15,18 @@ BASE_URL = "http://localhost:8000"
 
 def create_test_pdf():
     """创建一个简单的测试PDF文件"""
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.pagesizes import letter
+    
     test_file_path = "test_document.pdf"
     
-    # 创建一个简单的文本文件作为测试（实际应该是PDF）
-    with open(test_file_path, "w", encoding="utf-8") as f:
-        f.write("这是一个测试文档\n")
-        f.write("用于测试文献上传功能\n")
-        f.write("标题：人工智能研究进展\n")
-        f.write("内容：本文介绍了人工智能的最新研究进展...")
+    # 创建一个真实的PDF文件
+    c = canvas.Canvas(test_file_path, pagesize=letter)
+    c.drawString(100, 750, "这是一个测试文档")
+    c.drawString(100, 730, "用于测试文献上传功能")
+    c.drawString(100, 710, "标题：人工智能研究进展")
+    c.drawString(100, 690, "内容：本文介绍了人工智能的最新研究进展...")
+    c.save()
     
     return test_file_path
 
@@ -33,7 +37,7 @@ def test_login():
     url = f"{BASE_URL}/login"
     data = {
         "username": "testuser",
-        "password": "password123"
+        "password": "testpass123"
     }
     
     try:

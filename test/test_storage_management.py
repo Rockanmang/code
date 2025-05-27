@@ -79,18 +79,19 @@ class StorageManagementTester:
             tmp_file_path = tmp_file.name
         
         try:
-            files = {"file": ("test_storage.pdf", open(tmp_file_path, "rb"), "application/pdf")}
-            data = {
-                "group_id": self.group_id,
-                "title": "存储管理测试文档"
-            }
-            
-            response = requests.post(
-                f"{BASE_URL}/literature/upload",
-                files=files,
-                data=data,
-                headers=self.get_headers()
-            )
+            with open(tmp_file_path, "rb") as f:
+                files = {"file": ("test_storage.pdf", f, "application/pdf")}
+                data = {
+                    "group_id": self.group_id,
+                    "title": "存储管理测试文档"
+                }
+                
+                response = requests.post(
+                    f"{BASE_URL}/literature/upload",
+                    files=files,
+                    data=data,
+                    headers=self.get_headers()
+                )
             
             if response.status_code == 200:
                 result = response.json()
@@ -104,7 +105,16 @@ class StorageManagementTester:
         finally:
             # 清理临时文件
             if os.path.exists(tmp_file_path):
-                os.unlink(tmp_file_path)
+                try:
+                    os.unlink(tmp_file_path)
+                except PermissionError:
+                    # Windows 系统可能需要稍等一下
+                    import time
+                    time.sleep(0.1)
+                    try:
+                        os.unlink(tmp_file_path)
+                    except:
+                        pass  # 如果还是删除不了，就忽略
     
     def test_literature_statistics(self):
         """测试文献统计功能"""

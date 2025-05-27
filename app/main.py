@@ -1,3 +1,5 @@
+import sys
+import logging
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from sqlalchemy.orm import Session
@@ -17,11 +19,18 @@ from app.utils.error_handler import (
 from app.schemas import FileUploadResponse, LiteratureListResponse, LiteratureListItem
 from jose import jwt
 from datetime import datetime, timedelta
-import logging
 from fastapi.responses import FileResponse
 from app.utils.auth_helper import verify_literature_access, get_literature_with_permission, verify_file_exists, get_content_type
 
 # 配置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('literature_system.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="文献管理系统", description="AI驱动的协作文献管理平台", version="1.0.0")
@@ -179,6 +188,7 @@ async def upload_literature(
         # 3. 验证文件
         is_valid, error_msg = validate_upload_file(file)
         if not is_valid:
+            logger.warning(f"文件验证失败: {error_msg}")
             raise ValidationError(error_msg)
         
         # 4. 获取文件信息
@@ -192,7 +202,7 @@ async def upload_literature(
         def save_file():
             return save_uploaded_file(file, full_path)
         
-        save_success = await safe_file_operation("file_save", save_file)
+        save_success = safe_file_operation("file_save", save_file)
         if not save_success:
             raise FileUploadError("文件保存失败")
         

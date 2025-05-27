@@ -11,7 +11,7 @@ import sys
 # API基础URL
 BASE_URL = "http://127.0.0.1:8000"
 
-def test_login(username="testuser", password="password123"):
+def test_login(username="testuser", password="testpass123"):
     """测试用户登录"""
     print("🔐 测试用户登录...")
     
@@ -195,15 +195,10 @@ def main():
         print("\n❌ 无法创建课题组，停止测试")
         sys.exit(1)
     
-    # 3. 测试加入课题组
-    success = test_join_group(token, group_id, invitation_code)
-    if not success:
-        print("\n❌ 无法加入课题组")
-    
-    # 4. 测试重复加入（应该失败）
+    # 3. 测试创建者尝试加入自己的课题组（应该失败）
     test_join_group_duplicate(token, group_id, invitation_code)
     
-    # 5. 测试无效课题组（应该失败）
+    # 4. 测试无效课题组（应该失败）
     test_invalid_group(token)
     
     print("\n" + "="*50)

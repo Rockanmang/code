@@ -27,12 +27,12 @@ venv/
 env/
 ENV/
 
-# Database - 注释掉以允许上传数据库文件
-# *.db
-# *.sqlite3
+# Database files (keep structure, ignore data)
+*.db
+*.sqlite3
 
-# Logs - 注释掉以允许上传日志文件
-# *.log
+# Log files
+*.log
 
 # OS generated files
 .DS_Store
@@ -49,12 +49,40 @@ Thumbs.db
 *.swp
 *.swo
 
-# Uploads directory - 注释掉以允许上传uploads目录
-# uploads/
+# Uploads directory (ignore actual uploaded files)
+uploads/*/
+!uploads/.gitkeep
 
-# Environment variables
+# Environment variables (keep example)
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# AI相关文件
+vector_db/
+*.pkl
+*.index
+*.faiss
+
+# 测试结果
+test_results*.json
+
+# 临时文件
+*.tmp
+*.temp
+temp/
+tmp/
+
+# 缓存
+cache/
+.cache/
+
+# 备份文件
+*.bak
+*.backup
+
+# 编辑器临时文件
+*~
+.swp

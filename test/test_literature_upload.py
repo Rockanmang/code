@@ -32,7 +32,7 @@ class LiteratureUploadTester:
         print("🔐 登录获取token...")
         
         url = f"{BASE_URL}/login"
-        data = {"username": "testuser", "password": "password123"}
+        data = {"username": "testuser", "password": "testpass123"}
         
         try:
             response = requests.post(url, data=data)
@@ -370,7 +370,7 @@ def main():
     """主函数"""
     print("请确保:")
     print("1. 应用已启动 (python run.py)")
-    print("2. 测试用户已创建 (testuser/password123)")
+    print("2. 测试用户已创建 (testuser/testpass123)")
     print("-" * 40)
     
     tester = LiteratureUploadTester()

@@ -1,9 +1,10 @@
 """
 文本提取工具函数
-主要用于从PDF文件中提取文本和标题
+支持从PDF、DOCX、HTML等文件中提取文本和标题
 """
 
 import os
+import re
 from pathlib import Path
 from typing import Optional
 import logging
@@ -32,28 +33,143 @@ def extract_pdf_text(file_path: str) -> Optional[str]:
             text = ""
             for page_num in range(len(pdf_reader.pages)):
                 page = pdf_reader.pages[page_num]
-                text += page.extract_text() + "\n"
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
             
-            # 清理文本（移除多余的空白字符）
-            text = " ".join(text.split())
+            # 清理文本
+            text = clean_extracted_text(text)
             
             if text.strip():
                 logger.info(f"成功从PDF提取文本，长度: {len(text)} 字符")
                 return text
             else:
                 logger.warning(f"PDF文件 {file_path} 中没有可提取的文本")
-                return None
+                return ""
                 
     except ImportError:
         logger.error("PyPDF2库未安装，无法提取PDF文本")
-        return None
+        return ""
     except Exception as e:
         logger.error(f"提取PDF文本失败: {e}")
-        return None
+        return ""
 
-def extract_title_from_text(text: str, max_length: int = 50) -> str:
+def extract_docx_text(file_path: str) -> Optional[str]:
     """
-    从文本中提取标题（简单实现）
+    使用python-docx从DOCX文件中提取文本
+    
+    Args:
+        file_path: DOCX文件路径
+        
+    Returns:
+        Optional[str]: 提取的文本内容，失败时返回空字符串
+    """
+    try:
+        from docx import Document
+        
+        doc = Document(file_path)
+        
+        # 提取所有段落的文本
+        text = ""
+        for paragraph in doc.paragraphs:
+            if paragraph.text.strip():
+                text += paragraph.text + "\n"
+        
+        # 提取表格中的文本
+        for table in doc.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    if cell.text.strip():
+                        text += cell.text + " "
+                text += "\n"
+        
+        # 清理文本
+        text = clean_extracted_text(text)
+        
+        if text.strip():
+            logger.info(f"成功从DOCX提取文本，长度: {len(text)} 字符")
+            return text
+        else:
+            logger.warning(f"DOCX文件 {file_path} 中没有可提取的文本")
+            return ""
+            
+    except ImportError:
+        logger.error("python-docx库未安装，无法提取DOCX文本")
+        return ""
+    except Exception as e:
+        logger.error(f"提取DOCX文本失败: {e}")
+        return ""
+
+def extract_html_text(file_path: str) -> Optional[str]:
+    """
+    使用BeautifulSoup从HTML文件中提取文本
+    
+    Args:
+        file_path: HTML文件路径
+        
+    Returns:
+        Optional[str]: 提取的文本内容，失败时返回空字符串
+    """
+    try:
+        from bs4 import BeautifulSoup
+        
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+            content = file.read()
+        
+        # 解析HTML
+        soup = BeautifulSoup(content, 'html.parser')
+        
+        # 移除script和style标签
+        for script in soup(["script", "style"]):
+            script.decompose()
+        
+        # 提取文本
+        text = soup.get_text()
+        
+        # 清理文本
+        text = clean_extracted_text(text)
+        
+        if text.strip():
+            logger.info(f"成功从HTML提取文本，长度: {len(text)} 字符")
+            return text
+        else:
+            logger.warning(f"HTML文件 {file_path} 中没有可提取的文本")
+            return ""
+            
+    except ImportError:
+        logger.error("beautifulsoup4库未安装，无法提取HTML文本")
+        return ""
+    except Exception as e:
+        logger.error(f"提取HTML文本失败: {e}")
+        return ""
+
+def clean_extracted_text(text: str) -> str:
+    """
+    清理提取的文本（去除多余空白、特殊字符等）
+    
+    Args:
+        text: 原始文本
+        
+    Returns:
+        str: 清理后的文本
+    """
+    if not text:
+        return ""
+    
+    # 替换多个空白字符为单个空格
+    text = re.sub(r'\s+', ' ', text)
+    
+    # 移除行首行尾空白
+    text = text.strip()
+    
+    # 移除特殊控制字符
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', text)
+    
+    return text
+
+def extract_title_from_text(text: str, max_length: int = 100) -> str:
+    """
+    从文本中提取标题（改进版）
     
     Args:
         text: 文本内容
@@ -68,25 +184,31 @@ def extract_title_from_text(text: str, max_length: int = 50) -> str:
     # 清理文本
     text = text.strip()
     
-    # 按行分割，取第一个非空行作为标题
+    # 按行分割，寻找合适的标题行
     lines = [line.strip() for line in text.split('\n') if line.strip()]
     
     if lines:
-        title = lines[0]
-        # 限制标题长度
-        if len(title) > max_length:
-            title = title[:max_length] + "..."
-        return title
+        # 寻找第一个看起来像标题的行（长度适中，不是纯数字）
+        for line in lines[:5]:  # 只检查前5行
+            if 10 <= len(line) and not line.isdigit():
+                # 移除常见的标题前缀
+                line = re.sub(r'^(第\d+章|Chapter\s+\d+|Abstract|摘要|引言|Introduction)[:：\s]*', '', line, flags=re.IGNORECASE)
+                if line:
+                    # 截断标题
+                    if len(line) > max_length:
+                        return line[:max_length]
+                    return line
+        
+        # 如果没找到合适的，使用第一行（截断）
+        if len(lines[0]) > max_length:
+            return lines[0][:max_length]
+        return lines[0]
     
-    # 如果没有找到合适的行，取前50个字符
-    if len(text) > max_length:
-        return text[:max_length] + "..."
-    
-    return text
+    return "未知标题"
 
 def extract_title_from_filename(filename: str) -> str:
     """
-    从文件名中提取标题（去除扩展名）
+    从文件名中提取标题
     
     Args:
         filename: 文件名
@@ -94,7 +216,46 @@ def extract_title_from_filename(filename: str) -> str:
     Returns:
         str: 提取的标题
     """
-    return Path(filename).stem
+    # 获取文件名（不含扩展名）
+    title = Path(filename).stem
+    
+    # 将下划线和连字符替换为空格
+    title = title.replace('_', ' ').replace('-', ' ')
+    
+    # 清理多余空格
+    title = ' '.join(title.split())
+    
+    return title
+
+def extract_text_from_file(file_path: str) -> str:
+    """
+    根据文件类型提取文本内容
+    
+    Args:
+        file_path: 文件路径
+        
+    Returns:
+        str: 提取的文本内容，失败时返回空字符串
+    """
+    file_ext = Path(file_path).suffix.lower()
+    
+    if file_ext == '.pdf':
+        return extract_pdf_text(file_path) or ""
+    elif file_ext in ['.docx', '.doc']:
+        return extract_docx_text(file_path) or ""
+    elif file_ext in ['.html', '.htm']:
+        return extract_html_text(file_path) or ""
+    elif file_ext == '.txt':
+        try:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+                text = file.read()
+            return clean_extracted_text(text)
+        except Exception as e:
+            logger.error(f"读取TXT文件失败: {e}")
+            return ""
+    else:
+        logger.warning(f"不支持的文件类型: {file_ext}")
+        return ""
 
 def extract_metadata_from_file(file_path: str, original_filename: str) -> dict:
     """
@@ -111,33 +272,32 @@ def extract_metadata_from_file(file_path: str, original_filename: str) -> dict:
     
     metadata = {
         "title": extract_title_from_filename(original_filename),
-        "extracted_text": None,
-        "extraction_success": False
+        "extracted_text": "",
+        "extraction_success": False,
+        "file_type": file_ext,
+        "text_length": 0
     }
     
-    # 只处理PDF文件
-    if file_ext == '.pdf':
-        try:
-            extracted_text = extract_pdf_text(file_path)
-            if extracted_text:
-                # 从提取的文本中获取更好的标题
-                title_from_text = extract_title_from_text(extracted_text)
-                if title_from_text and title_from_text != "未知标题":
-                    metadata["title"] = title_from_text
-                
-                metadata["extracted_text"] = extracted_text
-                metadata["extraction_success"] = True
-                
-                logger.info(f"成功提取PDF元数据: {metadata['title']}")
-            else:
-                logger.warning(f"PDF文本提取失败，使用文件名作为标题")
-                
-        except Exception as e:
-            logger.error(f"PDF元数据提取失败: {e}")
-    
-    else:
-        # 对于非PDF文件，暂时只使用文件名作为标题
-        logger.info(f"文件类型 {file_ext} 暂不支持文本提取，使用文件名作为标题")
+    try:
+        # 提取文本内容
+        extracted_text = extract_text_from_file(file_path)
+        
+        if extracted_text and extracted_text.strip():
+            # 从提取的文本中获取更好的标题
+            title_from_text = extract_title_from_text(extracted_text)
+            if title_from_text and title_from_text != "未知标题":
+                metadata["title"] = title_from_text
+            
+            metadata["extracted_text"] = extracted_text
+            metadata["extraction_success"] = True
+            metadata["text_length"] = len(extracted_text)
+            
+            logger.info(f"成功提取文件元数据: {metadata['title']} (长度: {metadata['text_length']})")
+        else:
+            logger.warning(f"文件 {file_path} 文本提取失败或为空，使用文件名作为标题")
+            
+    except Exception as e:
+        logger.error(f"文件元数据提取失败: {e}")
     
     return metadata
 
@@ -152,5 +312,29 @@ def is_text_extractable(file_path: str) -> bool:
         bool: 是否支持文本提取
     """
     file_ext = Path(file_path).suffix.lower()
-    # 目前只支持PDF
-    return file_ext == '.pdf'
+    supported_types = ['.pdf', '.docx', '.doc', '.html', '.htm', '.txt']
+    return file_ext in supported_types
+
+def estimate_reading_time(text: str, words_per_minute: int = 200) -> int:
+    """
+    估算文本阅读时间（分钟）
+    
+    Args:
+        text: 文本内容
+        words_per_minute: 每分钟阅读词数
+        
+    Returns:
+        int: 估算的阅读时间（分钟）
+    """
+    if not text:
+        return 0
+    
+    # 简单的词数统计（中英文混合）
+    words = len(text.split())
+    chinese_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
+    
+    # 中文字符按2个字符算一个词
+    total_words = words + chinese_chars // 2
+    
+    reading_time = max(1, total_words // words_per_minute)
+    return reading_time

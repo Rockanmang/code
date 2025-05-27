@@ -3,3 +3,827 @@
 2025-05-25 14:35:41,477 - app.utils.error_handler - INFO - ç›´æŽ¥ä½¿ç”¨loggerè®°å½•ä¿¡æ¯
 2025-05-25 14:35:41,477 - app.utils.error_handler - WARNING - è¿™æ˜¯ä¸€ä¸ªè­¦å‘Šæ¶ˆæ¯
 2025-05-25 14:35:41,511 - app.utils.error_handler - ERROR - è¿™æ˜¯ä¸€ä¸ªé”™è¯¯æ¶ˆæ¯
+2025-05-26 17:11:37,066 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:37,067 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:37,068 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:11:37,864 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:37,864 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:37,865 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:11:38,677 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:38,678 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:38,679 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:11:52,674 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:52,675 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:52,675 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:11:53,469 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:53,470 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:53,472 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:11:54,302 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:11:54,304 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:11:54,305 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:12:13,678 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:12:13,678 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:12:13,679 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:12:14,469 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:12:14,469 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:12:14,470 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:12:27,159 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:12:27,159 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:12:27,160 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:13:40,627 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:13:40,627 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:13:40,628 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:13:40,637 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:13:40,637 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:13:40,638 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:01,952 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:14:01,952 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:14:01,954 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:01,963 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:14:01,963 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:14:01,964 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:02,779 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:14:02,779 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:14:02,781 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:20,524 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:14:20,525 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:14:20,525 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:31,952 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:14:31,966 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:14:32,183 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:14:32,204 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '560a6280-4016-4fc2-a0fa-d5d3bdb7b033', 'group_name': 'ÎÄÏ×²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:14:32,211 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 7}
+2025-05-26 17:14:32,274 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\560a6280-4016-4fc2-a0fa-d5d3bdb7b033
+2025-05-26 17:14:32,274 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 560a6280-4016-4fc2-a0fa-d5d3bdb7b033 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:32,274 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_document.pdf in 560a6280-4016-4fc2-a0fa-d5d3bdb7b033
+2025-05-26 17:14:32,276 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_document.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:14:32,276 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\560a6280-4016-4fc2-a0fa-d5d3bdb7b033\test_document.pdf
+2025-05-26 17:14:32,276 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:14:32,277 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'literature_upload', 'error_type': 'TypeError', 'error_message': "object bool can't be used in 'await' expression", 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_document.pdf', 'group_id': '560a6280-4016-4fc2-a0fa-d5d3bdb7b033', 'file_size': 1550}
+2025-05-26 17:14:32,277 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'unknown', 'error_type': 'TypeError', 'error_message': "object bool can't be used in 'await' expression", 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_document.pdf'}
+2025-05-26 17:14:32,286 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '560a6280-4016-4fc2-a0fa-d5d3bdb7b033', 'literature_count': 0}
+2025-05-26 17:14:32,294 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\560a6280-4016-4fc2-a0fa-d5d3bdb7b033
+2025-05-26 17:14:32,295 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 560a6280-4016-4fc2-a0fa-d5d3bdb7b033 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:14:32,295 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_invalid.txt in 560a6280-4016-4fc2-a0fa-d5d3bdb7b033
+2025-05-26 17:14:32,295 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_invalid.txt ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:14:32,296 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\560a6280-4016-4fc2-a0fa-d5d3bdb7b033\test_invalid.txt
+2025-05-26 17:14:32,296 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:14:32,296 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'literature_upload', 'error_type': 'TypeError', 'error_message': "object bool can't be used in 'await' expression", 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid.txt', 'group_id': '560a6280-4016-4fc2-a0fa-d5d3bdb7b033', 'file_size': 26}
+2025-05-26 17:14:32,297 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'unknown', 'error_type': 'TypeError', 'error_message': "object bool can't be used in 'await' expression", 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid.txt'}
+2025-05-26 17:15:12,824 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:12,824 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:12,826 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:12,875 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:12,876 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:12,877 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:12,907 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:12,908 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:12,909 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:13,747 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:13,748 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:13,749 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:13,818 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:13,819 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:13,820 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:13,828 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:13,828 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:13,829 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:14,658 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:14,659 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:14,660 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:14,703 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:14,703 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:14,704 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:14,710 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:14,710 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:14,710 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:40,123 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:15:40,124 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:15:40,124 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:50,992 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:15:51,006 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:15:51,225 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:15:51,247 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'group_name': 'ÎÄÏ×²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:15:51,254 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 8}
+2025-05-26 17:15:51,316 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-26 17:15:51,317 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:51,317 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_document.pdf in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-26 17:15:51,317 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_document.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:15:51,318 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_document.pdf
+2025-05-26 17:15:51,318 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:15:51,355 - app.utils.text_extractor - INFO - ³É¹¦´ÓPDFÌáÈ¡ÎÄ±¾£¬³¤¶È: 54 ×Ö·û
+2025-05-26 17:15:51,356 - app.utils.text_extractor - INFO - ³É¹¦ÌáÈ¡ÎÄ¼þÔªÊý¾Ý: ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö... (³¤¶È: 54)
+2025-05-26 17:15:51,363 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '5e47ce46-e03d-4b90-b6db-35c70c64fddd', 'title': 'ÈË¹¤ÖÇÄÜÑÐ¾¿½øÕ¹²âÊÔÎÄµµ', 'filename': 'test_document.pdf', 'file_size': 1550, 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58'}
+2025-05-26 17:15:51,371 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'literature_count': 1}
+2025-05-26 17:15:51,379 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-26 17:15:51,380 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:15:51,380 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_invalid.txt in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-26 17:15:51,380 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_invalid.txt ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:15:51,381 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_invalid.txt
+2025-05-26 17:15:51,382 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:16:25,876 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:25,876 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:25,877 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:16:25,917 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:25,918 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:25,919 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:16:25,924 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:25,925 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:25,926 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:16:25,948 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:25,948 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:25,949 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:16:26,771 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:26,772 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:26,773 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:16:42,200 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:16:42,201 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:16:42,202 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:00,848 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:17:00,863 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:17:01,087 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:17:01,104 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': 'fb87928a-7b52-4b5b-b5d1-d11c3b830c47', 'group_name': 'ÎÄÏ×²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:17:01,111 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 9}
+2025-05-26 17:17:01,174 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\fb87928a-7b52-4b5b-b5d1-d11c3b830c47
+2025-05-26 17:17:01,175 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ fb87928a-7b52-4b5b-b5d1-d11c3b830c47 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:01,176 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_document.pdf in fb87928a-7b52-4b5b-b5d1-d11c3b830c47
+2025-05-26 17:17:01,176 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_document.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:17:01,177 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\fb87928a-7b52-4b5b-b5d1-d11c3b830c47\test_document.pdf
+2025-05-26 17:17:01,177 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:17:01,213 - app.utils.text_extractor - INFO - ³É¹¦´ÓPDFÌáÈ¡ÎÄ±¾£¬³¤¶È: 54 ×Ö·û
+2025-05-26 17:17:01,213 - app.utils.text_extractor - INFO - ³É¹¦ÌáÈ¡ÎÄ¼þÔªÊý¾Ý: ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö... (³¤¶È: 54)
+2025-05-26 17:17:01,223 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '2479efca-406b-4108-a9cb-5cb337bdebcb', 'title': 'ÈË¹¤ÖÇÄÜÑÐ¾¿½øÕ¹²âÊÔÎÄµµ', 'filename': 'test_document.pdf', 'file_size': 1550, 'group_id': 'fb87928a-7b52-4b5b-b5d1-d11c3b830c47'}
+2025-05-26 17:17:01,232 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': 'fb87928a-7b52-4b5b-b5d1-d11c3b830c47', 'literature_count': 1}
+2025-05-26 17:17:01,239 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\fb87928a-7b52-4b5b-b5d1-d11c3b830c47
+2025-05-26 17:17:01,239 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ fb87928a-7b52-4b5b-b5d1-d11c3b830c47 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:01,240 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_invalid.txt in fb87928a-7b52-4b5b-b5d1-d11c3b830c47
+2025-05-26 17:17:01,240 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_invalid.txt ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:17:01,241 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\fb87928a-7b52-4b5b-b5d1-d11c3b830c47\test_invalid.txt
+2025-05-26 17:17:01,241 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:17:19,162 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:19,162 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:19,163 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:19,234 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:19,235 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:19,236 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:19,254 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:19,255 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:19,256 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:19,294 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:19,294 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:19,295 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+Ä¿Â¼: uploads
+2025-05-26 17:17:19,296 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:19,297 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:20,129 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:20,129 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:20,131 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:20,282 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:20,284 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:20,285 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:20,289 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:20,289 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:20,292 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:20,316 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:20,317 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:20,318 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:20,318 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:20,319 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:20,319 - app.utils.storage_manager - ERROR - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞ²âÊÔÊ§°Ü: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼þ¡£: 'uploads\\.write_test'
+2025-05-26 17:17:20,319 - app.utils.storage_manager - ERROR - ´´½¨ÉÏ´«¸ùÄ¿Â¼Ê§°Ü: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼þ¡£: 'uploads\\.write_test'
+2025-05-26 17:17:21,094 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:21,095 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:21,096 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:21,246 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:21,247 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:21,247 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:21,255 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:21,255 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:21,257 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:21,284 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:21,284 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:21,285 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:21,285 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:21,286 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:21,286 - app.utils.storage_manager - ERROR - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞ²âÊÔÊ§°Ü: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼þ¡£: 'uploads\\.write_test'
+2025-05-26 17:17:21,286 - app.utils.storage_manager - ERROR - ´´½¨ÉÏ´«¸ùÄ¿Â¼Ê§°Ü: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼þ¡£: 'uploads\\.write_test'
+2025-05-26 17:17:39,397 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:39,398 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:39,399 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:39,676 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:39,676 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:39,677 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:39,746 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:39,747 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:39,749 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:39,766 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:39,767 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:39,769 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:39,781 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:39,782 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:39,783 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:40,325 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:40,325 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:40,327 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:40,643 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:40,644 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:40,645 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:40,757 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:40,757 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:40,758 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:40,813 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:40,815 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:40,816 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:40,819 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:40,819 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:40,821 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:41,414 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:41,414 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:41,415 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:41,614 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:41,615 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:41,616 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:41,724 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:41,725 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:41,725 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:41,763 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:41,763 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:41,764 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:41,770 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:41,770 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:41,773 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:54,068 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:54,069 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:54,070 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:54,098 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:54,099 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:54,100 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:54,169 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:54,170 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:54,171 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:54,188 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:54,189 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:54,190 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:54,199 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:54,199 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:54,201 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,023 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,024 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,025 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,097 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,098 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,100 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,182 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,183 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,183 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,183 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,183 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,184 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,195 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,195 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,196 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:17:55,876 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:17:55,877 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:17:55,879 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:18:05,755 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:18:05,756 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:18:05,756 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:18:10,301 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:18:10,315 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:18:10,529 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:18:10,547 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '8db26f0e-ea4d-4d04-8d95-d3113b3f4664', 'group_name': 'ÎÄÏ×²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:18:10,554 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 10}
+2025-05-26 17:18:10,615 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_document.pdf
+2025-05-26 17:18:10,616 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_document.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:18:10,616 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: test_document.pdf
+2025-05-26 17:18:10,617 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\8db26f0e-ea4d-4d04-8d95-d3113b3f4664
+2025-05-26 17:18:10,617 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 8db26f0e-ea4d-4d04-8d95-d3113b3f4664 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:18:10,618 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_document.pdf in 8db26f0e-ea4d-4d04-8d95-d3113b3f4664
+2025-05-26 17:18:10,618 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_document.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:18:10,618 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\8db26f0e-ea4d-4d04-8d95-d3113b3f4664\test_document.pdf
+2025-05-26 17:18:10,618 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:18:10,658 - app.utils.text_extractor - INFO - ³É¹¦´ÓPDFÌáÈ¡ÎÄ±¾£¬³¤¶È: 54 ×Ö·û
+2025-05-26 17:18:10,659 - app.utils.text_extractor - INFO - ³É¹¦ÌáÈ¡ÎÄ¼þÔªÊý¾Ý: ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö ¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö¡ö... (³¤¶È: 54)
+2025-05-26 17:18:10,666 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '26f39d63-a380-4b17-a8cd-b73936c95c4e', 'title': 'ÈË¹¤ÖÇÄÜÑÐ¾¿½øÕ¹²âÊÔÎÄµµ', 'filename': 'test_document.pdf', 'file_size': 1550, 'group_id': '8db26f0e-ea4d-4d04-8d95-d3113b3f4664'}
+2025-05-26 17:18:10,675 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '8db26f0e-ea4d-4d04-8d95-d3113b3f4664', 'literature_count': 1}
+2025-05-26 17:18:10,683 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_invalid.txt
+2025-05-26 17:18:10,683 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_invalid.txt -> .txt -> ²»ÔÊÐí
+2025-05-26 17:18:10,683 - app.utils.file_handler - WARNING - ÎÄ¼þÀàÐÍÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:18:10,684 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:18:10,684 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid.txt'}
+2025-05-26 17:18:56,791 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:18:56,994 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:18:57,003 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 10}
+2025-05-26 17:18:57,011 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'literature_count': 2}
+2025-05-26 17:19:03,297 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:19:03,492 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': 'µÇÂ¼Ê§°Ü', 'user_id': None, 'username': 'testuser'}
+2025-05-26 17:19:28,370 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:19:28,567 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': 'µÇÂ¼Ê§°Ü', 'user_id': None, 'username': 'testuser'}
+2025-05-26 17:20:38,149 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:20:38,149 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:20:38,150 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:20:39,156 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:20:39,156 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:20:39,157 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:20:57,983 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:20:57,984 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:20:57,984 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:21:04,551 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:21:04,564 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:21:04,784 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': 'µÇÂ¼Ê§°Ü', 'user_id': None, 'username': 'testuser'}
+2025-05-26 17:22:12,607 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:22:12,814 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:22:12,824 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 10}
+2025-05-26 17:22:12,836 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'literature_count': 2}
+2025-05-26 17:22:25,099 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:22:25,100 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:22:25,101 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:25,138 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:22:25,139 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:22:25,140 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:36,349 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:22:36,349 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:22:36,350 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:36,440 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:22:36,440 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:22:36,441 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:36,461 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:22:36,472 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:22:36,689 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:22:36,707 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '9e7526f8-8de2-4818-a6fd-cb0edb1eec03', 'group_name': 'ÎÄÏ×ÉÏ´«²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:22:36,715 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_success.pdf
+2025-05-26 17:22:36,716 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_success.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:22:36,716 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: test_success.pdf
+2025-05-26 17:22:36,717 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03
+2025-05-26 17:22:36,717 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 9e7526f8-8de2-4818-a6fd-cb0edb1eec03 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:36,717 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_success.pdf in 9e7526f8-8de2-4818-a6fd-cb0edb1eec03
+2025-05-26 17:22:36,718 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_success.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:22:36,718 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03\test_success.pdf
+2025-05-26 17:22:36,719 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:22:36,757 - app.utils.text_extractor - ERROR - ÌáÈ¡PDFÎÄ±¾Ê§°Ü: EOF marker not found
+2025-05-26 17:22:36,757 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03\test_success.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-26 17:22:36,765 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '58d81857-a321-4648-b8cc-5da2926c2df9', 'title': '»úÆ÷Ñ§Ï°Ëã·¨ÑÐ¾¿', 'filename': 'test_success.pdf', 'file_size': 130, 'group_id': '9e7526f8-8de2-4818-a6fd-cb0edb1eec03'}
+2025-05-26 17:22:36,773 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_invalid.txt
+2025-05-26 17:22:36,773 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_invalid.txt -> .txt -> ²»ÔÊÐí
+2025-05-26 17:22:36,773 - app.utils.file_handler - WARNING - ÎÄ¼þÀàÐÍÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:22:36,774 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:22:36,774 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid.txt'}
+2025-05-26 17:22:37,027 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_large.pdf
+2025-05-26 17:22:37,027 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_large.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:22:37,027 - app.utils.file_handler - WARNING - ÎÄ¼þ´óÐ¡ÑéÖ¤Ê§°Ü: ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB
+2025-05-26 17:22:37,027 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB
+2025-05-26 17:22:37,028 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': 'ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_large.pdf'}
+2025-05-26 17:22:37,048 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_permission', 'error_type': 'PermissionError', 'error_message': 'ÑÐ¾¿×é²»´æÔÚ', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid_group.pdf'}
+2025-05-26 17:22:37,055 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_empty.pdf
+2025-05-26 17:22:37,055 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_empty.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:22:37,056 - app.utils.file_handler - WARNING - ÎÄ¼þÄÚÈÝÎª¿Õ
+2025-05-26 17:22:37,056 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ÎÄ¼þ²»ÄÜÎª¿Õ
+2025-05-26 17:22:37,056 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': 'ÎÄ¼þ²»ÄÜÎª¿Õ', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_empty.pdf'}
+2025-05-26 17:22:37,064 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:22:37,064 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:22:37,064 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:22:37,065 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03
+2025-05-26 17:22:37,065 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 9e7526f8-8de2-4818-a6fd-cb0edb1eec03 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:22:37,066 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf in 9e7526f8-8de2-4818-a6fd-cb0edb1eec03
+2025-05-26 17:22:37,066 - app.utils.storage_manager - INFO - ÎÄ¼þÃû ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:22:37,066 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03\²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:22:37,067 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:22:37,067 - app.utils.text_extractor - ERROR - ÌáÈ¡PDFÎÄ±¾Ê§°Ü: EOF marker not found
+2025-05-26 17:22:37,067 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\9e7526f8-8de2-4818-a6fd-cb0edb1eec03\²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-26 17:22:37,072 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': 'c1942df2-dc39-466b-8cba-a481830191af', 'title': '²âÊÔÎÄµµ ÌØÊâ×Ö·û@#$%', 'filename': '²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf', 'file_size': 36, 'group_id': '9e7526f8-8de2-4818-a6fd-cb0edb1eec03'}
+2025-05-26 17:23:04,574 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:04,575 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:04,576 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:04,615 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:04,615 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:04,616 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:17,766 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:17,767 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:17,768 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:17,833 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:17,835 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:17,837 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:27,094 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:27,095 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:27,096 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:27,146 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:27,147 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:27,148 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:33,146 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:33,147 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:33,148 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:33,174 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:33,175 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:33,175 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:35,111 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:35,112 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:35,112 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:35,136 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:35,136 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:35,137 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:37,722 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:37,723 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:37,723 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:23:37,796 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:23:37,797 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:23:37,797 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:24:10,258 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:24:10,271 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:24:10,493 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:24:10,511 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '77207617-ae25-4094-874c-8a1df1f7fd65', 'group_name': 'ÎÄÏ×ÉÏ´«²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:24:10,519 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_success.pdf
+2025-05-26 17:24:10,520 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_success.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:24:10,520 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: test_success.pdf
+2025-05-26 17:24:10,520 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\77207617-ae25-4094-874c-8a1df1f7fd65
+2025-05-26 17:24:10,521 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 77207617-ae25-4094-874c-8a1df1f7fd65 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:24:10,521 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_success.pdf in 77207617-ae25-4094-874c-8a1df1f7fd65
+2025-05-26 17:24:10,521 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_success.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:24:10,523 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\77207617-ae25-4094-874c-8a1df1f7fd65\test_success.pdf
+2025-05-26 17:24:10,523 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:24:10,564 - app.utils.text_extractor - ERROR - ÌáÈ¡PDFÎÄ±¾Ê§°Ü: EOF marker not found
+2025-05-26 17:24:10,564 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\77207617-ae25-4094-874c-8a1df1f7fd65\test_success.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-26 17:24:10,570 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': 'a7c98af6-f0bb-4422-85ca-0d0007034505', 'title': '»úÆ÷Ñ§Ï°Ëã·¨ÑÐ¾¿', 'filename': 'test_success.pdf', 'file_size': 130, 'group_id': '77207617-ae25-4094-874c-8a1df1f7fd65'}
+2025-05-26 17:24:10,579 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_invalid.txt
+2025-05-26 17:24:10,579 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_invalid.txt -> .txt -> ²»ÔÊÐí
+2025-05-26 17:24:10,580 - app.utils.file_handler - WARNING - ÎÄ¼þÀàÐÍÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:24:10,580 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc
+2025-05-26 17:24:10,580 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '²»Ö§³ÖµÄÎÄ¼þÀàÐÍ¡£ÔÊÐíµÄÀàÐÍ: .pdf, .docx, .doc', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid.txt'}
+2025-05-26 17:24:10,837 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_large.pdf
+2025-05-26 17:24:10,837 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_large.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:24:10,837 - app.utils.file_handler - WARNING - ÎÄ¼þ´óÐ¡ÑéÖ¤Ê§°Ü: ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB
+2025-05-26 17:24:10,838 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB
+2025-05-26 17:24:10,838 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': 'ÎÄ¼þ¹ý´ó¡£×î´óÔÊÐí´óÐ¡: 50MB', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_large.pdf'}
+2025-05-26 17:24:10,858 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_permission', 'error_type': 'PermissionError', 'error_message': 'ÑÐ¾¿×é²»´æÔÚ', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_invalid_group.pdf'}
+2025-05-26 17:24:10,865 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_empty.pdf
+2025-05-26 17:24:10,865 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_empty.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:24:10,865 - app.utils.file_handler - WARNING - ÎÄ¼þÄÚÈÝÎª¿Õ
+2025-05-26 17:24:10,865 - app.main - WARNING - ÎÄ¼þÑéÖ¤Ê§°Ü: ÎÄ¼þ²»ÄÜÎª¿Õ
+2025-05-26 17:24:10,866 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': 'ÎÄ¼þ²»ÄÜÎª¿Õ', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'filename': 'test_empty.pdf'}
+2025-05-26 17:24:10,873 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:24:10,874 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf -> .pdf -> ÔÊÐí
+2025-05-26 17:24:10,874 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:24:10,874 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\77207617-ae25-4094-874c-8a1df1f7fd65
+2025-05-26 17:24:10,875 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 77207617-ae25-4094-874c-8a1df1f7fd65 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:24:10,875 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf in 77207617-ae25-4094-874c-8a1df1f7fd65
+2025-05-26 17:24:10,876 - app.utils.storage_manager - INFO - ÎÄ¼þÃû ²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-26 17:24:10,876 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\77207617-ae25-4094-874c-8a1df1f7fd65\²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf
+2025-05-26 17:24:10,877 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-26 17:24:10,877 - app.utils.text_extractor - ERROR - ÌáÈ¡PDFÎÄ±¾Ê§°Ü: EOF marker not found
+2025-05-26 17:24:10,877 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\77207617-ae25-4094-874c-8a1df1f7fd65\²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-26 17:24:10,881 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '7f4164c4-de53-48e4-903b-19ff2c4aebd7', 'title': '²âÊÔÎÄµµ ÌØÊâ×Ö·û@#$%', 'filename': '²âÊÔÎÄµµ-ÌØÊâ×Ö·û@#$%.pdf', 'file_size': 36, 'group_id': '77207617-ae25-4094-874c-8a1df1f7fd65'}
+2025-05-26 17:24:32,880 - app.utils.error_handler - INFO - æ“ä½œæˆåŠŸ: {'operation': 'test_operation', 'user_id': 'test_user_123', 'status': 'success', 'test_data': 'è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•', 'timestamp': '2025-05-25'}
+2025-05-26 17:24:32,881 - app.utils.error_handler - ERROR - æ“ä½œå¤±è´¥: {'operation': 'test_error', 'error_type': 'Exception', 'error_message': 'è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•å¼‚å¸¸', 'user_id': 'test_user_123', 'error_context': 'æµ‹è¯•é”™è¯¯å¤„ç†'}
+2025-05-26 17:24:32,881 - app.utils.error_handler - INFO - ç›´æŽ¥ä½¿ç”¨loggerè®°å½•ä¿¡æ¯
+2025-05-26 17:24:32,881 - app.utils.error_handler - WARNING - è¿™æ˜¯ä¸€ä¸ªè­¦å‘Šæ¶ˆæ¯
+2025-05-26 17:24:32,881 - app.utils.error_handler - ERROR - è¿™æ˜¯ä¸€ä¸ªé”™è¯¯æ¶ˆæ¯
+2025-05-26 17:24:38,059 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:24:38,258 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:24:38,267 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 12}
+2025-05-26 17:24:44,028 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:24:44,224 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': 'µÇÂ¼Ê§°Ü', 'user_id': None, 'username': 'testuser'}
+2025-05-26 17:24:52,272 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:24:52,272 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:24:52,272 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:24:52,273 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:24:52,273 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:24:52,274 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:24:52,293 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-26 17:24:52,305 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-26 17:24:52,522 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-26 17:24:52,543 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': 'e15fb992-a498-4ca8-842a-1db7be46de5e', 'group_name': 'AIÑÐ¾¿²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-26 17:24:52,552 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'group_join', 'error_type': 'Exception', 'error_message': 'ÓÃ»§ÒÑ¼ÓÈë¸Ã¿ÎÌâ×é', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'group_id': 'e15fb992-a498-4ca8-842a-1db7be46de5e'}
+2025-05-26 17:24:52,560 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'group_join', 'error_type': 'Exception', 'error_message': 'ÓÃ»§ÒÑ¼ÓÈë¸Ã¿ÎÌâ×é', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'group_id': 'e15fb992-a498-4ca8-842a-1db7be46de5e'}
+2025-05-26 17:24:52,566 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'group_join', 'error_type': 'Exception', 'error_message': 'ÎÞÐ§µÄ¿ÎÌâ×éID»òÑûÇëÂë', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'group_id': 'invalid-group-id', 'provided_code': 'invalid-code'}
+2025-05-26 17:25:56,536 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:25:56,536 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:25:56,537 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:25:56,547 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:25:56,548 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:25:56,549 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:26:30,122 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:26:30,123 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:26:30,126 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-26 17:26:30,129 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-26 17:26:30,130 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-26 17:26:30,130 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 12:59:47,361 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 12:59:47,362 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 12:59:47,364 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 12:59:47,370 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 12:59:47,371 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 12:59:47,372 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 12:59:55,124 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 12:59:55,136 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 12:59:55,347 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 12:59:55,367 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'group_create', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '8da06dae-7556-4e85-a951-b2180c7c62a8', 'group_name': 'AIÑÐ¾¿²âÊÔ×é', 'institution': '²âÊÔ´óÑ§'}
+2025-05-27 12:59:55,377 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'group_join', 'error_type': 'Exception', 'error_message': 'ÓÃ»§ÒÑ¼ÓÈë¸Ã¿ÎÌâ×é', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'group_id': '8da06dae-7556-4e85-a951-b2180c7c62a8'}
+2025-05-27 12:59:55,384 - app.utils.error_handler - ERROR - ²Ù×÷Ê§°Ü: {'operation': 'group_join', 'error_type': 'Exception', 'error_message': 'ÎÞÐ§µÄ¿ÎÌâ×éID»òÑûÇëÂë', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'group_id': 'invalid-group-id', 'provided_code': 'invalid-code'}
+2025-05-27 13:07:05,436 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:07:05,438 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:07:05,440 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:07:16,861 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:07:16,862 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:07:16,863 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:07:47,296 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:07:47,296 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:07:47,298 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:07:52,408 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:07:52,419 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 13:07:52,631 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:07:52,641 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:07:52,651 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'literature_count': 2}
+2025-05-27 13:07:52,664 - app.utils.literature_manager - INFO - ÎÄÏ×ÈíÉ¾³ý³É¹¦: 84114971-c10d-4ed8-8440-51a37b274cdc by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:07:52,666 - app.main - INFO - ÎÄÏ×É¾³ý³É¹¦: 84114971-c10d-4ed8-8440-51a37b274cdc by testuser
+2025-05-27 13:07:52,674 - app.main - INFO - »ñÈ¡É¾³ýÎÄÏ×ÁÐ±í: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, count=1
+2025-05-27 13:07:52,684 - app.utils.literature_manager - INFO - ÎÄÏ×»Ö¸´³É¹¦: 84114971-c10d-4ed8-8440-51a37b274cdc by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:07:52,686 - app.main - INFO - ÎÄÏ×»Ö¸´³É¹¦: 84114971-c10d-4ed8-8440-51a37b274cdc by testuser
+2025-05-27 13:07:52,692 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_list', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58', 'literature_count': 2}
+2025-05-27 13:08:12,084 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:08:12,291 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:08:12,299 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:08:12,307 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_storage.pdf
+2025-05-27 13:08:12,307 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_storage.pdf -> .pdf -> ÔÊÐí
+2025-05-27 13:08:12,308 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: test_storage.pdf
+2025-05-27 13:08:12,308 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:08:12,311 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:08:12,311 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_storage.pdf in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:08:12,312 - app.utils.storage_manager - INFO - ÎÄ¼þÃû test_storage.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-27 13:08:12,312 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage.pdf
+2025-05-27 13:08:12,312 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-27 13:08:12,355 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2025-05-27 13:08:12,356 - app.utils.text_extractor - WARNING - PDFÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage.pdf ÖÐÃ»ÓÐ¿ÉÌáÈ¡µÄÎÄ±¾
+2025-05-27 13:08:12,356 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-27 13:08:12,362 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': '95b45e20-81d2-4605-80d2-2942535cdca5', 'title': '´æ´¢¹ÜÀí²âÊÔÎÄµµ', 'filename': 'test_storage.pdf', 'file_size': 328, 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58'}
+2025-05-27 13:08:12,374 - app.main - INFO - »ñÈ¡ÎÄÏ×Í³¼Æ: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, active=3
+2025-05-27 13:08:12,384 - app.utils.literature_manager - INFO - ÎÄÏ×ÈíÉ¾³ý³É¹¦: 95b45e20-81d2-4605-80d2-2942535cdca5 by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:08:12,384 - app.main - INFO - ÎÄÏ×É¾³ý³É¹¦: 95b45e20-81d2-4605-80d2-2942535cdca5 by testuser
+2025-05-27 13:08:12,391 - app.main - INFO - »ñÈ¡É¾³ýÎÄÏ×ÁÐ±í: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, count=1
+2025-05-27 13:08:12,401 - app.utils.literature_manager - INFO - ÎÄÏ×»Ö¸´³É¹¦: 95b45e20-81d2-4605-80d2-2942535cdca5 by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:08:12,402 - app.main - INFO - ÎÄÏ×»Ö¸´³É¹¦: 95b45e20-81d2-4605-80d2-2942535cdca5 by testuser
+2025-05-27 13:08:12,408 - app.main - ERROR - »ñÈ¡´æ´¢Í³¼ÆÊ§°Ü: name 'datetime' is not defined
+2025-05-27 13:08:12,415 - app.utils.storage_manager - INFO - ÇåÀí¿ÕÄ¿Â¼: uploads\test-group-123
+2025-05-27 13:08:12,416 - app.utils.storage_manager - INFO - ÇåÀí¿ÕÄ¿Â¼: uploads\test-group-456
+2025-05-27 13:08:12,416 - app.main - INFO - ´æ´¢ÇåÀíÍê³É: ÇåÀíÁË 2 ¸ö¿ÕÄ¿Â¼
+2025-05-27 13:09:14,095 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:09:14,096 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:09:14,097 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:09:14,918 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:09:14,919 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:09:14,920 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:09:38,137 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:09:38,138 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:09:38,139 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:09:40,174 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:09:40,175 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:09:40,175 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:09:44,694 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:09:44,705 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 13:09:44,926 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:09:44,969 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:09:44,979 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: test_storage.pdf
+2025-05-27 13:09:44,979 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: test_storage.pdf -> .pdf -> ÔÊÐí
+2025-05-27 13:09:44,979 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: test_storage.pdf
+2025-05-27 13:09:44,980 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:09:44,981 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:09:44,981 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: test_storage.pdf in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:09:44,981 - app.utils.storage_manager - INFO - Éú³ÉÐÂÎÄ¼þÃû: test_storage.pdf -> test_storage_1.pdf
+2025-05-27 13:09:44,982 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage_1.pdf
+2025-05-27 13:09:44,983 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-27 13:09:45,022 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2025-05-27 13:09:45,023 - app.utils.text_extractor - WARNING - PDFÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage_1.pdf ÖÐÃ»ÓÐ¿ÉÌáÈ¡µÄÎÄ±¾
+2025-05-27 13:09:45,023 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\test_storage_1.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-27 13:09:45,032 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': 'e1c56575-f8ed-48eb-b3d0-f26738255b2f', 'title': '´æ´¢¹ÜÀí²âÊÔÎÄµµ', 'filename': 'test_storage.pdf', 'file_size': 328, 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58'}
+2025-05-27 13:09:45,045 - app.main - INFO - »ñÈ¡ÎÄÏ×Í³¼Æ: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, active=4
+2025-05-27 13:09:45,056 - app.utils.literature_manager - INFO - ÎÄÏ×ÈíÉ¾³ý³É¹¦: e1c56575-f8ed-48eb-b3d0-f26738255b2f by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:09:45,057 - app.main - INFO - ÎÄÏ×É¾³ý³É¹¦: e1c56575-f8ed-48eb-b3d0-f26738255b2f by testuser
+2025-05-27 13:09:45,065 - app.main - INFO - »ñÈ¡É¾³ýÎÄÏ×ÁÐ±í: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, count=1
+2025-05-27 13:09:45,074 - app.utils.literature_manager - INFO - ÎÄÏ×»Ö¸´³É¹¦: e1c56575-f8ed-48eb-b3d0-f26738255b2f by 2dce0533-09f3-4e86-9a42-e3abcc34b8e1
+2025-05-27 13:09:45,075 - app.main - INFO - ÎÄÏ×»Ö¸´³É¹¦: e1c56575-f8ed-48eb-b3d0-f26738255b2f by testuser
+2025-05-27 13:09:45,090 - app.main - INFO - »ñÈ¡´æ´¢Í³¼Æ: groups=10, files=20
+2025-05-27 13:09:45,101 - app.main - INFO - ´æ´¢ÇåÀíÍê³É: ÇåÀíÁË 0 ¸ö¿ÕÄ¿Â¼
+2025-05-27 13:10:14,081 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:10:14,082 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:10:14,083 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:10:14,104 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:10:14,116 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 13:10:14,340 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:10:14,349 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:10:14,362 - app.main - INFO - »ñÈ¡ÎÄÏ×Í³¼Æ: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, active=4
+2025-05-27 13:10:14,373 - app.main - INFO - »ñÈ¡´æ´¢Í³¼Æ: groups=10, files=20
+2025-05-27 13:10:14,382 - app.main - INFO - »ñÈ¡É¾³ýÎÄÏ×ÁÐ±í: group=067a66a0-9005-4c7f-a271-d2efcbf0db58, count=0
+2025-05-27 13:10:14,388 - app.main - INFO - ´æ´¢ÇåÀíÍê³É: ÇåÀíÁË 0 ¸ö¿ÕÄ¿Â¼
+2025-05-27 13:18:09,224 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:09,225 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:09,225 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:11,889 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:11,890 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:11,891 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:12,701 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:12,702 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:12,703 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:13,515 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:13,515 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:13,516 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:47,436 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:47,436 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:47,437 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:48,264 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:48,264 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:48,266 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:49,728 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:49,729 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:49,729 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:58,301 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:58,302 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:58,303 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:18:59,139 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:18:59,140 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:18:59,141 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:19:01,791 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:19:01,792 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:19:01,793 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:19:09,280 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:19:09,292 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 13:19:09,511 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:19:09,551 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:19:09,561 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: async_test.pdf
+2025-05-27 13:19:09,561 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: async_test.pdf -> .pdf -> ÔÊÐí
+2025-05-27 13:19:09,561 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: async_test.pdf
+2025-05-27 13:19:09,562 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:19:09,563 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:19:09,563 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: async_test.pdf in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:19:09,564 - app.utils.storage_manager - INFO - ÎÄ¼þÃû async_test.pdf ¿ÉÖ±½ÓÊ¹ÓÃ
+2025-05-27 13:19:09,564 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test.pdf
+2025-05-27 13:19:09,565 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-27 13:19:09,603 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2025-05-27 13:19:09,603 - app.utils.text_extractor - WARNING - PDFÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test.pdf ÖÐÃ»ÓÐ¿ÉÌáÈ¡µÄÎÄ±¾
+2025-05-27 13:19:09,604 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-27 13:19:09,611 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': 'f59b11c2-992f-42cf-8497-569d4ffcd6c7', 'title': 'Òì²½´¦Àí²âÊÔÎÄµµ', 'filename': 'async_test.pdf', 'file_size': 328, 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58'}
+2025-05-27 13:19:39,968 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:19:39,968 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:19:39,969 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:19:40,792 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:19:40,792 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:19:40,793 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:20:16,720 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:20:16,721 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:20:16,721 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:20:26,289 - app.main - INFO - ÓÃ»§µÇÂ¼³¢ÊÔ: testuser
+2025-05-27 13:20:26,302 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-27 13:20:26,524 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_login', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'username': 'testuser'}
+2025-05-27 13:20:26,560 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'user_groups', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'group_count': 14}
+2025-05-27 13:20:26,570 - app.utils.file_handler - INFO - ¿ªÊ¼ÑéÖ¤ÎÄ¼þ: async_test.pdf
+2025-05-27 13:20:26,570 - app.utils.file_handler - INFO - ÑéÖ¤ÎÄ¼þÀàÐÍ: async_test.pdf -> .pdf -> ÔÊÐí
+2025-05-27 13:20:26,570 - app.utils.file_handler - INFO - ÎÄ¼þÑéÖ¤Í¨¹ý: async_test.pdf
+2025-05-27 13:20:26,571 - app.utils.storage_manager - INFO - È·±£ÑÐ¾¿×éÄ¿Â¼´æÔÚ: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:20:26,571 - app.utils.storage_manager - INFO - ÑÐ¾¿×éÄ¿Â¼ 067a66a0-9005-4c7f-a271-d2efcbf0db58 Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:20:26,572 - app.utils.storage_manager - INFO - Éú³ÉÎ¨Ò»ÎÄ¼þÃû: async_test.pdf in 067a66a0-9005-4c7f-a271-d2efcbf0db58
+2025-05-27 13:20:26,572 - app.utils.storage_manager - INFO - Éú³ÉÐÂÎÄ¼þÃû: async_test.pdf -> async_test_1.pdf
+2025-05-27 13:20:26,572 - app.utils.file_handler - INFO - ÎÄ¼þ±£´æ³É¹¦: uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test_1.pdf
+2025-05-27 13:20:26,573 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-27 13:20:26,608 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2025-05-27 13:20:26,609 - app.utils.text_extractor - WARNING - PDFÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test_1.pdf ÖÐÃ»ÓÐ¿ÉÌáÈ¡µÄÎÄ±¾
+2025-05-27 13:20:26,609 - app.utils.text_extractor - WARNING - ÎÄ¼þ uploads\067a66a0-9005-4c7f-a271-d2efcbf0db58\async_test_1.pdf ÎÄ±¾ÌáÈ¡Ê§°Ü»òÎª¿Õ£¬Ê¹ÓÃÎÄ¼þÃû×÷Îª±êÌâ
+2025-05-27 13:20:26,617 - app.utils.error_handler - INFO - ²Ù×÷³É¹¦: {'operation': 'literature_upload', 'user_id': '2dce0533-09f3-4e86-9a42-e3abcc34b8e1', 'status': 'success', 'literature_id': 'db0b34d7-c0e1-4f8b-addb-009e50c8aff9', 'title': 'Òì²½´¦Àí²âÊÔÎÄµµ', 'filename': 'async_test.pdf', 'file_size': 328, 'group_id': '067a66a0-9005-4c7f-a271-d2efcbf0db58'}
+2025-05-27 13:21:32,779 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:21:32,780 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:21:32,781 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:21:35,140 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:21:35,141 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:21:35,142 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:21:35,943 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:21:35,943 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:21:35,944 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:21:36,966 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:21:36,967 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:21:36,968 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:24:18,342 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:24:18,343 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:24:18,344 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:24:27,881 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:24:27,882 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:24:27,883 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:26:16,573 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:26:16,574 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:26:16,574 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:26:19,023 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:26:19,023 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:26:19,025 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:26:19,824 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:26:19,824 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:26:19,826 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:26:20,858 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:26:20,860 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:26:20,860 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:27:21,251 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:27:21,252 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:27:21,253 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:27:23,825 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:27:23,826 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:27:23,827 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:27:24,623 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:27:24,624 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:27:24,624 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:36:59,204 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:36:59,204 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:36:59,205 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:37:01,820 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:37:01,821 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:37:01,822 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:37:02,659 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:37:02,659 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:37:02,660 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:37:31,396 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:37:31,397 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:37:31,398 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:44:31,914 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:44:31,915 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:44:31,916 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:44:32,740 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:44:32,741 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:44:32,742 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:44:48,264 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:44:48,265 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:44:48,266 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:45:13,473 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:45:13,474 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:45:13,474 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:45:15,943 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:45:15,944 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:45:15,945 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 13:45:16,783 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 13:45:16,784 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 13:45:16,785 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 14:04:11,827 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 14:04:11,828 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 14:04:11,829 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 14:06:06,827 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 14:06:06,827 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 14:06:06,828 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 14:06:06,830 - app.utils.storage_manager - INFO - ³õÊ¼»¯´æ´¢¹ÜÀíÆ÷£¬ÉÏ´«¸ùÄ¿Â¼: uploads
+2025-05-27 14:06:06,830 - app.utils.storage_manager - INFO - È·±£ÉÏ´«¸ùÄ¿Â¼´æÔÚ: uploads
+2025-05-27 14:06:06,831 - app.utils.storage_manager - INFO - ÉÏ´«¸ùÄ¿Â¼Ð´ÈëÈ¨ÏÞÕý³£
+2025-05-27 14:06:06,833 - app.utils.text_processor - INFO - ÎÄ±¾·Ö¿éÍê³É: 296 ×Ö·û -> 3 ¸ö¿é
+2025-05-27 14:06:06,833 - app.utils.text_processor - INFO - ÎªÎÄÏ× test_workflow_lit ×¼±¸ÁË 3 ¸öÎÄ±¾¿é
+2025-05-27 14:06:06,833 - app.utils.embedding_service - INFO - ´¦ÀíÅú´Î 1/1
+2025-05-27 14:06:07,228 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 14:06:07,853 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 14:06:08,282 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 14:06:08,288 - app.utils.embedding_service - INFO - ÅúÁ¿embeddingÉú³ÉÍê³É: 3/3 ³É¹¦ (100.0%)
+2025-05-27 14:06:08,309 - app.utils.vector_store - INFO - ChromaDB¿Í»§¶Ë³õÊ¼»¯³É¹¦£¬Êý¾ÝÂ·¾¶: ./vector_db

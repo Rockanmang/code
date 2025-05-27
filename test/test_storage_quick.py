@@ -7,7 +7,7 @@ import requests
 import tempfile
 import os
 
-BASE_URL = "http://localhost:8001"
+BASE_URL = "http://localhost:8000"
 
 def main():
     """主测试函数"""
