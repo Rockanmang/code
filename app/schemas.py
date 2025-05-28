@@ -1,24 +1,54 @@
 # app/schemas.py
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, root_validator
 from typing import Optional, List
 from datetime import datetime
 
-# 用户注册模型
+# 用户注册模型 - 支持手机号注册
 class UserCreate(BaseModel):
-    username: str = Field(..., example="testuser")
-    password: str = Field(..., example="password123")
+    username: str = Field(..., min_length=3, max_length=50)
+    phone_number: str = Field(..., pattern=r"^\d{11}$")
+    password: str = Field(..., min_length=8)
+    password_confirm: str
+
+    # 密码一致性验证
+    @root_validator(pre=True)
+    def check_passwords_match(cls, values):
+        password = values.get('password')
+        password_confirm = values.get('password_confirm')
+        
+        if password != password_confirm:
+            raise ValueError("两次输入密码不一致")
+        return values
+
+# 用户登录模型 - 支持手机号登录
+class UserLogin(BaseModel):
+    phone_number: str
+    password: str
 
 # 用户响应模型（不返回密码）
 class UserOut(BaseModel):
     id: str
     username: str
+    phone_number: str
 
     class Config:
         orm_mode = True
 
+# 用户信息模型
+class UserInfo(BaseModel):
+    id: str
+    username: str
+    phone_number: str
+
 # Token 模型
 class Token(BaseModel):
     access_token: str
+    token_type: str
+
+# 带刷新令牌的Token模型
+class TokenWithRefresh(BaseModel):
+    access_token: str
+    refresh_token: str
     token_type: str
 
 class TokenData(BaseModel):

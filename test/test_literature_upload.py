@@ -28,23 +28,60 @@ class LiteratureUploadTester:
                 print(f"🧹 清理测试文件: {file_path}")
     
     def login(self):
-        """登录获取token"""
-        print("🔐 登录获取token...")
+        """登录获取token - 支持新的手机号登录"""
+        print("🔐 尝试登录...")
+        
+        # 首先尝试手机号登录
+        success = self.login_with_phone()
+        if success:
+            return True
+        
+        # 如果手机号登录失败，尝试传统用户名登录
+        print("⚠️ 手机号登录失败，尝试用户名登录...")
+        return self.login_legacy()
+    
+    def login_with_phone(self, phone_number="13800000001", password="testpass123"):
+        """使用手机号登录获取token"""
+        print(f"📱 使用手机号登录: {phone_number}")
+        
+        url = f"{BASE_URL}/api/auth/login"
+        data = {
+            "phone_number": phone_number,
+            "password": password
+        }
+        
+        try:
+            response = requests.post(url, json=data)
+            if response.status_code == 200:
+                token_data = response.json()
+                self.token = token_data.get("access_token")
+                print("✅ 手机号登录成功")
+                return True
+            else:
+                print(f"❌ 手机号登录失败: {response.text}")
+                return False
+        except Exception as e:
+            print(f"❌ 手机号登录错误: {e}")
+            return False
+    
+    def login_legacy(self, username="testuser", password="testpass123"):
+        """使用传统用户名登录（兼容性）"""
+        print(f"👤 使用用户名登录: {username}")
         
         url = f"{BASE_URL}/login"
-        data = {"username": "testuser", "password": "testpass123"}
+        data = {"username": username, "password": password}
         
         try:
             response = requests.post(url, data=data)
             if response.status_code == 200:
                 self.token = response.json().get("access_token")
-                print("✅ 登录成功")
+                print("✅ 用户名登录成功")
                 return True
             else:
-                print(f"❌ 登录失败: {response.text}")
+                print(f"❌ 用户名登录失败: {response.text}")
                 return False
         except Exception as e:
-            print(f"❌ 登录错误: {e}")
+            print(f"❌ 用户名登录错误: {e}")
             return False
     
     def create_test_group(self):

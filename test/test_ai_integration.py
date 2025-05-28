@@ -120,13 +120,62 @@ class AIIntegrationTester:
             self.log_test_result("系统健康检查", False, error=error_msg)
             return False
     
-    def test_user_authentication(self, username: str = "testuser", 
-                                password: str = "testpass") -> bool:
-        """测试用户认证"""
+    def test_user_authentication(self, phone_number: str = "13800000001", 
+                                password: str = "testpass123") -> bool:
+        """测试用户认证 - 支持手机号登录"""
         logger.info("[TEST] 测试用户认证...")
         
         try:
-            # 尝试登录
+            # 首先尝试手机号登录
+            if self.login_with_phone(phone_number, password):
+                return True
+            
+            # 如果手机号登录失败，尝试传统用户名登录
+            logger.warning("手机号登录失败，尝试用户名登录...")
+            return self.login_legacy("testuser", password)
+                
+        except Exception as e:
+            self.log_test_result("用户认证", False, error=str(e))
+            return False
+    
+    def login_with_phone(self, phone_number: str, password: str) -> bool:
+        """使用手机号登录"""
+        try:
+            login_data = {
+                "phone_number": phone_number,
+                "password": password
+            }
+            
+            response = self.session.post(
+                f"{self.base_url}/api/auth/login",
+                json=login_data
+            )
+            
+            if response.status_code == 200:
+                token_data = response.json()
+                self.access_token = token_data["access_token"]
+                self.session.headers.update({
+                    "Authorization": f"Bearer {self.access_token}"
+                })
+                
+                logger.info(f"手机号登录成功: {phone_number}")
+                self.log_test_result(
+                    "手机号登录",
+                    True,
+                    {"phone_number": phone_number, "token_type": token_data.get("token_type")}
+                )
+                return True
+            else:
+                logger.error(f"手机号登录失败: {response.status_code} - {response.text}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"手机号登录异常: {e}")
+            return False
+    
+    def login_legacy(self, username: str, password: str) -> bool:
+        """使用传统用户名登录（兼容性）"""
+        try:
             login_data = {
                 "username": username,
                 "password": password
@@ -144,17 +193,19 @@ class AIIntegrationTester:
                     "Authorization": f"Bearer {self.access_token}"
                 })
                 
+                logger.info(f"用户名登录成功: {username}")
                 self.log_test_result(
-                    "用户认证",
+                    "用户名登录",
                     True,
-                    {"token_type": token_data.get("token_type")}
+                    {"username": username, "token_type": token_data.get("token_type")}
                 )
                 return True
             else:
                 raise Exception(f"登录失败: {response.status_code} - {response.text}")
                 
         except Exception as e:
-            self.log_test_result("用户认证", False, error=str(e))
+            logger.error(f"用户名登录异常: {e}")
+            self.log_test_result("用户名登录", False, error=str(e))
             return False
     
     def test_literature_access(self) -> Optional[str]:
@@ -424,7 +475,7 @@ class AIIntegrationTester:
             self.log_test_result("错误场景处理", False, error=str(e))
             return False
     
-    def run_all_tests(self, username: str = "testuser", password: str = "testpass"):
+    def run_all_tests(self, username: str = "testuser", password: str = "testpass123"):
         """运行所有测试"""
         logger.info("[START] 开始AI集成端到端测试...")
         logger.info("=" * 60)
@@ -432,7 +483,7 @@ class AIIntegrationTester:
         # 测试序列
         tests = [
             ("系统健康检查", lambda: self.test_system_health()),
-            ("用户认证", lambda: self.test_user_authentication(username, password)),
+            ("用户认证", lambda: self.test_user_authentication("13800000001", password)),  # 使用手机号
             ("权限控制", lambda: self.test_permission_control()),
             ("错误场景处理", lambda: self.test_error_scenarios())
         ]
@@ -499,7 +550,7 @@ def main():
     parser = argparse.ArgumentParser(description="AI集成端到端测试")
     parser.add_argument("--url", default="http://localhost:8000", help="API基础URL")
     parser.add_argument("--username", default="testuser", help="测试用户名")
-    parser.add_argument("--password", default="testpassword", help="测试密码")
+    parser.add_argument("--password", default="testpass123", help="测试密码")  # 修正默认密码
     
     args = parser.parse_args() 
     

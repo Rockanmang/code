@@ -1,14 +1,15 @@
 import sys
 import logging
-from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form
+from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form, status, Body
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import Optional, List
 from app.database import get_db
 from app.models.user import User
 from app.models.research_group import ResearchGroup, UserResearchGroup
 from app.models.literature import Literature
-from app.auth import verify_password, get_current_user, create_access_token
+from app.auth import verify_password, get_current_user, create_access_token, authenticate_user_by_phone, create_refresh_token, get_password_hash
 from app.utils.auth_helper import require_group_membership, verify_group_membership
 from app.utils.file_handler import validate_upload_file, generate_file_path, save_uploaded_file, get_file_info
 from app.utils.text_extractor import extract_metadata_from_file
@@ -16,8 +17,8 @@ from app.utils.error_handler import (
     log_error, log_success, handle_file_upload_error, handle_permission_error,
     validate_file_upload, safe_file_operation, FileUploadError, PermissionError, ValidationError
 )
-from app.schemas import FileUploadResponse, LiteratureListResponse, LiteratureListItem
-from jose import jwt
+from app.schemas import FileUploadResponse, LiteratureListResponse, LiteratureListItem, UserCreate, UserLogin, TokenWithRefresh, UserInfo, Token
+from jose import jwt, JWTError
 from datetime import datetime, timedelta
 from fastapi.responses import FileResponse, JSONResponse
 from app.utils.auth_helper import verify_literature_access, get_literature_with_permission, verify_file_exists, get_content_type
@@ -36,6 +37,18 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="文献管理系统", description="AI驱动的协作文献管理平台", version="1.0.0")
 
+# 添加CORS配置
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # 注册路由
 app.include_router(ai_chat.router)
 
@@ -47,6 +60,7 @@ app.include_router(cache_admin.router)
 SECRET_KEY = "your-secret-key"  # 替换为随机字符串，例如 "mysecretkey123"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
+REFRESH_TOKEN_EXPIRE_DAYS = 7
 
 @app.get("/")
 def read_root():
@@ -825,3 +839,118 @@ async def ai_health_check():
             "response_time": time.time() - start_time if 'start_time' in locals() else 0
         }
         return JSONResponse(status_code=500, content=error_report)
+
+# ===== 新的认证接口 =====
+
+@app.post("/api/auth/register", status_code=status.HTTP_201_CREATED)
+def register(user: UserCreate, db: Session = Depends(get_db)):
+    # 检查用户名是否已存在
+    existing_username = db.query(User).filter(
+        User.username == user.username
+    ).first()
+    if existing_username:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="用户名已被注册"
+        )
+    
+    # 检查手机号是否已存在
+    existing_phone = db.query(User).filter(
+        User.phone_number == user.phone_number
+    ).first()
+    
+    if existing_phone:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="手机号已被注册"
+        )
+    
+    # 哈希密码
+    hashed_password = get_password_hash(user.password)
+    
+    # 创建用户记录
+    db_user = User(
+        username=user.username,
+        phone_number=user.phone_number,
+        password_hash=hashed_password
+    )
+    
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    
+    return {"message": "注册成功"}
+
+@app.post("/api/auth/login", response_model=TokenWithRefresh)
+def login_by_phone(user: UserLogin, db: Session = Depends(get_db)):
+    # 查找用户
+    db_user = db.query(User).filter(
+        User.phone_number == user.phone_number
+    ).first()
+    
+    if not db_user or not verify_password(user.password, db_user.password_hash):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="手机号或密码错误",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    # 生成JWT
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={"sub": db_user.phone_number},
+        expires_delta=access_token_expires
+    )
+    refresh_token_expires = timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
+    refresh_token = create_refresh_token(
+        data={"sub": db_user.phone_number},
+        expires_delta=refresh_token_expires
+    )
+    # 存到数据库
+    db_user.refresh_token = refresh_token
+    db.commit()
+    return {
+        "access_token": access_token,
+        "refresh_token": refresh_token,
+        "token_type": "bearer"
+    }
+
+@app.get("/api/user/me", response_model=UserInfo)
+def read_users_me(current_user: User = Depends(get_current_user)):
+    return UserInfo(
+        id=current_user.id,
+        username=current_user.username,
+        phone_number=current_user.phone_number
+    )
+
+@app.post("/api/auth/refresh", response_model=Token)
+def refresh_token(
+    refresh_token: str = Body(..., embed=True),
+    db: Session = Depends(get_db)
+):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="刷新令牌无效",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(refresh_token, SECRET_KEY, algorithms=[ALGORITHM])
+        if payload.get("type") != "refresh":
+            raise credentials_exception
+        phone_number: str = payload.get("sub")
+        if phone_number is None:
+            raise credentials_exception
+    except JWTError:
+        raise credentials_exception
+
+    user = db.query(User).filter(User.phone_number == phone_number).first()
+    if user is None or user.refresh_token != refresh_token:
+        raise credentials_exception
+
+    # 生成新的 access_token
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={"sub": user.phone_number},
+        expires_delta=access_token_expires
+    )
+    return {"access_token": access_token, "token_type": "bearer"}

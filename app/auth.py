@@ -21,9 +21,10 @@ from app.models.user import User
 from app import schemas
 
 # 安全配置
-SECRET_KEY = "REPLACE_WITH_A_RANDOM_SECRET_KEY"
+SECRET_KEY = "your-secret-key"  # 与main.py保持一致
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60  # Token 有效期（分钟）
+REFRESH_TOKEN_EXPIRE_DAYS = 7  # 刷新令牌有效期（天）
 
 # 密码哈希上下文
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -40,9 +41,18 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 def get_password_hash(password: str) -> str:
     return pwd_context.hash(password)
 
-# 校验用户身份
+# 校验用户身份（兼容原有用户名登录）
 def authenticate_user(db: Session, username: str, password: str) -> Optional[User]:
     user = db.query(User).filter(User.username == username).first()
+    if not user:
+        return None
+    if not verify_password(password, user.password_hash):
+        return None
+    return user
+
+# 校验用户身份（手机号登录）
+def authenticate_user_by_phone(db: Session, phone_number: str, password: str) -> Optional[User]:
+    user = db.query(User).filter(User.phone_number == phone_number).first()
     if not user:
         return None
     if not verify_password(password, user.password_hash):
@@ -56,7 +66,14 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
-# 登录接口
+# 生成刷新令牌
+def create_refresh_token(data: dict, expires_delta: timedelta = None):
+    to_encode = data.copy()
+    expire = datetime.utcnow() + (expires_delta or timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS))
+    to_encode.update({"exp": expire, "type": "refresh"})
+    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+
+# 登录接口（保持原有接口兼容性）
 @router.post("/token", response_model=schemas.Token)
 async def login_for_access_token(
     form_data: OAuth2PasswordRequestForm = Depends(),
@@ -86,12 +103,19 @@ async def get_current_user(
     )
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        user_id: str = payload.get("sub")
-        if user_id is None:
+        sub: str = payload.get("sub")
+        if sub is None:
             raise credentials_exception
     except JWTError:
         raise credentials_exception
-    user = db.query(User).filter(User.id == user_id).first()
+    
+    # 尝试通过用户ID查找用户（原有系统）
+    user = db.query(User).filter(User.id == sub).first()
+    if user:
+        return user
+    
+    # 如果通过ID找不到，尝试通过手机号查找（新系统）
+    user = db.query(User).filter(User.phone_number == sub).first()
     if user is None:
         raise credentials_exception
     return user

@@ -2964,3 +2964,503 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-05-28 14:19:06,523 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
 2025-05-28 14:19:06,531 - app.utils.conversation_manager - INFO - 添加对话轮次: 94295cde-9ad9-4d07-a18a-d6010fd288dc (会话: d7827915-fab7-4532-93bd-acccd4670759)
 2025-05-28 14:19:06,531 - app.routers.ai_chat - INFO - 问答完成，会话: d7827915-fab7-4532-93bd-acccd4670759, 轮次: 94295cde-9ad9-4d07-a18a-d6010fd288dc
+2025-05-28 14:34:56,099 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:34:56,099 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:34:56,100 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:34:56,107 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:34:56,107 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:34:56,107 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:34:56,107 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:34:56,899 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:34:57,479 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:34:57,750 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:35:29,251 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:35:29,252 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:35:29,253 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:35:29,259 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:35:29,260 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:35:29,260 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:35:29,260 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:35:30,047 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:35:30,649 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:35:30,918 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:35:32,184 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:35:32,184 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:35:32,186 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:35:32,193 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:35:32,193 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:35:32,193 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:35:32,193 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:35:33,001 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:35:33,607 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:35:33,878 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:35:40,098 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:35:55,489 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:35:55,490 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:35:55,491 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:35:55,498 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:35:55,498 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:35:55,498 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:35:55,499 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:35:56,282 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:35:56,843 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:35:57,085 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:35:58,336 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:35:58,337 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:35:58,338 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:35:58,345 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:35:58,345 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:35:58,345 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:35:58,345 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:35:59,103 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:35:59,639 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:35:59,886 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:36:07,249 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:36:07,249 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:36:07,251 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:36:07,258 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:36:07,258 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:36:07,258 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:36:07,258 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:36:08,022 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:36:08,552 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:36:08,792 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:36:10,037 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:36:10,038 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:36:10,039 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:36:10,045 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:36:10,045 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:36:10,045 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:36:10,045 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:36:10,801 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:36:11,354 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:36:11,598 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:36:12,777 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:36:28,147 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:36:28,148 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:36:28,149 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:36:28,156 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:36:28,156 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:36:28,156 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:36:28,156 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:36:28,948 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:36:29,480 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:36:29,744 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:36:30,970 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:36:30,971 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:36:30,972 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:36:30,979 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:36:30,979 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:36:30,980 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:36:30,980 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:36:31,747 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:36:32,292 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:36:32,540 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:36:34,307 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:37:35,483 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:37:35,682 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'username': 'testuser'}
+2025-05-28 14:42:28,682 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:42:28,683 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:42:28,684 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:42:28,692 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:42:28,692 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:42:28,692 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:42:28,693 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:42:29,498 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:42:30,059 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:42:30,334 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:42:31,633 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:42:31,633 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:42:31,634 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:42:31,642 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:42:31,642 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:42:31,643 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:42:31,643 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:42:32,419 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:42:32,989 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:42:33,234 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:42:50,334 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:42:50,335 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:42:50,336 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:42:50,343 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:42:50,344 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:42:50,344 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:42:50,344 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:42:51,117 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:42:51,662 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:42:51,917 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:43:04,377 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:43:04,378 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:43:04,379 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:43:04,387 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:43:04,387 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:43:04,387 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:43:04,387 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:43:05,163 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:43:05,701 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:43:05,953 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:43:22,579 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:43:22,580 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:43:22,581 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:43:22,588 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:43:22,588 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:43:22,588 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:43:22,589 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:43:23,359 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:43:23,932 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:43:24,184 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:43:25,435 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:43:25,435 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:43:25,437 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:43:25,443 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:43:25,443 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:43:25,443 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:43:25,443 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:43:26,196 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:43:26,772 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:43:27,045 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:43:39,584 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:43:39,584 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:43:39,585 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:43:39,593 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:43:39,593 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:43:39,593 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:43:39,593 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:43:40,360 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:43:40,912 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:43:41,156 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:43:42,468 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:43:42,469 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:43:42,470 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:43:42,477 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:43:42,477 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:43:42,478 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:43:42,478 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:43:43,249 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:43:43,800 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:43:44,055 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:44:05,891 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:44:05,892 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:44:05,893 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:44:05,903 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:44:05,903 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:44:05,903 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:44:05,903 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:44:06,717 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:44:07,270 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:44:07,573 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:44:08,846 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:44:08,847 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:44:08,848 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:44:08,854 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:44:08,854 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:44:08,855 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:44:08,855 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:44:09,623 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:44:10,160 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:44:10,411 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:44:11,699 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:44:11,699 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:44:11,701 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:44:11,707 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:44:11,708 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:44:11,708 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:44:11,708 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:44:12,473 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:44:13,021 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:44:13,278 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:44:22,814 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:44:22,816 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:44:23,032 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'username': 'testuser'}
+2025-05-28 14:44:41,803 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:44:41,803 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:44:41,804 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:44:41,812 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:44:41,812 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:44:41,812 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:44:41,812 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:44:42,594 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:44:43,143 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:44:43,404 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:44:44,680 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:44:44,681 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:44:44,682 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:44:44,688 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:44:44,688 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:44:44,688 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:44:44,689 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:44:45,452 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:44:45,991 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:44:46,238 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:45:02,003 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:45:02,004 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:45:02,005 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:45:02,012 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:45:02,012 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:45:02,012 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:45:02,012 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:45:02,809 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:45:03,408 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:45:03,663 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:45:05,440 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:45:05,440 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:45:05,441 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:45:05,450 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:45:05,450 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:45:05,451 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:45:05,451 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:45:06,214 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:45:06,774 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:45:07,049 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:45:27,557 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:45:27,779 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:45:27,982 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'username': 'testuser'}
+2025-05-28 14:45:41,109 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:45:41,110 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:45:41,111 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:45:41,119 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:45:41,119 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:45:41,119 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:45:41,120 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:45:41,919 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:45:42,475 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:45:42,725 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:45:44,027 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:45:44,028 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:45:44,029 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:45:44,038 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:45:44,038 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:45:44,038 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:45:44,038 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:45:44,819 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:45:45,362 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:45:45,612 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:45:58,556 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:45:58,798 - app.utils.error_handler - INFO - 操作成功: {'operation': 'group_create', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'group_name': '文献上传测试组', 'institution': '测试大学'}
+2025-05-28 14:45:58,807 - app.utils.file_handler - INFO - 开始验证文件: test_success.pdf
+2025-05-28 14:45:58,808 - app.utils.file_handler - INFO - 验证文件类型: test_success.pdf -> .pdf -> 允许
+2025-05-28 14:45:58,808 - app.utils.file_handler - INFO - 文件验证通过: test_success.pdf
+2025-05-28 14:45:58,808 - app.utils.storage_manager - INFO - 确保研究组目录存在: uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9
+2025-05-28 14:45:58,809 - app.utils.storage_manager - INFO - 研究组目录 7e8f5626-0259-44f7-bcc7-eff24cc01bf9 写入权限正常
+2025-05-28 14:45:58,809 - app.utils.storage_manager - INFO - 生成唯一文件名: test_success.pdf in 7e8f5626-0259-44f7-bcc7-eff24cc01bf9
+2025-05-28 14:45:58,809 - app.utils.storage_manager - INFO - 文件名 test_success.pdf 可直接使用
+2025-05-28 14:45:58,810 - app.utils.file_handler - INFO - 文件保存成功: uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9\test_success.pdf
+2025-05-28 14:45:58,810 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-28 14:45:58,935 - app.utils.text_extractor - ERROR - 提取PDF文本失败: EOF marker not found
+2025-05-28 14:45:58,935 - app.utils.text_extractor - WARNING - 文件 uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9\test_success.pdf 文本提取失败或为空，使用文件名作为标题
+2025-05-28 14:45:58,942 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_upload', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': '5d251ae3-db7e-451d-9d59-162ae9ef5ac9', 'title': '机器学习算法研究', 'filename': 'test_success.pdf', 'file_size': 130, 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9'}
+2025-05-28 14:45:58,951 - app.utils.file_handler - INFO - 开始验证文件: test_invalid.txt
+2025-05-28 14:45:58,951 - app.utils.file_handler - INFO - 验证文件类型: test_invalid.txt -> .txt -> 不允许
+2025-05-28 14:45:58,951 - app.utils.file_handler - WARNING - 文件类型验证失败: 不支持的文件类型。允许的类型: .pdf, .docx, .doc
+2025-05-28 14:45:58,952 - app.main - WARNING - 文件验证失败: 不支持的文件类型。允许的类型: .pdf, .docx, .doc
+2025-05-28 14:45:58,952 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '不支持的文件类型。允许的类型: .pdf, .docx, .doc', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'filename': 'test_invalid.txt'}
+2025-05-28 14:45:59,287 - app.utils.file_handler - INFO - 开始验证文件: test_large.pdf
+2025-05-28 14:45:59,287 - app.utils.file_handler - INFO - 验证文件类型: test_large.pdf -> .pdf -> 允许
+2025-05-28 14:45:59,287 - app.utils.file_handler - WARNING - 文件大小验证失败: 文件过大。最大允许大小: 50MB
+2025-05-28 14:45:59,287 - app.main - WARNING - 文件验证失败: 文件过大。最大允许大小: 50MB
+2025-05-28 14:45:59,287 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '文件过大。最大允许大小: 50MB', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'filename': 'test_large.pdf'}
+2025-05-28 14:45:59,312 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'file_upload_permission', 'error_type': 'PermissionError', 'error_message': '研究组不存在', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'filename': 'test_invalid_group.pdf'}
+2025-05-28 14:45:59,321 - app.utils.file_handler - INFO - 开始验证文件: test_empty.pdf
+2025-05-28 14:45:59,321 - app.utils.file_handler - INFO - 验证文件类型: test_empty.pdf -> .pdf -> 允许
+2025-05-28 14:45:59,321 - app.utils.file_handler - WARNING - 文件内容为空
+2025-05-28 14:45:59,322 - app.main - WARNING - 文件验证失败: 文件不能为空
+2025-05-28 14:45:59,322 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'file_upload_validation', 'error_type': 'ValidationError', 'error_message': '文件不能为空', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'filename': 'test_empty.pdf'}
+2025-05-28 14:45:59,331 - app.utils.file_handler - INFO - 开始验证文件: 测试文档-特殊字符@#$%.pdf
+2025-05-28 14:45:59,331 - app.utils.file_handler - INFO - 验证文件类型: 测试文档-特殊字符@#$%.pdf -> .pdf -> 允许
+2025-05-28 14:45:59,331 - app.utils.file_handler - INFO - 文件验证通过: 测试文档-特殊字符@#$%.pdf
+2025-05-28 14:45:59,333 - app.utils.storage_manager - INFO - 确保研究组目录存在: uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9
+2025-05-28 14:45:59,333 - app.utils.storage_manager - INFO - 研究组目录 7e8f5626-0259-44f7-bcc7-eff24cc01bf9 写入权限正常
+2025-05-28 14:45:59,334 - app.utils.storage_manager - INFO - 生成唯一文件名: 测试文档-特殊字符@#$%.pdf in 7e8f5626-0259-44f7-bcc7-eff24cc01bf9
+2025-05-28 14:45:59,334 - app.utils.storage_manager - INFO - 文件名 测试文档-特殊字符@#$%.pdf 可直接使用
+2025-05-28 14:45:59,335 - app.utils.file_handler - INFO - 文件保存成功: uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9\测试文档-特殊字符@#$%.pdf
+2025-05-28 14:45:59,335 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_save', 'user_id': None, 'status': 'success'}
+2025-05-28 14:45:59,335 - app.utils.text_extractor - ERROR - 提取PDF文本失败: EOF marker not found
+2025-05-28 14:45:59,336 - app.utils.text_extractor - WARNING - 文件 uploads\7e8f5626-0259-44f7-bcc7-eff24cc01bf9\测试文档-特殊字符@#$%.pdf 文本提取失败或为空，使用文件名作为标题
+2025-05-28 14:45:59,341 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_upload', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': '891435ca-5edb-428d-a9f5-85dc1377d2cd', 'title': '测试文档 特殊字符@#$%', 'filename': '测试文档-特殊字符@#$%.pdf', 'file_size': 36, 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9'}
+2025-05-28 14:46:07,066 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:07,067 - app.utils.embedding_service - ERROR - Google embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:07,067 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:07,067 - app.main - INFO - AI健康检查完成: critical (1/5 通过)
+2025-05-28 14:46:07,075 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:46:07,281 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'username': 'testuser'}
+2025-05-28 14:46:36,924 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:46:36,925 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:46:36,926 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:46:36,933 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:46:36,933 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:46:36,933 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:46:36,933 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:46:37,722 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:46:38,279 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:46:38,536 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:46:39,839 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:46:39,840 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:46:39,841 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:46:39,849 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:46:39,849 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:46:39,849 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:46:39,850 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:46:40,613 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:46:41,153 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:46:41,392 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:46:45,455 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:45,457 - app.utils.embedding_service - ERROR - Google embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:45,457 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:45,458 - app.main - INFO - AI健康检查完成: critical (1/5 通过)
+2025-05-28 14:46:45,479 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:46:45,717 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 14:46:45,725 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 14:46:45,733 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-28 14:46:45,743 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 14:46:45,749 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 14:46:45,753 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_view', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'filename': 'test_document.txt', 'file_type': 'txt'}
+2025-05-28 14:46:45,765 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 14:46:45,775 - app.utils.conversation_manager - INFO - 创建新会话: 3d1124dc-db18-4987-ba17-29de89fe331a
+2025-05-28 14:46:45,776 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 14:46:46,066 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:46,067 - app.utils.embedding_service - ERROR - Google查询embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:46,068 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:46,874 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:46,875 - app.utils.embedding_service - ERROR - Google embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:46,876 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:46,878 - app.utils.vector_store - ERROR - 相似度搜索失败: Expected embeddings to be a list of floats or ints, a list of lists, a numpy array, or a list of numpy arrays, got [None] in query.
+2025-05-28 14:46:46,957 - app.utils.conversation_manager - INFO - 添加对话轮次: 4a3bdc0f-5842-4993-b756-d7adeb7ef9f1 (会话: 3d1124dc-db18-4987-ba17-29de89fe331a)
+2025-05-28 14:46:46,958 - app.routers.ai_chat - INFO - 问答完成，会话: 3d1124dc-db18-4987-ba17-29de89fe331a, 轮次: 4a3bdc0f-5842-4993-b756-d7adeb7ef9f1
+2025-05-28 14:46:47,977 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 14:46:47,984 - app.utils.conversation_manager - INFO - 创建新会话: 24a6e51b-370d-4344-95dc-19617705e42f
+2025-05-28 14:46:47,985 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 14:46:48,253 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:48,254 - app.utils.embedding_service - ERROR - Google查询embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:48,255 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:49,078 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-28 14:46:49,079 - app.utils.embedding_service - ERROR - Google embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:49,080 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-28 14:46:49,082 - app.utils.vector_store - ERROR - 相似度搜索失败: Expected embeddings to be a list of floats or ints, a list of lists, a numpy array, or a list of numpy arrays, got [None] in query.
+2025-05-28 14:46:49,090 - app.utils.conversation_manager - INFO - 添加对话轮次: f80ddcb5-74e4-4b7c-b23d-a4b4f77343f7 (会话: 24a6e51b-370d-4344-95dc-19617705e42f)
+2025-05-28 14:46:49,090 - app.routers.ai_chat - INFO - 问答完成，会话: 24a6e51b-370d-4344-95dc-19617705e42f, 轮次: f80ddcb5-74e4-4b7c-b23d-a4b4f77343f7
+2025-05-28 14:47:13,229 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:13,230 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:13,231 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:13,239 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:13,239 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:13,239 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:13,239 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:14,032 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:14,564 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:14,809 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:22,760 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:22,760 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:22,761 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:22,767 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:22,767 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:22,768 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:22,768 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:23,548 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:24,153 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:24,399 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:25,673 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:25,674 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:25,676 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:25,682 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:25,682 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:25,683 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:25,683 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:26,446 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:27,006 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:27,254 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:35,732 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:35,733 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:35,734 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:35,740 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:35,740 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:35,740 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:35,740 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:36,569 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:37,111 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:37,353 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:38,632 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:38,633 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:38,634 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:38,642 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:38,643 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:38,643 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:38,643 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:39,399 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:39,949 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:40,200 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:47,093 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:47,094 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:47,096 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:47,102 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:47,102 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:47,102 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:47,102 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:47,887 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:48,436 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:48,675 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:47:49,933 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:47:49,933 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:47:49,934 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:47:49,941 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:47:49,942 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:47:49,942 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:47:49,942 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:47:50,691 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:47:51,263 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:47:51,515 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:48:24,723 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:48:24,724 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:48:24,725 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:48:24,733 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:48:24,733 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:48:24,733 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:48:24,733 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:48:25,566 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:48:26,132 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:48:26,392 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:48:27,713 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:48:27,714 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:48:27,715 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:48:27,721 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:48:27,722 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:48:27,722 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:48:27,722 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:48:28,502 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:48:29,049 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:48:29,295 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:48:34,396 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:48:34,635 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-28 14:48:34,640 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:48:34,838 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
