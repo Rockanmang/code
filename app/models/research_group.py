@@ -23,6 +23,8 @@ class ResearchGroup(Base):
     users = relationship("User", secondary="user_research_groups", back_populates="research_groups")
     # 与文献的一对多关系（研究组的文献）
     literature = relationship("Literature", back_populates="research_group")
+    # 与问答会话的一对多关系
+    qa_sessions = relationship("QASession", back_populates="group")
     
     def __init__(self, name, institution, description, research_area):
         self.id = str(uuid.uuid4())

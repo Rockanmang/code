@@ -1,4 +1,12 @@
-# app/auth.py
+"""
+用户认证模块
+
+提供JWT令牌认证、密码验证等功能
+"""
+import warnings
+# 抑制bcrypt版本警告
+warnings.filterwarnings("ignore", message=".*bcrypt.*", category=UserWarning)
+
 from datetime import datetime, timedelta
 from typing import Optional
 

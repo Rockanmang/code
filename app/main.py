@@ -8,7 +8,7 @@ from app.database import get_db
 from app.models.user import User
 from app.models.research_group import ResearchGroup, UserResearchGroup
 from app.models.literature import Literature
-from app.auth import verify_password  # 导入auth.py中的验证函数
+from app.auth import verify_password, get_current_user, create_access_token
 from app.utils.auth_helper import require_group_membership, verify_group_membership
 from app.utils.file_handler import validate_upload_file, generate_file_path, save_uploaded_file, get_file_info
 from app.utils.text_extractor import extract_metadata_from_file
@@ -19,7 +19,7 @@ from app.utils.error_handler import (
 from app.schemas import FileUploadResponse, LiteratureListResponse, LiteratureListItem
 from jose import jwt
 from datetime import datetime, timedelta
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from app.utils.auth_helper import verify_literature_access, get_literature_with_permission, verify_file_exists, get_content_type
 from app.routers import ai_chat
 
@@ -38,6 +38,10 @@ app = FastAPI(title="文献管理系统", description="AI驱动的协作文献�
 
 # 注册路由
 app.include_router(ai_chat.router)
+
+# 导入缓存管理路由
+from app.routers import cache_admin
+app.include_router(cache_admin.router)
 
 # JWT 配置
 SECRET_KEY = "your-secret-key"  # 替换为随机字符串，例如 "mysecretkey123"
@@ -60,37 +64,17 @@ def health_check():
     """健康检查接口"""
     return {"status": "healthy", "timestamp": datetime.utcnow()}
 
-def get_current_user(db: Session = Depends(get_db), token: str = Depends(OAuth2PasswordBearer(tokenUrl="login"))):
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise HTTPException(status_code=401, detail="无效的令牌")
-    except Exception:
-        raise HTTPException(status_code=401, detail="无效的令牌")
-    user = db.query(User).filter(User.username == username).first()
-    if user is None:
-        raise HTTPException(status_code=401, detail="用户不存在")
-    return user
-
-def create_access_token(data: dict, expires_delta: timedelta):
-    to_encode = data.copy()
-    expire = datetime.utcnow() + expires_delta
-    to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-    return encoded_jwt
-
 @app.post("/login")
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     logger.info(f"用户登录尝试: {form_data.username}")
     user = db.query(User).filter(User.username == form_data.username).first()
     
     if not user or not verify_password(form_data.password, user.password_hash):
-        log_error("user_login", Exception("登录失败"), extra_info={"username": form_data.username})
+        log_error("user_login", Exception("登录失败"), user_id=None, extra_info={"username": form_data.username})
         raise HTTPException(status_code=400, detail="Incorrect username or password")
     
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    access_token = create_access_token(data={"sub": user.username}, expires_delta=access_token_expires)
+    access_token = create_access_token(data={"sub": user.id}, expires_delta=access_token_expires)
     
     log_success("user_login", user.id, {"username": user.username})
     return {"access_token": access_token, "token_type": "bearer"}
@@ -516,6 +500,7 @@ async def cleanup_storage(
         raise HTTPException(status_code=500, detail=f"存储清理失败: {str(e)}")
     
 @app.get("/literature/view/file/{literature_id}")
+@app.head("/literature/view/file/{literature_id}")
 async def view_literature_file(
     literature_id: str,
     db: Session = Depends(get_db),
@@ -666,3 +651,177 @@ async def download_literature_file(
     except Exception as e:
         log_error("file_download", e, current_user.id, {"literature_id": literature_id})
         raise HTTPException(status_code=500, detail="文件下载失败")
+
+# ===== AI系统健康检查接口 =====
+
+@app.get("/health/ai")
+async def ai_health_check():
+    """
+    AI系统健康检查接口
+    检查OpenAI API连接状态、向量数据库状态、AI服务响应时间等
+    """
+    import time
+    from datetime import datetime
+    
+    try:
+        health_report = {
+            "timestamp": datetime.now().isoformat(),
+            "overall_status": "healthy",
+            "checks": {},
+            "statistics": {},
+            "response_time": 0
+        }
+        
+        start_time = time.time()
+        failed_checks = 0
+        
+        # 1. 检查Embedding服务
+        try:
+            from app.utils.embedding_service import embedding_service
+            
+            embedding_test_start = time.time()
+            test_embedding = embedding_service.generate_embedding("健康检查测试文本")
+            embedding_test_time = time.time() - embedding_test_start
+            
+            if test_embedding and len(test_embedding) > 0:
+                health_report["checks"]["embedding_service"] = {
+                    "status": "healthy",
+                    "response_time": embedding_test_time,
+                    "provider": embedding_service.provider,
+                    "embedding_dimension": len(test_embedding)
+                }
+            else:
+                health_report["checks"]["embedding_service"] = {
+                    "status": "unhealthy",
+                    "error": "embedding生成失败"
+                }
+                failed_checks += 1
+                
+        except Exception as e:
+            health_report["checks"]["embedding_service"] = {
+                "status": "error",
+                "error": str(e)
+            }
+            failed_checks += 1
+        
+        # 2. 检查向量数据库
+        try:
+            from app.utils.vector_store import vector_store
+            
+            vector_test_start = time.time()
+            vector_stats = vector_store.get_stats()
+            vector_test_time = time.time() - vector_test_start
+            
+            health_report["checks"]["vector_database"] = {
+                "status": "healthy",
+                "response_time": vector_test_time,
+                "stats": vector_stats
+            }
+            
+        except Exception as e:
+            health_report["checks"]["vector_database"] = {
+                "status": "error",
+                "error": str(e)
+            }
+            failed_checks += 1
+        
+        # 3. 检查RAG服务
+        try:
+            from app.utils.rag_service import rag_service
+            
+            rag_stats = rag_service.get_service_stats()
+            health_report["checks"]["rag_service"] = {
+                "status": "healthy",
+                "stats": rag_stats
+            }
+            
+        except Exception as e:
+            health_report["checks"]["rag_service"] = {
+                "status": "error",
+                "error": str(e)
+            }
+            failed_checks += 1
+        
+        # 4. 检查缓存系统
+        try:
+            from app.utils.cache_manager import cache_manager
+            
+            cache_stats = cache_manager.get_stats()
+            cache_health = cache_manager.health_check()
+            
+            health_report["checks"]["cache_system"] = {
+                "status": cache_health.get("status", "unknown"),
+                "stats": cache_stats,
+                "health_details": cache_health
+            }
+            
+            if cache_health.get("status") not in ["healthy", "warning"]:
+                failed_checks += 1
+                
+        except Exception as e:
+            health_report["checks"]["cache_system"] = {
+                "status": "error",
+                "error": str(e)
+            }
+            failed_checks += 1
+        
+        # 5. 检查对话管理器
+        try:
+            from app.utils.conversation_manager import conversation_manager
+            
+            conversation_stats = conversation_manager.get_stats()
+            health_report["checks"]["conversation_manager"] = {
+                "status": "healthy",
+                "stats": conversation_stats
+            }
+            
+        except Exception as e:
+            health_report["checks"]["conversation_manager"] = {
+                "status": "error",
+                "error": str(e)
+            }
+            failed_checks += 1
+        
+        # 计算总体状态
+        total_checks = len(health_report["checks"])
+        health_percentage = ((total_checks - failed_checks) / total_checks) * 100
+        
+        if failed_checks == 0:
+            health_report["overall_status"] = "healthy"
+        elif failed_checks <= total_checks * 0.3:  # 30%以下失败
+            health_report["overall_status"] = "warning"
+        else:
+            health_report["overall_status"] = "critical"
+        
+        # 添加统计信息
+        health_report["statistics"] = {
+            "total_checks": total_checks,
+            "passed_checks": total_checks - failed_checks,
+            "failed_checks": failed_checks,
+            "health_percentage": health_percentage
+        }
+        
+        # 计算总响应时间
+        health_report["response_time"] = time.time() - start_time
+        
+        logger.info(f"AI健康检查完成: {health_report['overall_status']} "
+                   f"({health_report['statistics']['passed_checks']}/{total_checks} 通过)")
+        
+        # 根据健康状态返回相应的HTTP状态码
+        if health_report["overall_status"] == "healthy":
+            return health_report
+        elif health_report["overall_status"] == "warning":
+            return JSONResponse(status_code=200, content=health_report)
+        else:
+            # 即使是critical状态，也返回200，让调用方自己判断
+            return JSONResponse(status_code=200, content=health_report)
+            
+    except Exception as e:
+        logger.error(f"AI健康检查失败: {e}")
+        error_report = {
+            "timestamp": datetime.now().isoformat(),
+            "overall_status": "error",
+            "error": str(e),
+            "response_time": time.time() - start_time if 'start_time' in locals() else 0
+        }
+        return JSONResponse(status_code=500, content=error_report)

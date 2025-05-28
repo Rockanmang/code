@@ -14,6 +14,7 @@ from app.utils.embedding_service import embedding_service
 from app.utils.vector_store import vector_store
 from app.utils.prompt_builder import PromptBuilder
 from app.utils.answer_processor import AnswerProcessor
+from app.utils.cache_manager import cache_manager
 from app.config import Config
 
 # Google AI 相关导入
@@ -64,7 +65,7 @@ class RAGService:
         top_k: Optional[int] = None
     ) -> Dict[str, Any]:
         """
-        处理用户问题的完整RAG流程
+        处理用户问题的完整RAG流程（带缓存支持）
         
         Args:
             question: 用户问题
@@ -113,7 +114,17 @@ class RAGService:
             if not context_chunks:
                 return self._create_error_response("no_relevant_content", question)
             
-            # 4. 构建提示词
+            # 4. 检查答案缓存
+            cached_answer = cache_manager.get_answer(validated_question, literature_id, context_chunks)
+            if cached_answer is not None:
+                self.logger.info(f"答案缓存命中: {question[:30]}...")
+                # 更新处理时间
+                processing_time = (datetime.now() - start_time).total_seconds()
+                cached_answer["metadata"]["processing_time"] = processing_time
+                cached_answer["metadata"]["from_cache"] = True
+                return cached_answer
+            
+            # 5. 构建提示词
             prompt = self.prompt_builder.build_qa_prompt(
                 validated_question, context_chunks, processed_history
             )
@@ -125,25 +136,29 @@ class RAGService:
                 # 尝试压缩提示词
                 prompt = self.prompt_builder._compress_prompt(prompt)
             
-            # 5. 调用AI生成答案
+            # 6. 调用AI生成答案
             raw_answer = await self._generate_ai_answer(prompt)
             if not raw_answer:
                 return self._create_error_response("ai_generation_failed", question)
             
-            # 6. 处理答案
+            # 7. 处理答案
             processed_answer = self.answer_processor.process_answer(
                 raw_answer, context_chunks, validated_question, literature_id
             )
             
-            # 7. 添加元数据
+            # 8. 添加元数据
             processing_time = (datetime.now() - start_time).total_seconds()
             processed_answer["metadata"].update({
                 "session_id": session_id,
                 "group_id": group_id,
                 "processing_time": processing_time,
                 "prompt_tokens": self.prompt_builder._estimate_tokens(prompt),
-                "chunks_retrieved": len(context_chunks)
+                "chunks_retrieved": len(context_chunks),
+                "from_cache": False
             })
+            
+            # 9. 缓存答案
+            cache_manager.set_answer(validated_question, literature_id, context_chunks, processed_answer)
             
             self.logger.info(f"问题处理完成，耗时: {processing_time:.2f}秒")
             return processed_answer

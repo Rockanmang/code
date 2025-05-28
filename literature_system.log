@@ -827,3 +827,2140 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-05-27 14:06:08,282 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
 2025-05-27 14:06:08,288 - app.utils.embedding_service - INFO - 批量embedding生成完成: 3/3 成功 (100.0%)
 2025-05-27 14:06:08,309 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 19:50:29,093 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 19:50:29,094 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 19:50:29,095 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 19:50:29,111 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 19:50:29,111 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 19:50:29,112 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 19:50:29,112 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 19:50:29,870 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 19:50:30,430 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 19:50:30,685 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:06:19,112 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:06:19,113 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:06:19,114 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:06:19,123 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:06:19,124 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:06:19,124 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:06:19,124 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:06:19,938 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:06:20,506 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:06:20,750 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:06:22,016 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:06:22,017 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:06:22,018 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:06:22,026 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:06:22,026 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:06:22,027 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:06:22,027 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:06:22,824 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:06:23,382 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:06:23,628 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:06:24,883 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:06:24,884 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:06:24,885 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:06:24,894 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:06:24,894 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:06:24,894 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:06:24,895 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:06:25,661 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:06:26,235 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:06:26,509 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:13:07,932 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:13:07,932 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:13:07,933 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:13:07,946 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:13:07,946 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:13:07,947 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:13:07,947 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:13:08,735 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:13:09,317 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:13:09,570 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:13:10,860 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:13:10,861 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:13:10,862 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:13:10,873 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:13:10,874 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:13:10,874 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:13:10,874 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:13:11,647 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:13:12,191 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:13:12,441 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:13:13,685 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:13:13,686 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:13:13,687 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:13:13,696 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:13:13,696 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:13:13,696 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:13:13,696 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:13:14,477 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:13:15,034 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:13:15,285 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:15:40,683 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:15:40,684 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:15:40,687 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:15:40,697 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:15:40,698 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:15:40,698 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:15:40,698 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:15:41,506 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:15:42,061 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:15:42,331 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:23:50,883 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:23:50,884 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:23:50,885 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:23:50,897 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:23:50,897 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:23:50,897 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:23:50,897 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:23:51,691 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:23:52,304 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:23:52,590 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:23:53,915 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:23:53,915 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:23:53,916 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:23:53,923 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:23:53,924 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:23:53,924 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:23:53,924 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:23:54,720 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:23:55,296 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:23:55,549 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:32:50,533 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:32:50,533 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:32:50,536 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:32:50,546 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:32:50,547 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:32:50,547 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:32:50,547 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:32:51,300 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:32:51,827 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:32:52,078 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:55:58,244 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:55:58,245 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:55:58,247 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:55:58,255 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:55:58,257 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:55:58,257 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:55:58,257 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:55:59,064 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:55:59,645 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:55:59,915 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:56:01,159 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:56:01,160 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:56:01,162 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:56:01,170 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:56:01,170 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:56:01,170 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:56:01,170 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:56:01,975 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:56:02,553 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:56:02,819 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:56:04,097 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 21:56:04,097 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 21:56:04,098 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 21:56:04,107 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 21:56:04,107 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 21:56:04,108 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 21:56:04,108 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 21:56:04,865 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 21:56:05,411 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 21:56:05,681 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 21:56:27,030 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 22:05:43,210 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:05:43,211 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:05:43,212 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:05:43,220 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:05:43,221 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:05:43,221 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:05:43,221 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:05:43,983 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:05:44,532 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:05:44,772 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:06:52,784 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:06:52,785 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:06:52,786 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:06:52,796 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:06:52,796 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:06:52,796 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:06:52,796 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:06:53,605 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:06:54,187 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:06:54,442 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:06:55,725 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:06:55,726 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:06:55,726 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:06:55,734 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:06:55,734 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:06:55,735 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:06:55,735 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:06:56,490 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:06:57,039 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:06:57,275 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:06:58,571 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:06:58,572 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:06:58,573 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:06:58,583 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:06:58,583 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:06:58,583 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:06:58,583 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:06:59,339 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:06:59,893 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:07:00,137 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:07:14,682 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:07:14,683 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:07:14,684 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:07:14,691 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:07:14,692 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:07:14,692 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:07:14,692 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:07:15,464 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:07:16,020 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:07:16,263 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:07:17,514 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:07:17,515 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:07:17,516 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:07:17,524 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:07:17,524 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:07:17,524 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:07:17,524 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:07:18,271 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:07:18,817 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:07:19,059 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:07:20,311 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:07:20,311 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:07:20,312 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:07:20,321 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:07:20,321 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:07:20,321 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:07:20,321 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:07:21,069 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:07:21,621 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:07:21,859 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:13,129 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:13,129 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:13,130 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:13,138 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:13,138 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:13,139 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:13,139 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:13,926 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:14,485 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:14,728 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:15,981 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:15,982 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:15,983 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:15,991 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:15,991 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:15,991 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:15,991 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:16,759 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:17,308 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:17,550 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:18,779 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:18,780 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:18,781 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:18,789 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:18,789 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:18,789 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:18,789 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:19,553 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:20,126 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:20,413 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:26,291 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:26,292 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:26,293 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:26,300 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:26,301 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:26,301 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:26,301 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:27,115 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:27,649 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:27,890 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:29,170 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:29,171 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:29,171 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:29,181 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:29,181 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:29,182 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:29,182 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:29,925 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:30,459 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:30,690 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:31,913 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:31,914 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:31,916 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:31,924 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:31,925 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:31,925 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:31,925 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:32,722 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:33,286 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:33,531 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:08:57,283 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:08:57,283 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:08:57,284 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:08:57,294 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:08:57,294 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:08:57,294 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:08:57,294 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:08:58,082 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:08:58,638 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:08:58,877 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:00,133 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:00,134 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:00,135 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:00,143 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:00,143 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:00,143 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:00,143 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:00,893 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:01,429 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:01,670 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:02,916 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:02,917 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:02,919 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:02,926 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:02,926 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:02,926 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:02,926 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:03,680 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:04,237 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:04,487 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:11,431 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:11,432 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:11,433 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:11,441 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:11,442 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:11,442 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:11,442 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:12,224 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:12,779 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:13,026 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:14,275 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:14,276 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:14,276 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:14,285 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:14,285 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:14,285 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:14,286 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:15,063 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:15,647 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:15,895 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:17,142 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:17,142 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:17,143 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:17,151 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:17,151 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:17,152 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:17,152 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:17,896 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:18,474 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:18,730 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:41,990 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:41,991 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:41,992 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:42,000 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:42,000 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:42,000 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:42,001 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:42,787 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:43,321 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:43,575 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:44,836 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:44,837 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:44,837 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:44,845 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:44,846 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:44,846 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:44,846 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:45,620 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:46,176 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:46,422 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:09:47,645 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:09:47,646 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:09:47,648 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:09:47,656 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:09:47,656 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:09:47,656 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:09:47,656 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:09:48,422 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:09:48,995 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:09:49,248 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:10:19,122 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:10:19,122 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:10:19,124 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:10:19,133 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:10:19,133 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:10:19,133 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:10:19,133 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:10:19,904 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:10:20,505 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:10:20,820 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:10:22,008 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:10:22,008 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:10:22,009 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:10:22,017 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:10:22,018 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:10:22,018 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:10:22,018 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:10:22,766 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:10:23,309 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:10:23,565 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:10:24,813 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:10:24,813 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:10:24,814 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:10:24,822 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:10:24,823 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:10:24,823 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:10:24,823 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:10:25,584 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:10:26,138 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:10:26,367 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:12:21,625 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:12:21,626 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:12:21,627 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:12:21,638 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:12:21,639 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:12:21,639 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:12:21,640 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:12:22,433 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:12:22,986 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:12:23,241 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:12:42,362 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:12:42,363 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:12:42,363 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:12:42,372 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:12:42,372 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:12:42,372 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:12:42,373 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:12:43,158 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:12:43,732 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:12:43,986 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:16:32,185 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:16:32,186 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:16:32,186 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:17:51,055 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:17:51,056 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:17:51,057 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:17:53,504 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:17:53,505 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:17:53,506 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:17:54,315 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:17:54,315 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:17:54,317 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:18:55,899 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:18:55,899 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:18:55,901 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:18:58,563 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:18:58,563 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:18:58,564 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:18:59,395 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:18:59,395 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:18:59,396 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:19:34,015 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:19:34,016 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:19:34,016 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:19:35,312 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:19:35,312 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:19:35,313 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:20:12,739 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:20:12,740 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:20:12,741 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:20:33,786 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:20:33,786 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:20:33,788 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:20:33,797 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:20:33,797 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:20:33,797 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:20:33,798 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:20:34,583 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:20:35,150 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:20:35,394 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:20:36,712 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:20:36,712 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:20:36,713 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:20:36,724 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:20:36,724 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:20:36,724 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:20:36,724 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:20:37,492 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:20:38,020 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:20:38,283 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:21:23,864 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:21:23,865 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:21:23,866 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:21:23,874 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:21:23,875 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:21:23,875 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:21:23,875 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:21:24,637 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:21:25,218 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:21:25,463 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:21:26,715 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:21:26,716 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:21:26,717 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:21:26,725 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:21:26,726 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:21:26,726 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:21:26,726 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:21:27,490 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:21:28,044 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:21:28,301 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:21:33,644 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:21:33,644 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:21:33,645 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:21:33,653 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:21:33,654 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:21:33,654 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:21:33,654 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:21:34,433 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:21:34,962 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:21:35,195 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:21:36,493 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:21:36,494 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:21:36,494 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:21:36,503 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:21:36,503 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:21:36,503 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:21:36,503 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:21:37,262 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:21:37,898 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:21:38,145 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:22:07,068 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:22:07,069 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:22:07,070 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:22:07,079 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:22:07,079 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:22:07,079 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:22:07,080 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:22:07,900 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:22:08,458 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:22:08,712 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:22:09,929 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:22:09,930 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:22:09,931 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:22:09,941 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:22:09,941 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:22:09,941 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:22:09,941 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:22:10,697 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:22:11,254 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:22:11,504 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:22:12,823 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:22:12,824 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:22:12,826 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:22:12,834 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:22:12,834 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:22:12,835 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:22:12,835 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:22:13,623 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:22:14,185 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:22:14,436 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:22:16,228 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:22:16,228 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:22:16,229 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:22:16,237 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:22:16,237 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:22:16,238 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:22:16,238 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:22:17,000 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:22:17,552 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:22:17,802 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:22:19,046 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:22:19,047 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:22:19,048 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:22:19,056 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:22:19,056 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:22:19,056 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:22:19,056 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:22:19,830 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:22:20,372 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:22:20,618 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:23:18,285 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:23:18,286 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:23:18,287 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:23:18,296 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:23:18,296 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:23:18,296 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:23:18,296 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:23:19,066 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:23:19,612 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:23:19,860 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:23:21,122 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:23:21,123 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:23:21,124 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:23:21,133 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:23:21,133 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:23:21,133 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:23:21,134 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:23:21,891 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:23:22,477 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:23:22,720 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:23:24,008 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:23:24,008 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:23:24,009 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:23:24,017 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:23:24,017 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:23:24,018 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:23:24,018 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:23:24,768 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:23:25,308 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:23:25,549 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:28:39,497 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 22:35:50,260 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:35:50,262 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:35:50,262 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:35:50,272 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:35:50,272 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:35:50,272 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:35:50,273 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:35:51,050 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:35:51,593 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:35:51,834 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:24,605 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:24,606 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:24,607 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:24,616 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:24,617 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:24,617 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:24,617 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:25,388 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:25,956 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:26,204 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:27,480 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:27,481 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:27,482 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:27,490 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:27,490 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:27,490 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:27,491 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:28,250 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:28,795 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:29,060 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:30,268 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:30,269 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:30,270 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:30,278 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:30,278 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:30,279 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:30,279 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:31,054 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:31,633 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:31,888 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:33,646 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:33,646 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:33,647 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:33,656 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:33,656 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:33,657 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:33,657 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:34,428 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:35,014 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:35,274 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:36,547 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:36,548 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:36,550 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:36,559 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:36,560 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:36,560 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:36,560 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:37,319 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:37,850 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:38,083 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:39,391 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:39,392 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:39,393 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:39,403 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:39,404 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:39,404 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:39,404 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:40,150 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:40,718 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:40,966 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:42,707 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:42,708 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:42,708 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:42,716 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:42,716 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:42,716 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:42,717 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:43,463 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:44,017 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:44,252 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:45,491 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:45,491 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:45,491 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:45,499 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:45,499 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:45,499 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:45,500 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:46,247 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:46,777 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:47,015 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:52,887 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:52,887 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:52,888 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:52,896 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:52,896 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:52,896 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:52,897 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:53,676 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:54,220 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:54,469 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:36:55,708 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:36:55,709 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:36:55,710 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:36:55,720 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:36:55,720 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:36:55,721 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:36:55,721 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:36:56,491 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:36:57,055 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:36:57,298 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:00,597 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:00,597 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:00,598 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:00,606 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:00,606 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:00,606 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:00,607 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:01,393 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:01,947 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:02,188 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:05,561 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:05,561 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:05,562 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:05,571 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:05,571 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:05,571 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:05,572 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:06,351 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:06,918 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:07,164 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:08,482 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:08,482 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:08,482 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:08,490 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:08,490 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:08,491 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:08,491 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:09,250 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:09,787 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:10,033 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:11,325 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:11,325 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:11,326 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:11,334 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:11,335 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:11,335 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:11,335 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:12,093 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:12,690 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:12,942 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:14,749 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:14,750 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:14,751 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:14,760 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:14,760 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:14,760 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:14,760 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:15,572 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:16,122 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:16,367 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:17,637 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:17,638 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:17,640 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:17,647 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:17,648 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:17,648 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:17,648 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:18,421 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:18,963 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:19,208 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:20,515 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:20,515 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:20,517 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:20,527 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:20,527 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:20,527 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:20,528 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:21,299 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:21,863 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:22,114 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:51,336 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:51,337 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:51,337 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:51,345 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:51,345 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:51,346 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:51,346 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:52,129 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:52,718 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:52,965 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:54,288 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:54,288 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:54,289 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:54,297 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:54,297 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:54,297 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:54,297 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:55,077 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:55,635 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:55,877 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:37:57,130 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:37:57,131 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:37:57,132 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:37:57,142 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:37:57,142 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:37:57,143 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:37:57,143 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:37:57,913 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:37:58,473 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:37:58,714 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:39:32,640 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:39:32,641 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:39:32,642 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:39:32,651 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:39:32,651 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:39:32,651 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:39:32,651 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:39:33,410 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:39:33,966 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:39:34,207 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:39:35,524 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:39:35,524 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:39:35,525 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:39:35,533 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:39:35,533 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:39:35,533 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:39:35,533 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:39:36,300 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:39:36,859 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:39:37,117 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:39:38,413 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:39:38,414 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:39:38,415 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:39:38,424 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:39:38,424 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:39:38,424 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:39:38,424 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:39:39,195 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:39:39,752 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:39:39,995 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:40:09,199 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:40:09,200 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:40:09,201 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:40:09,209 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:40:09,210 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:40:09,210 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:40:09,210 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:40:10,079 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:40:10,645 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:40:10,906 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:40:13,150 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:40:13,151 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:40:13,152 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:40:13,160 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:40:13,160 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:40:13,160 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:40:13,160 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:40:13,940 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:40:14,488 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:40:14,736 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:40:18,402 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 22:44:57,603 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:44:57,603 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:44:57,604 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:44:57,612 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:44:57,612 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:44:57,612 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:44:57,612 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:44:58,414 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:44:58,978 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:44:59,236 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:45:52,913 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 22:46:01,667 - app.main - INFO - 用户登录尝试: testuser
+2025-05-27 22:51:25,745 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-27 22:51:25,745 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-27 22:51:25,746 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-27 22:51:25,755 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-27 22:51:25,755 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-27 22:51:25,756 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-27 22:51:25,757 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-27 22:51:26,544 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-27 22:51:27,117 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-27 22:51:27,379 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-27 22:51:30,332 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-27 22:51:38,649 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:26:31,645 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:26:31,647 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:26:31,648 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:26:31,659 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:26:31,660 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:26:31,661 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:26:31,661 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:26:32,557 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:26:33,242 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:26:33,582 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:26:37,942 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:26:47,287 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:35:44,759 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:35:44,759 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:35:44,760 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:35:44,769 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:35:44,770 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:35:44,770 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:35:44,770 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:35:45,590 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:35:46,154 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:35:46,413 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:36:01,581 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:36:01,581 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:36:01,583 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:36:01,592 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:36:01,593 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:36:01,593 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:36:01,593 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:36:02,407 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:36:02,964 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:36:03,218 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:36:27,028 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:36:27,029 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:36:27,030 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:36:27,038 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:36:27,039 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:36:27,039 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:36:27,039 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:36:27,812 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:36:28,339 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:36:28,591 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:36:36,970 - app.utils.rag_service - ERROR - AI生成答案失败: Timeout of 600.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv6:%5B2404:6800:4012:8::200a%5D:443: tcp handshaker shutdown
+2025-05-28 12:36:40,583 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:36:40,584 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:36:40,585 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:36:40,592 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:36:40,593 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:36:40,593 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:36:40,594 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:36:41,351 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:36:41,912 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:36:42,152 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:37:13,567 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:37:13,567 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:37:13,568 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:37:13,577 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:37:13,578 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:37:13,578 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:37:13,578 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:37:14,377 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:37:14,936 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:37:15,176 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:37:35,486 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:37:35,487 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:37:35,488 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:37:35,496 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:37:35,496 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:37:35,496 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:37:35,496 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:37:36,263 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:37:36,827 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:37:37,069 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:37:38,360 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:37:38,360 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:37:38,361 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:37:38,369 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:37:38,369 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:37:38,370 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:37:38,370 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:37:39,135 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:37:39,683 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:37:39,924 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:37:41,191 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:37:41,191 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:37:41,192 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:37:41,201 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:37:41,201 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:37:41,201 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:37:41,202 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:37:41,971 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:37:42,518 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:37:42,768 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:37:48,616 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:37:48,638 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 12:37:48,850 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:37:57,068 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:38:06,483 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:38:06,689 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'username': 'testuser'}
+2025-05-28 12:38:27,913 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:38:37,317 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:38:37,521 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:38:37,549 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:39:47,839 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:39:47,840 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:39:47,841 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:39:47,850 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:39:47,850 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:39:47,850 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:39:47,850 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:39:48,628 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:39:49,173 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:39:49,424 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:39:58,584 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:40:04,593 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:40:07,936 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:40:07,959 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 12:40:08,177 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:40:08,207 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:44:49,648 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:44:49,649 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:44:49,649 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:44:49,662 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:44:49,663 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:44:49,663 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:44:49,663 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:44:50,541 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:44:51,124 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:44:51,411 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:48:02,768 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:48:42,430 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:48:42,431 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:48:42,432 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:48:42,440 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:48:42,440 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:48:42,440 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:48:42,440 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:48:43,196 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:48:43,768 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:48:44,046 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:48:48,458 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:58:03,326 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 12:58:03,327 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 12:58:03,327 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 12:58:03,336 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 12:58:03,336 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 12:58:03,336 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 12:58:03,337 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 12:58:04,173 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 12:58:04,748 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 12:58:05,024 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 12:58:33,852 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 12:58:43,268 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:58:43,288 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 12:58:43,506 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:58:43,533 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:59:03,777 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:59:03,974 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:59:03,980 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:59:25,974 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:59:26,173 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:59:26,180 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:59:51,559 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 12:59:51,756 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 12:59:51,762 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 12:59:51,772 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:00:45,137 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:00:45,138 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:00:45,139 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:00:45,150 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:00:45,150 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:00:45,151 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:00:45,151 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:00:45,934 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:00:46,529 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:00:46,797 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:01:24,846 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:01:24,868 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:01:25,093 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:01:25,103 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:01:45,041 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:01:45,239 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:01:45,248 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:02:18,843 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:02:28,296 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:02:28,498 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:02:28,523 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:02:28,529 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:02:28,536 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:04:31,319 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:04:31,320 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:04:31,320 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:04:31,329 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:04:31,329 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:04:31,329 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:04:31,329 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:04:32,113 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:04:32,666 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:04:32,914 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:04:56,602 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:05:06,112 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:05:06,131 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:05:06,357 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:05:06,372 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:05:06,382 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:05:06,390 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:05:06,399 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:05:06,405 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:05:06,412 - app.routers.ai_chat - ERROR - 获取预设问题失败: 'Literature' object has no attribute 'group_id'
+2025-05-28 13:05:06,416 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 13:05:06,417 - app.routers.ai_chat - ERROR - 问答处理失败: 'Literature' object has no attribute 'group_id'
+2025-05-28 13:05:07,432 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 13:05:07,434 - app.routers.ai_chat - ERROR - 问答处理失败: 'Literature' object has no attribute 'group_id'
+2025-05-28 13:09:01,398 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:09:01,398 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:09:01,399 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:09:01,410 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:09:01,410 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:09:01,410 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:09:01,411 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:09:02,187 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:09:02,733 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:09:02,984 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:10:15,734 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:10:25,206 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:10:25,226 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:10:25,449 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:10:25,464 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:10:25,471 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:10:25,478 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:10:25,485 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:10:25,491 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:12:37,621 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:12:37,622 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:12:37,623 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:12:37,634 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:12:37,634 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:12:37,634 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:12:37,634 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:12:38,416 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:12:38,958 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:12:39,208 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:12:46,957 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:12:56,417 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:12:56,439 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:12:56,669 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:12:56,683 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:12:56,690 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:12:56,699 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:12:56,707 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:12:56,713 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:12:56,725 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 13:12:56,734 - app.utils.conversation_manager - INFO - 创建新会话: fde1c539-a77f-4c14-8394-a7a4f4ecc37b
+2025-05-28 13:12:56,735 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:12:57,361 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:12:57,394 - app.utils.vector_store - INFO - 为研究组 362c0ac6-d3f9-4962-87b8-b00175050419 创建向量集合: literature_group_362c0ac6-d3f9-4962-87b8-b00175050419
+2025-05-28 13:12:57,421 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:12:57,511 - app.utils.conversation_manager - INFO - 添加对话轮次: a0f5945f-8ab4-4b77-b084-2f6f0d440e1f (会话: fde1c539-a77f-4c14-8394-a7a4f4ecc37b)
+2025-05-28 13:12:57,512 - app.routers.ai_chat - INFO - 问答完成，会话: fde1c539-a77f-4c14-8394-a7a4f4ecc37b, 轮次: a0f5945f-8ab4-4b77-b084-2f6f0d440e1f
+2025-05-28 13:12:58,521 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 13:12:58,528 - app.utils.conversation_manager - INFO - 创建新会话: 37f592b9-0111-489e-b2f4-c2b18ec99f22
+2025-05-28 13:12:58,529 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:12:58,889 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:12:58,897 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:12:58,903 - app.utils.conversation_manager - INFO - 添加对话轮次: d51f53dc-9247-49a7-9223-695135b77468 (会话: 37f592b9-0111-489e-b2f4-c2b18ec99f22)
+2025-05-28 13:12:58,904 - app.routers.ai_chat - INFO - 问答完成，会话: 37f592b9-0111-489e-b2f4-c2b18ec99f22, 轮次: d51f53dc-9247-49a7-9223-695135b77468
+2025-05-28 13:15:37,122 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:15:37,122 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:15:37,123 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:15:37,131 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:15:37,132 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:15:37,132 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:15:37,132 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:15:37,910 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:15:38,471 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:15:38,714 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:15:43,961 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:15:43,970 - app.main - INFO - AI健康检查完成: critical (2/5 通过)
+2025-05-28 13:15:43,970 - app.main - ERROR - AI健康检查失败: name 'JSONResponse' is not defined
+2025-05-28 13:17:48,000 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:17:48,001 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:17:48,002 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:17:48,009 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:17:48,010 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:17:48,010 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:17:48,010 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:17:48,777 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:17:49,334 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:17:49,582 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:17:50,935 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:17:50,936 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:17:50,936 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:17:50,945 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:17:50,945 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:17:50,945 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:17:50,946 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:17:51,738 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:17:52,301 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:17:52,545 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:18:11,754 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:18:11,755 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:18:11,756 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:18:11,765 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:18:11,766 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:18:11,766 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:18:11,766 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:18:12,552 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:18:13,114 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:18:13,355 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:18:14,640 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:18:14,641 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:18:14,642 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:18:14,650 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:18:14,650 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:18:14,651 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:18:14,651 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:18:15,424 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:18:15,979 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:18:16,223 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:22:06,460 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:22:06,460 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:22:06,461 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:22:06,468 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:22:06,468 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:22:06,469 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:22:06,470 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:22:07,239 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:22:07,783 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:22:08,032 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:22:26,138 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:22:26,139 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:22:26,139 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:22:26,148 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:22:26,148 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:22:26,149 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:22:26,149 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:22:26,945 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:22:27,505 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:22:27,766 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:22:31,528 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:22:31,538 - app.main - INFO - AI健康检查完成: critical (2/5 通过)
+2025-05-28 13:22:31,542 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:22:31,563 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:22:31,785 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:22:31,803 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:22:31,810 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:22:31,818 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:22:31,825 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:22:31,832 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:22:31,837 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_view', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'filename': 'test_document.txt', 'file_type': 'txt'}
+2025-05-28 13:22:31,846 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 13:22:31,855 - app.utils.conversation_manager - INFO - 创建新会话: 33de339b-05cd-426b-a434-4d9b42a323b2
+2025-05-28 13:22:31,856 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:22:32,245 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:22:32,272 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:22:32,282 - app.utils.conversation_manager - INFO - 添加对话轮次: 7c5ac570-e052-434d-ae20-286d5c3ff39e (会话: 33de339b-05cd-426b-a434-4d9b42a323b2)
+2025-05-28 13:22:32,283 - app.routers.ai_chat - INFO - 问答完成，会话: 33de339b-05cd-426b-a434-4d9b42a323b2, 轮次: 7c5ac570-e052-434d-ae20-286d5c3ff39e
+2025-05-28 13:22:33,294 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 13:22:33,299 - app.utils.conversation_manager - INFO - 创建新会话: cc739d77-4fb3-4d39-b339-e659df957cf0
+2025-05-28 13:22:33,300 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:22:33,706 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:22:33,712 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:22:33,719 - app.utils.conversation_manager - INFO - 添加对话轮次: be6b5eb0-cce4-40fd-a987-c4b211dd9619 (会话: cc739d77-4fb3-4d39-b339-e659df957cf0)
+2025-05-28 13:22:33,719 - app.routers.ai_chat - INFO - 问答完成，会话: cc739d77-4fb3-4d39-b339-e659df957cf0, 轮次: be6b5eb0-cce4-40fd-a987-c4b211dd9619
+2025-05-28 13:24:14,728 - app.main - INFO - AI健康检查完成: critical (3/5 通过)
+2025-05-28 13:24:14,731 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:24:14,930 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:24:14,944 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:24:14,950 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:24:14,957 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:24:14,961 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:24:14,967 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:24:14,974 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_view', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'filename': 'test_document.txt', 'file_type': 'txt'}
+2025-05-28 13:24:14,986 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 13:24:14,994 - app.utils.conversation_manager - INFO - 创建新会话: 4fe0c31e-8201-4131-9717-a42c771fe26c
+2025-05-28 13:24:14,995 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:24:15,653 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:24:15,663 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:24:15,670 - app.utils.conversation_manager - INFO - 添加对话轮次: 9995e3f9-79c5-49e8-a0cb-00fe3a603fc3 (会话: 4fe0c31e-8201-4131-9717-a42c771fe26c)
+2025-05-28 13:24:15,671 - app.routers.ai_chat - INFO - 问答完成，会话: 4fe0c31e-8201-4131-9717-a42c771fe26c, 轮次: 9995e3f9-79c5-49e8-a0cb-00fe3a603fc3
+2025-05-28 13:24:16,677 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 13:24:16,684 - app.utils.conversation_manager - INFO - 创建新会话: b799149f-4af4-4402-9255-f53faab00962
+2025-05-28 13:24:16,685 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:24:17,179 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:24:17,189 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:24:17,196 - app.utils.conversation_manager - INFO - 添加对话轮次: cdd93e61-157e-4e57-a6ca-288ac819b7f7 (会话: b799149f-4af4-4402-9255-f53faab00962)
+2025-05-28 13:24:17,197 - app.routers.ai_chat - INFO - 问答完成，会话: b799149f-4af4-4402-9255-f53faab00962, 轮次: cdd93e61-157e-4e57-a6ca-288ac819b7f7
+2025-05-28 13:25:02,925 - app.main - INFO - AI健康检查完成: critical (3/5 通过)
+2025-05-28 13:25:02,928 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 13:25:03,130 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 13:25:03,144 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 13:25:03,152 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 13:25:03,158 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 13:25:03,164 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 13:25:03,170 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 13:25:03,174 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_view', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'filename': 'test_document.txt', 'file_type': 'txt'}
+2025-05-28 13:25:03,182 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 13:25:03,190 - app.utils.conversation_manager - INFO - 创建新会话: b2322ddb-38d5-4525-82dd-9de1babbdadf
+2025-05-28 13:25:03,191 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:25:03,764 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:25:03,772 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:25:03,779 - app.utils.conversation_manager - INFO - 添加对话轮次: a115f310-be69-4cd2-b053-055d27675a8e (会话: b2322ddb-38d5-4525-82dd-9de1babbdadf)
+2025-05-28 13:25:03,779 - app.routers.ai_chat - INFO - 问答完成，会话: b2322ddb-38d5-4525-82dd-9de1babbdadf, 轮次: a115f310-be69-4cd2-b053-055d27675a8e
+2025-05-28 13:25:04,786 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 13:25:04,794 - app.utils.conversation_manager - INFO - 创建新会话: bac7c338-9cb1-4277-ac84-b0b8a391155f
+2025-05-28 13:25:04,795 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 13:25:05,163 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 13:25:05,174 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 13:25:05,180 - app.utils.conversation_manager - INFO - 添加对话轮次: 34edecbc-adb5-44c4-b7ea-84e1d05e97f1 (会话: bac7c338-9cb1-4277-ac84-b0b8a391155f)
+2025-05-28 13:25:05,181 - app.routers.ai_chat - INFO - 问答完成，会话: bac7c338-9cb1-4277-ac84-b0b8a391155f, 轮次: 34edecbc-adb5-44c4-b7ea-84e1d05e97f1
+2025-05-28 13:28:02,642 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:02,643 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:02,644 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:02,655 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:02,655 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:02,655 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:02,657 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:03,439 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:04,003 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:04,255 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:28:05,515 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:05,515 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:05,516 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:05,525 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:05,526 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:05,526 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:05,526 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:06,276 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:06,798 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:07,027 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:28:27,162 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:27,163 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:27,164 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:27,174 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:27,175 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:27,175 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:27,175 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:27,953 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:28,517 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:28,852 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:28:30,012 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:30,012 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:30,014 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:30,026 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:30,026 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:30,027 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:30,027 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:30,787 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:31,308 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:31,561 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:28:32,883 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:32,883 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:32,884 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:32,892 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:32,892 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:32,893 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:32,893 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:33,682 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:34,249 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:34,508 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:28:36,298 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:28:36,299 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:28:36,300 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:28:36,310 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:28:36,310 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:28:36,310 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:28:36,310 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:28:37,081 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:28:37,617 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:28:37,866 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:29:03,679 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:29:03,679 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:29:03,680 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:29:03,689 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:29:03,689 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:29:03,690 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:29:03,690 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:29:04,446 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:29:05,011 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:29:05,265 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:32:27,418 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:32:27,418 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:32:27,419 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:32:27,428 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:32:27,429 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:32:27,429 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:32:27,429 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:32:28,183 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:32:28,732 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:32:28,972 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:32:33,527 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:32:33,528 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:32:33,529 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:32:33,540 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:32:33,540 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:32:33,540 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:32:33,540 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:32:34,291 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:32:34,823 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:32:35,067 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:32:38,010 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:32:38,011 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:32:38,012 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:32:38,021 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:32:38,021 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:32:38,021 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:32:38,021 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:32:38,784 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:32:39,305 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:32:39,544 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:39:24,424 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:39:24,424 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:39:24,425 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:39:24,434 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:39:24,434 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:39:24,434 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:39:24,434 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:39:25,213 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:39:25,739 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:39:25,992 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:39:43,105 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:39:43,105 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:39:43,106 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:39:43,117 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:39:43,117 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:39:43,117 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:39:43,117 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:39:43,909 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:39:44,458 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:39:44,715 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:39:46,104 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:39:46,105 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:39:46,106 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:39:46,114 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:39:46,114 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:39:46,114 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:39:46,114 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:39:46,873 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:39:47,429 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:39:47,665 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:39:47,724 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 13:40:05,299 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:40:05,300 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:40:05,300 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:40:05,309 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:40:05,310 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:40:05,310 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:40:05,310 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:40:06,092 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:40:06,649 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:40:06,902 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:42:50,939 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:42:50,940 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:42:50,941 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:42:50,951 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:42:50,951 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:42:50,952 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:42:50,952 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:42:51,743 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:42:52,312 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:42:52,567 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:42:53,952 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:42:53,953 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:42:53,954 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:42:53,962 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:42:53,962 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:42:53,963 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:42:53,963 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:42:54,729 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:42:55,273 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:42:55,517 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:42:56,821 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:42:56,822 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:42:56,823 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:42:56,831 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:42:56,831 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:42:56,832 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:42:56,832 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:42:57,592 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:42:58,148 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:42:58,409 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:43:21,682 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:43:21,682 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:43:21,683 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:43:21,692 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:43:21,692 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:43:21,692 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:43:21,692 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:43:22,465 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:43:23,015 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:43:23,295 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:45:11,836 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:45:11,836 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:45:11,837 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:45:11,845 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:45:11,845 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:45:11,846 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:45:11,846 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:45:12,623 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:45:13,177 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:45:13,458 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:58:28,239 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:58:28,239 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:58:28,240 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:58:28,249 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:58:28,249 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:58:28,249 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:58:28,250 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:58:29,022 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:58:29,570 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:58:29,814 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:58:31,069 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:58:31,070 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:58:31,070 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:58:31,078 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:58:31,078 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:58:31,079 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:58:31,079 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:58:31,909 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:58:32,459 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:58:32,722 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:58:50,459 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:58:50,459 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:58:50,460 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:58:50,470 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:58:50,470 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:58:50,471 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:58:50,471 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:58:51,239 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:58:51,777 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:58:52,033 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:58:53,312 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:58:53,313 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:58:53,314 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:58:53,324 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:58:53,324 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:58:53,325 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:58:53,325 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:58:54,148 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:58:54,687 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:58:54,939 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:59:02,307 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:59:02,308 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:59:02,309 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:59:02,318 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:59:02,318 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:59:02,319 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:59:02,319 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:59:03,058 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:59:03,623 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:59:03,858 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:59:05,088 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:59:05,089 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:59:05,090 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:59:05,099 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:59:05,099 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:59:05,099 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:59:05,100 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:59:05,853 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:59:06,408 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:59:06,662 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:59:18,845 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:59:18,846 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:59:18,847 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:59:18,857 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:59:18,857 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:59:18,857 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:59:18,858 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:59:19,643 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:59:20,178 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:59:20,416 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:59:21,693 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:59:21,694 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:59:21,695 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:59:21,703 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:59:21,704 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:59:21,704 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:59:21,704 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:59:22,489 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:59:23,051 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:59:23,296 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 13:59:24,556 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 13:59:24,557 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 13:59:24,558 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 13:59:24,566 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 13:59:24,566 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 13:59:24,566 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 13:59:24,566 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 13:59:25,332 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 13:59:25,876 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 13:59:26,114 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:00:11,106 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:00:11,107 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:00:11,108 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:00:11,116 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:00:11,117 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:00:11,117 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:00:11,117 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:00:11,893 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:00:12,427 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:00:12,672 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:00:13,900 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:00:13,901 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:00:13,901 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:00:13,910 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:00:13,910 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:00:13,910 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:00:13,910 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:00:14,653 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:00:15,186 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:00:15,422 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:00:16,660 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:00:16,661 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:00:16,662 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:00:16,670 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:00:16,670 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:00:16,671 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:00:16,671 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:00:17,424 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:00:17,971 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:00:18,213 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:02:09,918 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:02:09,920 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:02:09,920 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:02:09,928 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:02:09,929 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:02:09,929 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:02:09,929 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:02:10,760 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:02:11,385 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:02:11,669 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:05:34,464 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:06:49,140 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:06:49,140 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:06:49,141 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:06:49,151 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:06:49,151 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:06:49,151 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:06:49,151 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:06:49,390 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:06:49,391 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:06:49,392 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:06:49,403 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:06:49,404 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:06:49,404 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:06:49,404 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:06:50,080 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:06:50,302 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:06:50,712 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:06:50,928 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:06:50,986 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:06:51,196 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:42,230 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:42,230 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:42,231 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:42,239 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:42,239 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:42,240 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:42,240 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:42,378 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:42,379 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:42,380 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:42,388 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:42,388 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:42,388 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:42,388 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:43,001 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:43,147 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:43,572 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:43,728 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:43,836 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:43,978 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:45,135 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:45,135 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:45,136 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:45,144 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:45,145 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:45,145 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:45,145 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:45,357 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:45,357 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:45,358 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:45,369 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:45,369 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:45,369 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:45,370 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:45,948 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:46,145 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:46,522 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:46,717 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:46,781 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:46,967 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:50,373 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:50,374 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:50,374 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:50,383 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:50,383 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:50,384 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:50,384 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:50,717 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:50,718 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:50,719 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:50,728 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:50,729 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:50,729 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:50,729 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:51,161 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:51,519 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:51,728 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:51,978 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:52,080 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:52,338 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:55,193 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:55,194 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:55,195 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:55,204 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:55,204 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:55,204 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:55,205 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:55,396 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:55,396 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:55,397 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:55,405 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:55,406 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:55,406 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:55,406 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:55,988 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:56,188 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:56,534 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:56,733 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:56,778 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:56,977 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:58,087 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:58,088 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:58,088 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:58,096 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:58,097 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:58,097 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:58,097 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:58,316 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:11:58,316 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:11:58,317 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:11:58,325 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:11:58,326 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:11:58,326 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:11:58,326 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:11:58,869 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:59,071 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:11:59,423 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:59,622 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:11:59,733 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:11:59,953 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:04,618 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:04,619 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:04,620 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:04,628 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:04,629 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:04,629 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:04,629 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:04,811 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:04,811 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:04,812 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:04,821 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:04,821 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:04,821 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:04,821 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:05,416 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:05,588 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:05,965 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:06,137 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:06,219 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:06,386 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:07,534 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:07,535 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:07,536 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:07,545 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:07,545 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:07,545 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:07,545 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:07,720 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:07,721 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:07,721 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:07,729 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:07,730 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:07,730 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:07,730 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:08,309 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:08,474 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:08,868 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:09,073 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:09,151 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:09,336 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:16,557 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:16,558 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:16,558 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:16,568 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:16,568 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:16,568 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:16,568 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:16,853 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:16,854 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:16,855 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:16,868 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:16,869 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:16,870 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:16,870 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:17,368 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:17,642 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:17,916 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:18,172 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:18,195 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:18,435 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:19,422 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:19,423 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:19,424 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:19,432 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:19,432 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:19,433 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:19,433 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:19,741 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:19,741 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:19,742 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:19,750 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:19,751 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:19,751 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:19,751 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:20,188 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:20,500 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:20,735 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:20,984 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:21,067 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:21,370 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:25,740 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:25,741 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:25,742 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:25,752 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:25,753 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:25,753 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:25,753 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:26,001 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:26,002 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:26,002 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:26,010 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:26,011 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:26,011 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:26,011 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:26,525 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:26,769 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:27,069 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:27,315 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:27,328 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:27,561 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:54,235 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:54,236 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:54,238 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:54,248 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:54,248 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:54,248 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:54,248 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:54,491 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:54,492 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:54,492 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:54,500 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:54,501 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:54,501 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:54,501 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:55,024 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:55,259 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:55,569 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:55,808 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:55,815 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:56,048 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:57,097 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:57,097 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:57,098 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:57,107 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:57,107 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:57,108 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:57,108 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:57,352 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:12:57,353 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:12:57,354 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:12:57,363 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:12:57,363 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:12:57,363 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:12:57,364 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:12:57,864 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:58,118 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:12:58,414 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:58,662 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:12:58,669 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:12:58,916 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:08,388 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:08,388 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:08,389 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:08,397 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:08,398 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:08,398 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:08,398 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:08,649 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:08,650 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:08,652 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:08,660 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:08,661 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:08,661 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:08,661 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:09,184 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:09,434 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:09,746 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:09,993 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:09,994 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:10,236 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:11,314 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:11,315 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:11,316 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:11,325 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:11,325 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:11,325 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:11,325 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:11,574 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:11,576 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:11,577 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:11,584 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:11,584 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:11,585 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:11,585 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:12,086 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:12,339 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:12,653 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:12,942 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:12,949 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:13,187 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:30,535 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:30,535 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:30,536 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:30,545 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:30,546 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:30,546 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:30,546 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:30,779 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:30,779 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:30,780 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:30,789 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:30,789 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:30,789 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:30,789 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:31,322 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:31,549 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:31,889 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:32,118 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:32,150 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:32,371 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:33,454 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:33,455 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:33,456 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:33,464 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:33,464 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:33,464 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:33,465 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:33,717 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:33,718 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:33,719 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:33,727 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:33,727 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:33,728 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:33,728 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:34,230 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:34,484 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:34,778 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:35,028 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:35,039 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:35,283 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:36,340 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:36,341 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:36,342 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:36,350 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:36,350 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:36,351 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:36,351 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:36,601 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:13:36,602 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:13:36,603 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:13:36,612 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:13:36,612 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:13:36,612 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:13:36,612 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:13:37,123 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:37,373 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:13:37,680 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:37,934 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:13:37,935 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:13:38,179 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:14:30,670 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:14:30,906 - app.main - INFO - 用户登录尝试: 19973039823
+2025-05-28 14:14:31,107 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser', 'phone_number': '19973039823'}
+2025-05-28 14:14:31,112 - app.main - INFO - 用户登录尝试: 13999999999
+2025-05-28 14:14:31,113 - app.utils.error_handler - ERROR - 操作失败: {'operation': 'user_login', 'error_type': 'Exception', 'error_message': '登录失败', 'user_id': None, 'phone_number': '13999999999'}
+2025-05-28 14:18:28,869 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:28,869 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:28,870 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:28,881 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:28,881 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:28,881 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:28,881 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:29,037 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:29,037 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:29,039 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:29,050 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:29,051 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:29,051 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:29,051 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:29,732 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:29,919 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:30,425 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:30,613 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:30,719 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:30,931 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:32,227 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:32,227 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:32,228 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:32,236 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:32,236 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:32,237 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:32,237 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:32,370 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:32,371 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:32,372 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:32,380 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:32,380 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:32,380 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:32,381 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:33,025 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:33,174 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:33,598 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:33,741 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:33,883 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:33,993 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:35,169 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:35,170 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:35,171 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:35,180 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:35,180 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:35,180 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:35,180 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:35,315 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:35,316 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:35,316 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:35,327 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:35,327 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:35,327 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:35,327 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:35,959 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:36,076 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:36,512 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:36,626 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:36,766 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:36,871 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:48,386 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:48,387 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:48,388 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:48,396 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:48,396 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:48,397 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:48,397 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:48,775 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:48,776 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:48,777 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:48,785 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:48,785 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:48,786 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:48,786 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:49,169 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:49,555 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:49,729 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:49,985 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:50,102 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:50,348 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:51,215 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:51,216 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:51,217 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:51,227 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:51,228 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:51,228 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:51,228 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:51,603 - app.utils.storage_manager - INFO - 初始化存储管理器，上传根目录: uploads
+2025-05-28 14:18:51,604 - app.utils.storage_manager - INFO - 确保上传根目录存在: uploads
+2025-05-28 14:18:51,605 - app.utils.storage_manager - INFO - 上传根目录写入权限正常
+2025-05-28 14:18:51,613 - app.utils.cache_manager - INFO - 初始化 embedding 内存缓存: maxsize=1000, ttl=3600s
+2025-05-28 14:18:51,613 - app.utils.cache_manager - INFO - 初始化 answer 内存缓存: maxsize=500, ttl=1800s
+2025-05-28 14:18:51,613 - app.utils.cache_manager - INFO - 初始化 chunk 内存缓存: maxsize=2000, ttl=7200s
+2025-05-28 14:18:51,613 - app.utils.cache_manager - INFO - 缓存管理器初始化完成
+2025-05-28 14:18:51,976 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:52,363 - app.utils.embedding_service - INFO - Google GenAI客户端初始化成功
+2025-05-28 14:18:52,523 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:52,767 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:18:52,918 - app.utils.vector_store - INFO - ChromaDB客户端初始化成功，数据路径: ./vector_db
+2025-05-28 14:18:53,152 - app.utils.rag_service - INFO - Google AI服务初始化成功
+2025-05-28 14:19:04,309 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 14:19:04,315 - app.main - INFO - AI健康检查完成: critical (2/5 通过)
+2025-05-28 14:19:04,321 - app.main - INFO - 用户登录尝试: testuser
+2025-05-28 14:19:04,342 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-28 14:19:04,568 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_login', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'username': 'testuser'}
+2025-05-28 14:19:04,585 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 测试问题...
+2025-05-28 14:19:04,592 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题这是一个非常长的问题...
+2025-05-28 14:19:04,600 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 1}
+2025-05-28 14:19:04,608 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-28 14:19:04,614 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_detail', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'title': '测试文献'}
+2025-05-28 14:19:04,619 - app.utils.error_handler - INFO - 操作成功: {'operation': 'file_view', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_id': 'ce79db6f-c3c8-4f9a-9275-465a88f8d055', 'filename': 'test_document.txt', 'file_type': 'txt'}
+2025-05-28 14:19:04,634 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要内容是什么？...
+2025-05-28 14:19:04,646 - app.utils.conversation_manager - INFO - 创建新会话: ec6fcfc5-c017-47c4-8bfd-d38ef4318141
+2025-05-28 14:19:04,648 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要内容是什么？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 14:19:05,046 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 14:19:05,078 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 14:19:05,086 - app.utils.conversation_manager - INFO - 添加对话轮次: bd50257f-45db-429f-a769-eb83f92ebdb6 (会话: ec6fcfc5-c017-47c4-8bfd-d38ef4318141)
+2025-05-28 14:19:05,087 - app.routers.ai_chat - INFO - 问答完成，会话: ec6fcfc5-c017-47c4-8bfd-d38ef4318141, 轮次: bd50257f-45db-429f-a769-eb83f92ebdb6
+2025-05-28 14:19:06,097 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中有哪些重要的研究发现？...
+2025-05-28 14:19:06,105 - app.utils.conversation_manager - INFO - 创建新会话: d7827915-fab7-4532-93bd-acccd4670759
+2025-05-28 14:19:06,105 - app.utils.rag_service - INFO - 开始处理问题: 文献中有哪些重要的研究发现？... (文献ID: ce79db6f-c3c8-4f9a-9275-465a88f8d055)
+2025-05-28 14:19:06,515 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-28 14:19:06,523 - app.utils.vector_store - INFO - 相似度搜索完成，返回 0 个结果
+2025-05-28 14:19:06,531 - app.utils.conversation_manager - INFO - 添加对话轮次: 94295cde-9ad9-4d07-a18a-d6010fd288dc (会话: d7827915-fab7-4532-93bd-acccd4670759)
+2025-05-28 14:19:06,531 - app.routers.ai_chat - INFO - 问答完成，会话: d7827915-fab7-4532-93bd-acccd4670759, 轮次: 94295cde-9ad9-4d07-a18a-d6010fd288dc

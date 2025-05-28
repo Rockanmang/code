@@ -35,6 +35,8 @@ class Literature(Base):
     deleter = relationship("User", foreign_keys=[deleted_by])
     restorer = relationship("User", foreign_keys=[restored_by])
     research_group = relationship("ResearchGroup", back_populates="literature")
+    # 与问答会话的一对多关系
+    qa_sessions = relationship("QASession", back_populates="literature")
     
     def __init__(self, title, filename, file_path, file_size, file_type, uploaded_by, research_group_id):
         self.id = str(uuid.uuid4())

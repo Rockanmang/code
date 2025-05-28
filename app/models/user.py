@@ -20,3 +20,6 @@ class User(Base):
     
     # 与文献的一对多关系（用户上传的文献）- 明确指定外键
     uploaded_literature = relationship("Literature", foreign_keys="Literature.uploaded_by", back_populates="uploader")
+    
+    # 与问答会话的一对多关系
+    qa_sessions = relationship("QASession", back_populates="user")

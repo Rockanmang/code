@@ -18,7 +18,7 @@ class QASession(BaseModel):
     session_id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     
     # 关联信息
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user_id = Column(String, ForeignKey("users.id"), nullable=False)
     group_id = Column(String(36), ForeignKey("research_groups.id"), nullable=False)
     literature_id = Column(String(36), ForeignKey("literature.id"), nullable=False)
     

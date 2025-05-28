@@ -28,7 +28,7 @@ router = APIRouter(prefix="/ai", tags=["AI聊天"])
 # Pydantic 模型定义
 class QARequest(BaseModel):
     """问答请求模型"""
-    question: str = Field(..., min_length=1, max_length=1000, description="用户问题")
+    question: str = Field(..., min_length=1, max_length=5000, description="用户问题")
     literature_id: str = Field(..., description="文献ID")
     session_id: Optional[str] = Field(None, description="会话ID（可选）")
     max_sources: int = Field(default=5, ge=1, le=10, description="最大引用来源数量")
@@ -111,7 +111,7 @@ async def ask_question(
             )
         
         # 检查用户是否有权限访问该文献
-        if not _check_literature_access(current_user.id, literature.group_id, db):
+        if not _check_literature_access(current_user.id, literature.research_group_id, db):
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="无权限访问该文献"
@@ -120,7 +120,7 @@ async def ask_question(
         # 获取或创建会话
         session_id = conversation_manager.get_or_create_session(
             user_id=current_user.id,
-            group_id=literature.group_id,
+            group_id=literature.research_group_id,
             literature_id=request.literature_id,
             session_id=request.session_id,
             db=db
@@ -140,7 +140,7 @@ async def ask_question(
         rag_result = await rag_service.process_question(
             question=request.question,
             literature_id=request.literature_id,
-            group_id=literature.group_id,
+            group_id=literature.research_group_id,
             session_id=session_id,
             conversation_history=conversation_history,
             top_k=request.max_sources
@@ -198,7 +198,7 @@ async def get_preset_questions(
     literature_id: str,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
-) -> Dict[str, List[str]]:
+) -> Dict[str, Any]:
     """
     获取文献的预设问题列表
     """
@@ -211,7 +211,7 @@ async def get_preset_questions(
                 detail="文献不存在"
             )
         
-        if not _check_literature_access(current_user.id, literature.group_id, db):
+        if not _check_literature_access(current_user.id, literature.research_group_id, db):
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="无权限访问该文献"
@@ -491,19 +491,18 @@ async def get_service_stats(
         )
 
 # 辅助函数
-def _check_literature_access(user_id: int, group_id: str, db: Session) -> bool:
+def _check_literature_access(user_id: str, group_id: str, db: Session) -> bool:
     """
     检查用户是否有权限访问指定研究组的文献
     """
     try:
-        from app.models.research_group import GroupMember
+        from app.models.research_group import UserResearchGroup
         from sqlalchemy import and_
         
-        member = db.query(GroupMember).filter(
+        member = db.query(UserResearchGroup).filter(
             and_(
-                GroupMember.user_id == user_id,
-                GroupMember.group_id == group_id,
-                GroupMember.status == "active"
+                UserResearchGroup.user_id == user_id,
+                UserResearchGroup.group_id == group_id
             )
         ).first()
         

@@ -7,6 +7,7 @@ import time
 import logging
 from typing import List, Optional, Dict, Tuple
 from app.config import settings
+from app.utils.cache_manager import cache_manager
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -76,7 +77,7 @@ class EmbeddingService:
     
     def generate_embedding(self, text: str) -> Optional[List[float]]:
         """
-        生成单个文本的embedding
+        生成单个文本的embedding（带缓存支持）
         
         Args:
             text: 要向量化的文本
@@ -92,14 +93,28 @@ class EmbeddingService:
             logger.warning("输入文本为空")
             return None
         
+        # 1. 先检查缓存
+        cached_embedding = cache_manager.get_embedding(text, self.provider)
+        if cached_embedding is not None:
+            logger.debug(f"Embedding缓存命中: {text[:30]}...")
+            return cached_embedding
+        
+        # 2. 缓存未命中，生成新的embedding
         try:
             if self.provider == "openai":
-                return self._generate_openai_embedding(text)
+                embedding = self._generate_openai_embedding(text)
             elif self.provider == "google":
-                return self._generate_google_embedding(text)
+                embedding = self._generate_google_embedding(text)
             else:
                 logger.error(f"不支持的AI提供商: {self.provider}")
                 return None
+            
+            # 3. 存入缓存
+            if embedding:
+                cache_manager.set_embedding(text, embedding, self.provider)
+                logger.debug(f"Embedding已缓存: {text[:30]}...")
+            
+            return embedding
                 
         except Exception as e:
             logger.error(f"生成embedding失败: {e}")
