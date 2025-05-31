@@ -155,7 +155,7 @@ AI服务层 (Google Gemini API + Sentence Transformers)
 - **Uvicorn**: ASGI服务器，支持异步处理
 
 **AI和数据层**:
-- **Google Gemini 2.0**: 最新一代大语言模型，多语言支持
+- **Google Gemini 2.5**: 最新一代大语言模型，多语言支持
 - **ChromaDB**: 开源向量数据库，专为AI应用优化
 - **Sentence Transformers**: 文本向量化模型，支持中英文
 - **Redis**: 内存数据库，实现高性能缓存
