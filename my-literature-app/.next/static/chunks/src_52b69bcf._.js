@@ -649,8 +649,10 @@ api.interceptors.request.use((config)=>{
 // 响应拦截器：自动刷新 token
 api.interceptors.response.use((response)=>response, async (error)=>{
     const originalRequest = error.config;
-    // 如果是401且未重试过
-    if (error.response && error.response.status === 401 && !originalRequest._retry) {
+    // 检查当前是否在登录页面
+    const isLoginPage = "object" !== 'undefined' && (window.location.pathname === '/login' || window.location.pathname === '/register');
+    // 如果是401且未重试过，且不在登录页面
+    if (error.response && error.response.status === 401 && !originalRequest._retry && !isLoginPage) {
         originalRequest._retry = true;
         const refreshToken = localStorage.getItem('refresh_token');
         if (refreshToken) {
@@ -665,16 +667,21 @@ api.interceptors.response.use((response)=>response, async (error)=>{
                 originalRequest.headers['Authorization'] = `Bearer ${newToken}`;
                 return api(originalRequest);
             } catch (refreshError) {
-                // 刷新失败，清除token并跳转登录
+                // 刷新失败，清除token并跳转登录（仅在非登录页面）
                 localStorage.removeItem('token');
                 localStorage.removeItem('refresh_token');
-                window.location.href = '/login';
+                if (!isLoginPage) {
+                    window.location.href = '/login';
+                }
             }
         } else {
-            // 没有refresh_token，跳转登录
-            window.location.href = '/login';
+            // 没有refresh_token，跳转登录（仅在非登录页面）
+            if (!isLoginPage) {
+                window.location.href = '/login';
+            }
         }
     }
+    // 如果是登录页面的401错误，直接返回错误，不进行重定向
     return Promise.reject(error);
 });
 const __TURBOPACK__default__export__ = api;

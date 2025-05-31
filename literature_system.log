@@ -6996,3 +6996,340 @@ dic- 15。 Sangaralingham, S。 J。 et al。 The aging heart, myocardial brosis
 2025-05-31 17:22:32,417 - app.utils.embedding_service - INFO - Google GenAI�ͻ��˳�ʼ���ɹ�
 2025-05-31 17:22:33,032 - app.utils.vector_store - INFO - ChromaDB�ͻ��˳�ʼ���ɹ�������·��: ./vector_db
 2025-05-31 17:22:33,174 - app.utils.rag_service - INFO - Google AI�����ʼ���ɹ���ʹ��ģ��: gemini-2.5-flash-preview-05-20
+2025-05-31 19:01:06,844 - app.utils.storage_manager - INFO - ��ʼ���洢���������ϴ���Ŀ¼: uploads
+2025-05-31 19:01:06,846 - app.utils.storage_manager - INFO - ȷ���ϴ���Ŀ¼����: uploads
+2025-05-31 19:01:06,847 - app.utils.storage_manager - INFO - �ϴ���Ŀ¼д��Ȩ������
+2025-05-31 19:01:06,847 - app.utils.cache_manager - INFO - ��ʼ�� embedding �ڴ滺��: maxsize=1000, ttl=3600s
+2025-05-31 19:01:06,847 - app.utils.cache_manager - INFO - ��ʼ�� answer �ڴ滺��: maxsize=500, ttl=1800s
+2025-05-31 19:01:06,847 - app.utils.cache_manager - INFO - ��ʼ�� chunk �ڴ滺��: maxsize=2000, ttl=7200s
+2025-05-31 19:01:06,854 - app.utils.cache_manager - INFO - �����������ʼ�����
+2025-05-31 19:01:07,750 - app.utils.embedding_service - INFO - Google GenAI�ͻ��˳�ʼ���ɹ�
+2025-05-31 19:01:08,523 - app.utils.vector_store - INFO - ChromaDB�ͻ��˳�ʼ���ɹ�������·��: ./vector_db
+2025-05-31 19:01:08,660 - app.utils.rag_service - INFO - Google AI�����ʼ���ɹ���ʹ��ģ��: gemini-2.5-flash-preview-05-20
+2025-05-31 19:01:31 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\ProgramData\anaconda3\envs\lite\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'private_literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'private_literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'literature_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'literature_count': 2}
+2025-05-31 19:01:33 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-31 19:01:48 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要论点是什么？...
+2025-05-31 19:01:48 - app.utils.conversation_manager - INFO - 创建新会话: 49d2b641-f308-481b-85d4-0eb5d0b5c370
+2025-05-31 19:01:48 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要论点是什么？... (文献ID: 32263fe1-9eab-4a07-bbe6-351dde7fe714)
+2025-05-31 19:01:49 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-31 19:01:49 - app.utils.embedding_service - ERROR - Google查询embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-31 19:01:49 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-31 19:01:50 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 400 Bad Request"
+2025-05-31 19:01:50 - app.utils.embedding_service - ERROR - Google embedding生成失败: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-31 19:01:50 - app.utils.embedding_service - ERROR - 错误详情: ClientError: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-05-31 19:01:50 - app.utils.vector_store - ERROR - 相似度搜索失败: Expected embeddings to be a list of floats or ints, a list of lists, a numpy array, or a list of numpy arrays, got [None] in query.
+2025-05-31 19:01:50 - app.utils.rag_service - INFO - 原始检索结果数量: 0
+2025-05-31 19:01:50 - app.utils.rag_service - WARNING - 没有检索到任何文档块
+2025-05-31 19:01:50 - app.utils.rag_service - INFO - 重排序后返回文档块数量: 0
+2025-05-31 19:01:50 - app.utils.conversation_manager - INFO - 添加对话轮次: 40eded23-4491-4043-9fc6-ea0572f86ab6 (会话: 49d2b641-f308-481b-85d4-0eb5d0b5c370)
+2025-05-31 19:01:50 - app.routers.ai_chat - INFO - 问答完成，会话: 49d2b641-f308-481b-85d4-0eb5d0b5c370, 轮次: 40eded23-4491-4043-9fc6-ea0572f86ab6
+2025-05-31 19:06:59 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要论点是什么？...
+2025-05-31 19:06:59 - app.utils.conversation_manager - INFO - 创建新会话: ddd99aad-df09-40ca-888d-b47232337a9a
+2025-05-31 19:06:59 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要论点是什么？... (文献ID: 32263fe1-9eab-4a07-bbe6-351dde7fe714)
+2025-05-31 19:07:00 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-31 19:07:01 - app.utils.vector_store - INFO - 相似度搜索完成，返回 20 个结果
+2025-05-31 19:07:01 - app.utils.rag_service - INFO - 原始检索结果数量: 20
+2025-05-31 19:07:01 - app.utils.rag_service - INFO - 重排序后返回文档块数量: 5
+2025-05-31 19:07:01 - app.utils.prompt_builder - INFO - Final QA prompt:
+
+# 角色：专业文献研究助手 (Professional Literature Research Assistant)
+
+## 核心身份与使命
+您是一位专业的AI文献研究助手，专门协助用户深入理解和分析学术文献。您的核心使命是基于提供的文献内容，提供准确、专业、有见地的学术支持。
+
+## 核心能力 (Core Capabilities)
+✅ **文献内容分析**：深度解析文献的核心论点、方法论和发现
+✅ **学术问题解答**：基于文献证据回答复杂的学术问题  
+✅ **引用追踪**：精确标注信息来源，确保学术诚信
+✅ **知识综合**：整合多个文献片段，提供全面的学术洞察
+✅ **批判性分析**：识别研究的优势、局限性和潜在偏见
+✅ **概念解释**：清晰阐释复杂的学术概念和术语
+
+## 严格限制 (Critical Limitations)
+❌ **不得编造信息**：绝不创造或推测未在文献中明确提及的内容
+❌ **不得超出文献范围**：严格限制在提供的文献内容范围内回答
+❌ **不得做最终结论**：避免做出超出文献证据支持的绝对性判断
+❌ **不得提供医疗/法律建议**：不替代专业医疗或法律咨询
+
+## 响应质量标准
+1. **准确性** (Accuracy)：信息必须完全基于提供的文献内容
+2. **完整性** (Completeness)：回答应全面覆盖问题的各个方面
+3. **清晰性** (Clarity)：使用清晰、专业但易懂的学术语言
+4. **可追溯性** (Traceability)：每个关键论点都应有明确的文献来源
+5. **平衡性** (Balance)：客观呈现不同观点和证据
+
+## 响应格式协议
+
+### 对于学术性问题，请严格遵循以下格式（不要使用markdown加粗等格式）：
+
+[主要回答内容：基于文献的详细回答，使用专业学术语言，以自然段落形式呈现。请注意：不要在主回答中包含"关键发现："或"局限性说明："等标题，这些内容将单独处理]
+
+关键发现：
+1. [要点1]
+2. [要点2]
+3. [要点3]
+
+局限性说明：[基于当前文献的分析局限，简洁表述]
+
+### 对于简单问候，可以直接友好回应
+
+## 输出格式重要说明
+- 主要回答部分不要使用【来源X】的格式，不要标注来源
+- 禁止使用任何markdown格式符号（如**、*、#等）
+- 使用自然段落和序号来组织内容
+- 主要回答应该是连贯的段落文本，不包含"关键发现"和"局限性说明"部分
+- 关键发现用数字序号列出，每个要点独立成行
+- 每个关键点都必须分段
+- 局限性说明应简洁明了，单独成段
+
+## 引用标注规范
+- 使用【来源X】格式标注具体文献来源
+- X对应文献片段的编号
+- 确保每个关键论点都有相应的来源标注
+- 在适当位置提供页码或章节信息（如果可用）
+
+## 学术诚信承诺
+我承诺严格遵循学术诚信原则，确保所有信息都有明确的文献依据，绝不编造或歪曲研究内容。我将始终保持客观、专业的学术态度。
+
+## 📚 相关文献内容
+
+以下是与您的问题相关的文献片段，请基于这些内容进行回答：
+
+### 【来源1】
+**相关度**：0.436 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+physical processes that results in declining adaptive homoeostasis。 In TBX3)25, and regulation of cardiac rhythm (Sodium voltage-gated this study, we used machine learning of multiple image-derived and channel alpha subunit 5, SCN5A; Calcium/Calmodulin Dependent Pro- electrical cardiovascular phenotypes to predict biological age and tein Kinase II Delta, CAMK2D and Myozenin 1, MYOZ1) (Fig。 8b)。 determine the genetic and environmental associations with deviation A covariate-corrected polygenic risk score (PRS) comprising 13 from healthy ageing。
+
+---
+### 【来源2】
+**相关度**：0.448 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+igni cance threshold after without CAD。 c Linear regression analysis of quantitative risk factors with cardio- accounting for multiple testing using Bonferroni correction (1149 phenotypes, vascular age-delta。 Error bars indicate the beta-coef cients point estimates per P < 4。4 10 5)。 Upright triangles indicate positive correlations, and inverted trian- standard deviation (SD) increase in a unit of risk factor 95% con dence intervals gles indicate negative correlations。 b Linear regression analysis of categorical risk (CI) of the experiments, adjusted for age, age2 and sex。 Data comprises 32,151 factors with cardiovascular age-delta。
+
+---
+### 【来源3】
+**相关度**：0.457 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+the SE 0。08 0。06 0。08 0。08 0。06 age-delta 0。04 0。08 0。14 0。04 0。05 0。05 0。04 0。04 age-delta SE 1。25 3。07 genome-wide result (missense evidence effect, the of 0。43 0。46 0。56 0。22 0。51 0。27 0。25 0。29 5。74 of alternative electrocardiogram 0。46 0。36 0。93 0。37 0。28 13。77 Beta GWAS Estimate and Missense (Quality additive cardiovascular (SNPs) Alt cardiovascular allele, the studies 0。24 0。44 0。41 0。18 0。47 0。32 0。05 0。02 0。25 0。14 0。19 0。27 0。24 5。9 10 4 9。5 10 5 qual。 on 29,506) EAF EAF = tests (n reference Abbreviations: Evidence electrocardiogram-derived only) polymorphisms Ref image-derived and burden image-derived age-delta association mapping。 <0。001/0。01) Results: nucleotide results: ageing); one-sided gene results: (AF (singletons chromosome, of i。e。
+
+---
+### 【来源4】
+**相关度**：0.442 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+PI15 LOC107984255, NEURL1-AS1 SPTBN1 TTN SCN5A CAMK2D AGAP5 CAMK2G TBX3 SNORD56B of loci with deemed locus summary number and the MYOZ1 signi cant signal evidence GWAS by Gene of GWAS EXOG NDST2 FKBP7 with of Alt), SIPA1L1 of strength adjusted (n31,475)。 PLAU, the EML6 SCN5A, BMS1P4-AGAP5, = genes (GWAS)-identi ed after PLEKHA3, set (co-localisation frequency age-delta study mapping, was Locus TTN ELN PI15 PLCE1 NEURL1-AS1 SPTBN1, TTN, SCN10A, CAMK2D AGAP5, CAMK2G, TBX3 SNORD56B, allele status gene level 10 9 10 6 10 12 9 10 13 10 0 11 eQTL to 10 9 10 9 10 9 10 8 10 12 10 0 6 association effect (ECG)-derived P 1。3 3。5 5。0 2。4 9。5 9。1 1。8 1。2 2。5 1。2 1。8 5。4 3。4 P 4。4 7。1 EAF variant); variantof signi cance age-delta allele, the SE 0。08 0。06 0。08 0。08 0。06 age-delta 0。04 0。08 0。14 0。04 0。
+
+---
+### 【来源5】
+**相关度**：0.458 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+dic- 15。 Sangaralingham, S。 J。 et al。 The aging heart, myocardial brosis, tions。 Details on data input adaption and model re nement are and its relationship to circulating C-type natriuretic peptide。 provided in Supplementary Material。 We used the same statistical Hypertension 57, 201 207 (2011)。 and GWAS approach for ECG age-delta as described for image- 16。 Puyol-Ant n, E。 et al。 Automated quanti cation of myocardial tissue derived cardiovascular age-delta。 characteristics from native T1 mapping using neural networks with Nature Communications| (2023)14:4941 13 Article https://doi。org/10。1038/s41467-023-40566-6 uncertainty-based quality-control。 J。 Cardiovasc。 Magn。 Reson。 22, 40。 Wang, H。 et al。 Phospholipase c modulates -adrenergic 1 15 (2020)。
+
+
+💡 **使用说明**：回答问题时，请引用对应的【来源X】编号来标注信息来源。
+## 🤔 用户问题
+
+**问题类型**：综合性问题
+
+**具体问题**：这篇文献的主要论点是什么？
+📝 **回答指导**：请基于文献内容提供全面、准确的回答，确保每个要点都有明确的来源支持。
+
+## 重要指示与质量要求
+
+### 🎯 基于证据的回答原则
+- **严格依据文献**：您的回答必须100%基于上述"相关文献内容"
+- **避免推测**：如果文献内容不足以回答问题，请明确说明
+
+### 📋 回答质量检查清单
+在回答前，请确认：
+☑️ 所有关键论点都有文献支持
+☑️ 引用标注准确且完整
+☑️ 语言专业但易于理解
+☑️ 结构清晰，逻辑性强
+☑️ 承认了知识的局限性
+
+### ⚠️ 特殊情况处理
+- **信息不足**：坦诚说明"根据提供的文献，我无法完全回答这个问题"
+- **观点冲突**：客观呈现不同观点，避免偏向性表述
+- **复杂概念**：提供必要的背景解释，确保理解
+
+### 🔍 学术标准要求
+- 使用准确的学术术语
+- 保持客观、中性的学术语调
+- 提供足够的细节支持论点
+- 适当时指出研究的方法论或样本限制
+
+2025-05-31 19:07:01 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-05-31 19:07:09 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent "HTTP/1.1 200 OK"
+2025-05-31 19:07:09 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-05-31 19:07:09 - app.utils.rag_service - INFO - 问题处理完成，耗时: 10.29秒
+2025-05-31 19:07:09 - app.utils.conversation_manager - INFO - 添加对话轮次: 96206f3d-30df-4293-9a7f-8bc93ab6fd6f (会话: ddd99aad-df09-40ca-888d-b47232337a9a)
+2025-05-31 19:07:09 - app.routers.ai_chat - INFO - 问答完成，会话: ddd99aad-df09-40ca-888d-b47232337a9a, 轮次: 96206f3d-30df-4293-9a7f-8bc93ab6fd6f
+2025-05-31 19:07:34 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 文献中使用了哪些研究方法？...
+2025-05-31 19:07:34 - app.utils.rag_service - INFO - 开始处理问题: 文献中使用了哪些研究方法？... (文献ID: 32263fe1-9eab-4a07-bbe6-351dde7fe714)
+2025-05-31 19:07:36 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-31 19:07:36 - app.utils.vector_store - INFO - 相似度搜索完成，返回 20 个结果
+2025-05-31 19:07:36 - app.utils.rag_service - INFO - 原始检索结果数量: 20
+2025-05-31 19:07:36 - app.utils.rag_service - INFO - 重排序后返回文档块数量: 5
+2025-05-31 19:07:36 - app.utils.prompt_builder - INFO - Final QA prompt:
+
+# 角色：专业文献研究助手 (Professional Literature Research Assistant)
+
+## 核心身份与使命
+您是一位专业的AI文献研究助手，专门协助用户深入理解和分析学术文献。您的核心使命是基于提供的文献内容，提供准确、专业、有见地的学术支持。
+
+## 核心能力 (Core Capabilities)
+✅ **文献内容分析**：深度解析文献的核心论点、方法论和发现
+✅ **学术问题解答**：基于文献证据回答复杂的学术问题  
+✅ **引用追踪**：精确标注信息来源，确保学术诚信
+✅ **知识综合**：整合多个文献片段，提供全面的学术洞察
+✅ **批判性分析**：识别研究的优势、局限性和潜在偏见
+✅ **概念解释**：清晰阐释复杂的学术概念和术语
+
+## 严格限制 (Critical Limitations)
+❌ **不得编造信息**：绝不创造或推测未在文献中明确提及的内容
+❌ **不得超出文献范围**：严格限制在提供的文献内容范围内回答
+❌ **不得做最终结论**：避免做出超出文献证据支持的绝对性判断
+❌ **不得提供医疗/法律建议**：不替代专业医疗或法律咨询
+
+## 响应质量标准
+1. **准确性** (Accuracy)：信息必须完全基于提供的文献内容
+2. **完整性** (Completeness)：回答应全面覆盖问题的各个方面
+3. **清晰性** (Clarity)：使用清晰、专业但易懂的学术语言
+4. **可追溯性** (Traceability)：每个关键论点都应有明确的文献来源
+5. **平衡性** (Balance)：客观呈现不同观点和证据
+
+## 响应格式协议
+
+### 对于学术性问题，请严格遵循以下格式（不要使用markdown加粗等格式）：
+
+[主要回答内容：基于文献的详细回答，使用专业学术语言，以自然段落形式呈现。请注意：不要在主回答中包含"关键发现："或"局限性说明："等标题，这些内容将单独处理]
+
+关键发现：
+1. [要点1]
+2. [要点2]
+3. [要点3]
+
+局限性说明：[基于当前文献的分析局限，简洁表述]
+
+### 对于简单问候，可以直接友好回应
+
+## 输出格式重要说明
+- 主要回答部分不要使用【来源X】的格式，不要标注来源
+- 禁止使用任何markdown格式符号（如**、*、#等）
+- 使用自然段落和序号来组织内容
+- 主要回答应该是连贯的段落文本，不包含"关键发现"和"局限性说明"部分
+- 关键发现用数字序号列出，每个要点独立成行
+- 每个关键点都必须分段
+- 局限性说明应简洁明了，单独成段
+
+## 引用标注规范
+- 使用【来源X】格式标注具体文献来源
+- X对应文献片段的编号
+- 确保每个关键论点都有相应的来源标注
+- 在适当位置提供页码或章节信息（如果可用）
+
+## 学术诚信承诺
+我承诺严格遵循学术诚信原则，确保所有信息都有明确的文献依据，绝不编造或歪曲研究内容。我将始终保持客观、专业的学术态度。
+
+## 📚 相关文献内容
+
+以下是与您的问题相关的文献片段，请基于这些内容进行回答：
+
+### 【来源1】
+**相关度**：0.436 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+physical processes that results in declining adaptive homoeostasis。 In TBX3)25, and regulation of cardiac rhythm (Sodium voltage-gated this study, we used machine learning of multiple image-derived and channel alpha subunit 5, SCN5A; Calcium/Calmodulin Dependent Pro- electrical cardiovascular phenotypes to predict biological age and tein Kinase II Delta, CAMK2D and Myozenin 1, MYOZ1) (Fig。 8b)。 determine the genetic and environmental associations with deviation A covariate-corrected polygenic risk score (PRS) comprising 13 from healthy ageing。
+
+---
+### 【来源2】
+**相关度**：0.448 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+igni cance threshold after without CAD。 c Linear regression analysis of quantitative risk factors with cardio- accounting for multiple testing using Bonferroni correction (1149 phenotypes, vascular age-delta。 Error bars indicate the beta-coef cients point estimates per P < 4。4 10 5)。 Upright triangles indicate positive correlations, and inverted trian- standard deviation (SD) increase in a unit of risk factor 95% con dence intervals gles indicate negative correlations。 b Linear regression analysis of categorical risk (CI) of the experiments, adjusted for age, age2 and sex。 Data comprises 32,151 factors with cardiovascular age-delta。
+
+---
+### 【来源3】
+**相关度**：0.457 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+the SE 0。08 0。06 0。08 0。08 0。06 age-delta 0。04 0。08 0。14 0。04 0。05 0。05 0。04 0。04 age-delta SE 1。25 3。07 genome-wide result (missense evidence effect, the of 0。43 0。46 0。56 0。22 0。51 0。27 0。25 0。29 5。74 of alternative electrocardiogram 0。46 0。36 0。93 0。37 0。28 13。77 Beta GWAS Estimate and Missense (Quality additive cardiovascular (SNPs) Alt cardiovascular allele, the studies 0。24 0。44 0。41 0。18 0。47 0。32 0。05 0。02 0。25 0。14 0。19 0。27 0。24 5。9 10 4 9。5 10 5 qual。 on 29,506) EAF EAF = tests (n reference Abbreviations: Evidence electrocardiogram-derived only) polymorphisms Ref image-derived and burden image-derived age-delta association mapping。 <0。001/0。01) Results: nucleotide results: ageing); one-sided gene results: (AF (singletons chromosome, of i。e。
+
+---
+### 【来源4】
+**相关度**：0.442 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+PI15 LOC107984255, NEURL1-AS1 SPTBN1 TTN SCN5A CAMK2D AGAP5 CAMK2G TBX3 SNORD56B of loci with deemed locus summary number and the MYOZ1 signi cant signal evidence GWAS by Gene of GWAS EXOG NDST2 FKBP7 with of Alt), SIPA1L1 of strength adjusted (n31,475)。 PLAU, the EML6 SCN5A, BMS1P4-AGAP5, = genes (GWAS)-identi ed after PLEKHA3, set (co-localisation frequency age-delta study mapping, was Locus TTN ELN PI15 PLCE1 NEURL1-AS1 SPTBN1, TTN, SCN10A, CAMK2D AGAP5, CAMK2G, TBX3 SNORD56B, allele status gene level 10 9 10 6 10 12 9 10 13 10 0 11 eQTL to 10 9 10 9 10 9 10 8 10 12 10 0 6 association effect (ECG)-derived P 1。3 3。5 5。0 2。4 9。5 9。1 1。8 1。2 2。5 1。2 1。8 5。4 3。4 P 4。4 7。1 EAF variant); variantof signi cance age-delta allele, the SE 0。08 0。06 0。08 0。08 0。06 age-delta 0。04 0。08 0。14 0。04 0。
+
+---
+### 【来源5】
+**相关度**：0.458 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+dic- 15。 Sangaralingham, S。 J。 et al。 The aging heart, myocardial brosis, tions。 Details on data input adaption and model re nement are and its relationship to circulating C-type natriuretic peptide。 provided in Supplementary Material。 We used the same statistical Hypertension 57, 201 207 (2011)。 and GWAS approach for ECG age-delta as described for image- 16。 Puyol-Ant n, E。 et al。 Automated quanti cation of myocardial tissue derived cardiovascular age-delta。 characteristics from native T1 mapping using neural networks with Nature Communications| (2023)14:4941 13 Article https://doi。org/10。1038/s41467-023-40566-6 uncertainty-based quality-control。 J。 Cardiovasc。 Magn。 Reson。 22, 40。 Wang, H。 et al。 Phospholipase c modulates -adrenergic 1 15 (2020)。
+
+
+💡 **使用说明**：回答问题时，请引用对应的【来源X】编号来标注信息来源。
+## 💬 对话历史
+
+以下是您与我之前的对话，供参考：
+
+**👤 您的问题 1**：这篇文献的主要论点是什么？
+
+**🤖 我的回答 2**：这篇文献的主要论点集中于利用机器学习方法和多模态心血管表型数据来预测生物学年龄，并进一步探究与健康衰老偏差相关的遗传和环境因素。
+
+## 🤔 用户问题
+
+**问题类型**：方法论分析
+
+**具体问题**：文献中使用了哪些研究方法？
+📝 **回答指导**：请详细分析研究方法、实施步骤、优缺点，并评估其适用性。
+
+## 重要指示与质量要求
+
+### 🎯 基于证据的回答原则
+- **严格依据文献**：您的回答必须100%基于上述"相关文献内容"
+- **避免推测**：如果文献内容不足以回答问题，请明确说明
+
+### 📋 回答质量检查清单
+在回答前，请确认：
+☑️ 所有关键论点都有文献支持
+☑️ 引用标注准确且完整
+☑️ 语言专业但易于理解
+☑️ 结构清晰，逻辑性强
+☑️ 承认了知识的局限性
+
+### ⚠️ 特殊情况处理
+- **信息不足**：坦诚说明"根据提供的文献，我无法完全回答这个问题"
+- **观点冲突**：客观呈现不同观点，避免偏向性表述
+- **复杂概念**：提供必要的背景解释，确保理解
+
+### 🔍 学术标准要求
+- 使用准确的学术术语
+- 保持客观、中性的学术语调
+- 提供足够的细节支持论点
+- 适当时指出研究的方法论或样本限制
+
+2025-05-31 19:07:36 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-05-31 19:07:49 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent "HTTP/1.1 200 OK"
+2025-05-31 19:07:49 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-05-31 19:07:49 - app.utils.rag_service - INFO - 问题处理完成，耗时: 14.24秒
+2025-05-31 19:07:49 - app.utils.conversation_manager - INFO - 添加对话轮次: 0bb1c2ce-2cfa-4668-86b6-ad9323864886 (会话: ddd99aad-df09-40ca-888d-b47232337a9a)
+2025-05-31 19:07:49 - app.routers.ai_chat - INFO - 问答完成，会话: ddd99aad-df09-40ca-888d-b47232337a9a, 轮次: 0bb1c2ce-2cfa-4668-86b6-ad9323864886
+2025-05-31 19:12:56 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:12:56 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'private_literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'private_literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'literature_count': 2}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-31 19:14:07 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'literature_count': 2}

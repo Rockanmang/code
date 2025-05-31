@@ -60,17 +60,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# Uploads directory (ignore actual uploaded files)
-uploads/*/
-!uploads/.gitkeep
 
-
-
-# AI相关文件
-vector_db/
-*.pkl
-*.index
-*.faiss
 
 # 测试结果
 test_results*.json
