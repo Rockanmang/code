@@ -2334,7 +2334,7 @@ const App = ()=>{
                                     columnNumber: 15
                                 }, this);
                             })(),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$re$2d$resizable$2f$lib$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Resizable"], {
+                            false && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$re$2d$resizable$2f$lib$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Resizable"], {
                                 defaultSize: {
                                     width: '100%',
                                     height: 320
@@ -2367,12 +2367,12 @@ const App = ()=>{
                                                                 className: "w-4 h-4 text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1175,
+                                                                lineNumber: 1177,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1174,
+                                                            lineNumber: 1176,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2382,7 +2382,7 @@ const App = ()=>{
                                                                     children: "全局AI研究助手"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1178,
+                                                                    lineNumber: 1180,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2390,19 +2390,19 @@ const App = ()=>{
                                                                     children: "支持多文献比较、跨文献分析等高级功能"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1179,
+                                                                    lineNumber: 1181,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1177,
+                                                            lineNumber: 1179,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1173,
+                                                    lineNumber: 1175,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2418,7 +2418,7 @@ const App = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1186,
+                                                            lineNumber: 1188,
                                                             columnNumber: 21
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
                                                             variant: "outline",
@@ -2429,7 +2429,7 @@ const App = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1190,
+                                                            lineNumber: 1192,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2449,24 +2449,24 @@ const App = ()=>{
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1208,
+                                                                lineNumber: 1210,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1194,
+                                                            lineNumber: 1196,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1184,
+                                                    lineNumber: 1186,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1172,
+                                            lineNumber: 1174,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2480,12 +2480,12 @@ const App = ()=>{
                                                             className: "w-3 h-3 text-white"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1216,
+                                                            lineNumber: 1218,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1215,
+                                                        lineNumber: 1217,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2496,7 +2496,7 @@ const App = ()=>{
                                                                 children: "🤖 您好！我是您的全局AI研究助手，可以帮助您："
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1219,
+                                                                lineNumber: 1221,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2509,14 +2509,14 @@ const App = ()=>{
                                                                                 className: "w-2 h-2 bg-blue-400 rounded-full mr-2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1224,
+                                                                                lineNumber: 1226,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             "比较多篇文献的异同点"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                        lineNumber: 1223,
+                                                                        lineNumber: 1225,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2526,14 +2526,14 @@ const App = ()=>{
                                                                                 className: "w-2 h-2 bg-purple-400 rounded-full mr-2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1228,
+                                                                                lineNumber: 1230,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             "总结当前文献库的研究趋势"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                        lineNumber: 1227,
+                                                                        lineNumber: 1229,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2543,14 +2543,14 @@ const App = ()=>{
                                                                                 className: "w-2 h-2 bg-green-400 rounded-full mr-2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1232,
+                                                                                lineNumber: 1234,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             "查找相关研究方法和技术"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                        lineNumber: 1231,
+                                                                        lineNumber: 1233,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2560,37 +2560,37 @@ const App = ()=>{
                                                                                 className: "w-2 h-2 bg-orange-400 rounded-full mr-2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1236,
+                                                                                lineNumber: 1238,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             "生成研究建议和方向"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                        lineNumber: 1235,
+                                                                        lineNumber: 1237,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1222,
+                                                                lineNumber: 1224,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1218,
+                                                        lineNumber: 1220,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1214,
+                                                lineNumber: 1216,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1213,
+                                            lineNumber: 1215,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2611,7 +2611,7 @@ const App = ()=>{
                                                     disabled: isAIThinking
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1245,
+                                                    lineNumber: 1247,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2624,7 +2624,7 @@ const App = ()=>{
                                                                 className: "animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1266,
+                                                                lineNumber: 1268,
                                                                 columnNumber: 23
                                                             }, this),
                                                             "思考中..."
@@ -2635,7 +2635,7 @@ const App = ()=>{
                                                                 className: "w-4 h-4 mr-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1271,
+                                                                lineNumber: 1273,
                                                                 columnNumber: 23
                                                             }, this),
                                                             "发送"
@@ -2643,13 +2643,13 @@ const App = ()=>{
                                                     }, void 0, true)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1259,
+                                                    lineNumber: 1261,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1244,
+                                            lineNumber: 1246,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2673,23 +2673,23 @@ const App = ()=>{
                                                     children: question
                                                 }, index, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1286,
+                                                    lineNumber: 1288,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1279,
+                                            lineNumber: 1281,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1171,
+                                    lineNumber: 1173,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/main/page.tsx",
-                                lineNumber: 1158,
+                                lineNumber: 1160,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -2718,12 +2718,12 @@ const App = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/main/page.tsx",
-                                lineNumber: 1312,
+                                lineNumber: 1315,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1311,
+                            lineNumber: 1314,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2736,7 +2736,7 @@ const App = ()=>{
                                             children: "文献标题（可选）"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1318,
+                                            lineNumber: 1321,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -2748,13 +2748,13 @@ const App = ()=>{
                                             className: "w-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1319,
+                                            lineNumber: 1322,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1317,
+                                    lineNumber: 1320,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2772,12 +2772,12 @@ const App = ()=>{
                                                     className: "w-8 h-8 text-green-600"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1346,
+                                                    lineNumber: 1349,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1345,
+                                                lineNumber: 1348,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2787,7 +2787,7 @@ const App = ()=>{
                                                         children: selectedFile.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1349,
+                                                        lineNumber: 1352,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2795,13 +2795,13 @@ const App = ()=>{
                                                         children: formatFileSize(selectedFile.size)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1350,
+                                                        lineNumber: 1353,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1348,
+                                                lineNumber: 1351,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2815,20 +2815,20 @@ const App = ()=>{
                                                         className: "w-4 h-4 mr-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1359,
+                                                        lineNumber: 1362,
                                                         columnNumber: 21
                                                     }, this),
                                                     "移除文件"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1352,
+                                                lineNumber: 1355,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/main/page.tsx",
-                                        lineNumber: 1344,
+                                        lineNumber: 1347,
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-3",
@@ -2839,12 +2839,12 @@ const App = ()=>{
                                                     className: "w-12 h-12"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1366,
+                                                    lineNumber: 1369,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1365,
+                                                lineNumber: 1368,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2854,7 +2854,7 @@ const App = ()=>{
                                                         children: "拖拽文件到此处或点击选择"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1369,
+                                                        lineNumber: 1372,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2862,13 +2862,13 @@ const App = ()=>{
                                                         children: "支持 PDF、Word 格式，最大 50MB"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1370,
+                                                        lineNumber: 1373,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1368,
+                                                lineNumber: 1371,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2880,7 +2880,7 @@ const App = ()=>{
                                                 disabled: isUploading
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1372,
+                                                lineNumber: 1375,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2890,18 +2890,18 @@ const App = ()=>{
                                                 children: "选择文件"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1380,
+                                                lineNumber: 1383,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/main/page.tsx",
-                                        lineNumber: 1364,
+                                        lineNumber: 1367,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1330,
+                                    lineNumber: 1333,
                                     columnNumber: 13
                                 }, this),
                                 isUploading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2915,7 +2915,7 @@ const App = ()=>{
                                                     children: "上传进度"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1395,
+                                                    lineNumber: 1398,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2926,13 +2926,13 @@ const App = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1396,
+                                                    lineNumber: 1399,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1394,
+                                            lineNumber: 1397,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2944,24 +2944,24 @@ const App = ()=>{
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1399,
+                                                lineNumber: 1402,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1398,
+                                            lineNumber: 1401,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1393,
+                                    lineNumber: 1396,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1315,
+                            lineNumber: 1318,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -2975,7 +2975,7 @@ const App = ()=>{
                                     children: "取消"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1409,
+                                    lineNumber: 1412,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2985,24 +2985,24 @@ const App = ()=>{
                                     children: isUploading ? '上传中...' : '确认上传'
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1417,
+                                    lineNumber: 1420,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1408,
+                            lineNumber: 1411,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/main/page.tsx",
-                    lineNumber: 1310,
+                    lineNumber: 1313,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/main/page.tsx",
-                lineNumber: 1309,
+                lineNumber: 1312,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -3017,12 +3017,12 @@ const App = ()=>{
                                 children: "确认删除文献"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/main/page.tsx",
-                                lineNumber: 1432,
+                                lineNumber: 1435,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1431,
+                            lineNumber: 1434,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3038,14 +3038,14 @@ const App = ()=>{
                                                     children: "警告："
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1438,
+                                                    lineNumber: 1441,
                                                     columnNumber: 17
                                                 }, this),
                                                 "此操作将删除以下文献，删除后可以恢复。"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1437,
+                                            lineNumber: 1440,
                                             columnNumber: 15
                                         }, this),
                                         literatureToDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3057,14 +3057,14 @@ const App = ()=>{
                                                             children: "标题："
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1442,
+                                                            lineNumber: 1445,
                                                             columnNumber: 22
                                                         }, this),
                                                         literatureToDelete.title
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1442,
+                                                    lineNumber: 1445,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3073,26 +3073,26 @@ const App = ()=>{
                                                             children: "文件名："
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1443,
+                                                            lineNumber: 1446,
                                                             columnNumber: 22
                                                         }, this),
                                                         literatureToDelete.filename
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1443,
+                                                    lineNumber: 1446,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1441,
+                                            lineNumber: 1444,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1436,
+                                    lineNumber: 1439,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3102,7 +3102,7 @@ const App = ()=>{
                                             children: "删除原因（可选）"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1449,
+                                            lineNumber: 1452,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -3114,19 +3114,19 @@ const App = ()=>{
                                             className: "w-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1452,
+                                            lineNumber: 1455,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1448,
+                                    lineNumber: 1451,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1435,
+                            lineNumber: 1438,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -3140,7 +3140,7 @@ const App = ()=>{
                                     children: "取消"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1464,
+                                    lineNumber: 1467,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3150,24 +3150,24 @@ const App = ()=>{
                                     children: isDeleting ? '删除中...' : '确认删除'
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1472,
+                                    lineNumber: 1475,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1463,
+                            lineNumber: 1466,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/main/page.tsx",
-                    lineNumber: 1430,
+                    lineNumber: 1433,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/main/page.tsx",
-                lineNumber: 1429,
+                lineNumber: 1432,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -3184,14 +3184,14 @@ const App = ()=>{
                                         className: "w-5 h-5 text-purple-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/main/page.tsx",
-                                        lineNumber: 1488,
+                                        lineNumber: 1491,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: "AI研究助手"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/main/page.tsx",
-                                        lineNumber: 1489,
+                                        lineNumber: 1492,
                                         columnNumber: 15
                                     }, this),
                                     aiAssistant.selectedLiterature && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -3200,18 +3200,18 @@ const App = ()=>{
                                         children: aiAssistant.selectedLiterature.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/main/page.tsx",
-                                        lineNumber: 1491,
+                                        lineNumber: 1494,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/main/page.tsx",
-                                lineNumber: 1487,
+                                lineNumber: 1490,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1486,
+                            lineNumber: 1489,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3231,7 +3231,7 @@ const App = ()=>{
                                                             children: "对话历史"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1503,
+                                                            lineNumber: 1506,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3244,13 +3244,13 @@ const App = ()=>{
                                                             children: aiAssistant.showHistory ? '隐藏' : '显示'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1504,
+                                                            lineNumber: 1507,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1502,
+                                                    lineNumber: 1505,
                                                     columnNumber: 17
                                                 }, this),
                                                 aiAssistant.showHistory && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$scroll$2d$area$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollArea"], {
@@ -3271,7 +3271,7 @@ const App = ()=>{
                                                                                     children: session.preview
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                    lineNumber: 1526,
+                                                                                    lineNumber: 1529,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3279,7 +3279,7 @@ const App = ()=>{
                                                                                     children: formatTime(session.last_activity)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                    lineNumber: 1527,
+                                                                                    lineNumber: 1530,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3290,13 +3290,13 @@ const App = ()=>{
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                    lineNumber: 1528,
+                                                                                    lineNumber: 1531,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                            lineNumber: 1525,
+                                                                            lineNumber: 1528,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3311,39 +3311,39 @@ const App = ()=>{
                                                                                 className: "w-3 h-3"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1539,
+                                                                                lineNumber: 1542,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                            lineNumber: 1530,
+                                                                            lineNumber: 1533,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1524,
+                                                                    lineNumber: 1527,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, session.session_id, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1517,
+                                                                lineNumber: 1520,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1515,
+                                                        lineNumber: 1518,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1514,
+                                                    lineNumber: 1517,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1501,
+                                            lineNumber: 1504,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3356,14 +3356,14 @@ const App = ()=>{
                                                             className: "w-4 h-4 mr-1 text-yellow-500"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1552,
+                                                            lineNumber: 1555,
                                                             columnNumber: 19
                                                         }, this),
                                                         "推荐问题"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1551,
+                                                    lineNumber: 1554,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$scroll$2d$area$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollArea"], {
@@ -3376,29 +3376,29 @@ const App = ()=>{
                                                                 children: question
                                                             }, index, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1558,
+                                                                lineNumber: 1561,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1556,
+                                                        lineNumber: 1559,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1555,
+                                                    lineNumber: 1558,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1550,
+                                            lineNumber: 1553,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1500,
+                                    lineNumber: 1503,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3419,7 +3419,7 @@ const App = ()=>{
                                                                     className: "animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600 mx-auto mb-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1580,
+                                                                    lineNumber: 1583,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3427,18 +3427,18 @@ const App = ()=>{
                                                                     children: "加载中..."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1581,
+                                                                    lineNumber: 1584,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1579,
+                                                            lineNumber: 1582,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1578,
+                                                        lineNumber: 1581,
                                                         columnNumber: 23
                                                     }, this) : aiAssistant.conversation.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center justify-center h-full min-h-[300px]",
@@ -3449,7 +3449,7 @@ const App = ()=>{
                                                                     className: "w-12 h-12 text-gray-300 mx-auto mb-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1587,
+                                                                    lineNumber: 1590,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3457,7 +3457,7 @@ const App = ()=>{
                                                                     children: "开始与AI助手对话"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1588,
+                                                                    lineNumber: 1591,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3465,18 +3465,18 @@ const App = ()=>{
                                                                     children: "询问关于这篇文献的任何问题"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1589,
+                                                                    lineNumber: 1592,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1586,
+                                                            lineNumber: 1589,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1585,
+                                                        lineNumber: 1588,
                                                         columnNumber: 23
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                         children: [
@@ -3493,7 +3493,7 @@ const App = ()=>{
                                                                                         children: turn.question
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1599,
+                                                                                        lineNumber: 1602,
                                                                                         columnNumber: 33
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3501,18 +3501,18 @@ const App = ()=>{
                                                                                         children: formatTime(turn.timestamp)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1600,
+                                                                                        lineNumber: 1603,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1598,
+                                                                                lineNumber: 1601,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                            lineNumber: 1597,
+                                                                            lineNumber: 1600,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3527,12 +3527,12 @@ const App = ()=>{
                                                                                             children: turn.answer
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                            lineNumber: 1608,
+                                                                                            lineNumber: 1611,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1607,
+                                                                                        lineNumber: 1610,
                                                                                         columnNumber: 33
                                                                                     }, this),
                                                                                     turn.key_findings && turn.key_findings.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3552,7 +3552,7 @@ const App = ()=>{
                                                                                                                         children: "🔍"
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1618,
+                                                                                                                        lineNumber: 1621,
                                                                                                                         columnNumber: 45
                                                                                                                     }, this),
                                                                                                                     "关键发现 (",
@@ -3561,7 +3561,7 @@ const App = ()=>{
                                                                                                                 ]
                                                                                                             }, void 0, true, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1617,
+                                                                                                                lineNumber: 1620,
                                                                                                                 columnNumber: 43
                                                                                                             }, this),
                                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3569,18 +3569,18 @@ const App = ()=>{
                                                                                                                 children: "▼"
                                                                                                             }, void 0, false, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1621,
+                                                                                                                lineNumber: 1624,
                                                                                                                 columnNumber: 43
                                                                                                             }, this)
                                                                                                         ]
                                                                                                     }, void 0, true, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1616,
+                                                                                                        lineNumber: 1619,
                                                                                                         columnNumber: 41
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                                    lineNumber: 1615,
+                                                                                                    lineNumber: 1618,
                                                                                                     columnNumber: 39
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$collapsible$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CollapsibleContent"], {
@@ -3599,7 +3599,7 @@ const App = ()=>{
                                                                                                                             ]
                                                                                                                         }, void 0, true, {
                                                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                            lineNumber: 1629,
+                                                                                                                            lineNumber: 1632,
                                                                                                                             columnNumber: 49
                                                                                                                         }, this),
                                                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3607,39 +3607,39 @@ const App = ()=>{
                                                                                                                             children: finding
                                                                                                                         }, void 0, false, {
                                                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                            lineNumber: 1630,
+                                                                                                                            lineNumber: 1633,
                                                                                                                             columnNumber: 49
                                                                                                                         }, this)
                                                                                                                     ]
                                                                                                                 }, idx, true, {
                                                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                    lineNumber: 1628,
+                                                                                                                    lineNumber: 1631,
                                                                                                                     columnNumber: 47
                                                                                                                 }, this))
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                                            lineNumber: 1626,
+                                                                                                            lineNumber: 1629,
                                                                                                             columnNumber: 43
                                                                                                         }, this)
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1625,
+                                                                                                        lineNumber: 1628,
                                                                                                         columnNumber: 41
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                                    lineNumber: 1624,
+                                                                                                    lineNumber: 1627,
                                                                                                     columnNumber: 39
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                            lineNumber: 1614,
+                                                                                            lineNumber: 1617,
                                                                                             columnNumber: 37
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1613,
+                                                                                        lineNumber: 1616,
                                                                                         columnNumber: 35
                                                                                     }, this),
                                                                                     (turn.limitations && turn.limitations.trim() || turn.sources && turn.sources.length > 0) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3659,7 +3659,7 @@ const App = ()=>{
                                                                                                                         children: "⚠️"
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1647,
+                                                                                                                        lineNumber: 1650,
                                                                                                                         columnNumber: 45
                                                                                                                     }, this),
                                                                                                                     "局限性与来源",
@@ -3672,13 +3672,13 @@ const App = ()=>{
                                                                                                                         ]
                                                                                                                     }, void 0, true, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1650,
+                                                                                                                        lineNumber: 1653,
                                                                                                                         columnNumber: 47
                                                                                                                     }, this)
                                                                                                                 ]
                                                                                                             }, void 0, true, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1646,
+                                                                                                                lineNumber: 1649,
                                                                                                                 columnNumber: 43
                                                                                                             }, this),
                                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3686,18 +3686,18 @@ const App = ()=>{
                                                                                                                 children: "▼"
                                                                                                             }, void 0, false, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1653,
+                                                                                                                lineNumber: 1656,
                                                                                                                 columnNumber: 43
                                                                                                             }, this)
                                                                                                         ]
                                                                                                     }, void 0, true, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1645,
+                                                                                                        lineNumber: 1648,
                                                                                                         columnNumber: 41
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                                    lineNumber: 1644,
+                                                                                                    lineNumber: 1647,
                                                                                                     columnNumber: 39
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$collapsible$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CollapsibleContent"], {
@@ -3712,7 +3712,7 @@ const App = ()=>{
                                                                                                                         children: "局限性说明："
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1661,
+                                                                                                                        lineNumber: 1664,
                                                                                                                         columnNumber: 47
                                                                                                                     }, this),
                                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3720,13 +3720,13 @@ const App = ()=>{
                                                                                                                         children: turn.limitations
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1662,
+                                                                                                                        lineNumber: 1665,
                                                                                                                         columnNumber: 47
                                                                                                                     }, this)
                                                                                                                 ]
                                                                                                             }, void 0, true, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1660,
+                                                                                                                lineNumber: 1663,
                                                                                                                 columnNumber: 45
                                                                                                             }, this),
                                                                                                             turn.sources && turn.sources.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3737,7 +3737,7 @@ const App = ()=>{
                                                                                                                         children: "参考来源："
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1669,
+                                                                                                                        lineNumber: 1672,
                                                                                                                         columnNumber: 47
                                                                                                                     }, this),
                                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3754,7 +3754,7 @@ const App = ()=>{
                                                                                                                                         ]
                                                                                                                                     }, void 0, true, {
                                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                                        lineNumber: 1673,
+                                                                                                                                        lineNumber: 1676,
                                                                                                                                         columnNumber: 53
                                                                                                                                     }, this),
                                                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3766,46 +3766,46 @@ const App = ()=>{
                                                                                                                                         ]
                                                                                                                                     }, void 0, true, {
                                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                                        lineNumber: 1674,
+                                                                                                                                        lineNumber: 1677,
                                                                                                                                         columnNumber: 53
                                                                                                                                     }, this)
                                                                                                                                 ]
                                                                                                                             }, idx, true, {
                                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                                lineNumber: 1672,
+                                                                                                                                lineNumber: 1675,
                                                                                                                                 columnNumber: 51
                                                                                                                             }, this))
                                                                                                                     }, void 0, false, {
                                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                        lineNumber: 1670,
+                                                                                                                        lineNumber: 1673,
                                                                                                                         columnNumber: 47
                                                                                                                     }, this)
                                                                                                                 ]
                                                                                                             }, void 0, true, {
                                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                                lineNumber: 1668,
+                                                                                                                lineNumber: 1671,
                                                                                                                 columnNumber: 45
                                                                                                             }, this)
                                                                                                         ]
                                                                                                     }, void 0, true, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1657,
+                                                                                                        lineNumber: 1660,
                                                                                                         columnNumber: 41
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                                                    lineNumber: 1656,
+                                                                                                    lineNumber: 1659,
                                                                                                     columnNumber: 39
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                            lineNumber: 1643,
+                                                                                            lineNumber: 1646,
                                                                                             columnNumber: 37
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1642,
+                                                                                        lineNumber: 1645,
                                                                                         columnNumber: 35
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3822,7 +3822,7 @@ const App = ()=>{
                                                                                                         ]
                                                                                                     }, void 0, true, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1689,
+                                                                                                        lineNumber: 1692,
                                                                                                         columnNumber: 37
                                                                                                     }, this),
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3833,13 +3833,13 @@ const App = ()=>{
                                                                                                         ]
                                                                                                     }, void 0, true, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1690,
+                                                                                                        lineNumber: 1693,
                                                                                                         columnNumber: 37
                                                                                                     }, this)
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                lineNumber: 1688,
+                                                                                                lineNumber: 1691,
                                                                                                 columnNumber: 35
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3854,12 +3854,12 @@ const App = ()=>{
                                                                                                             className: "w-3 h-3"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                                            lineNumber: 1701,
+                                                                                                            lineNumber: 1704,
                                                                                                             columnNumber: 39
                                                                                                         }, this)
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1695,
+                                                                                                        lineNumber: 1698,
                                                                                                         columnNumber: 37
                                                                                                     }, this),
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3871,41 +3871,41 @@ const App = ()=>{
                                                                                                             className: "w-3 h-3"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                                                            lineNumber: 1709,
+                                                                                                            lineNumber: 1712,
                                                                                                             columnNumber: 39
                                                                                                         }, this)
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                                        lineNumber: 1703,
+                                                                                                        lineNumber: 1706,
                                                                                                         columnNumber: 37
                                                                                                     }, this)
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                                lineNumber: 1694,
+                                                                                                lineNumber: 1697,
                                                                                                 columnNumber: 35
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                                        lineNumber: 1687,
+                                                                                        lineNumber: 1690,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1606,
+                                                                                lineNumber: 1609,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                                            lineNumber: 1605,
+                                                                            lineNumber: 1608,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, turn.turn_id, true, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1595,
+                                                                    lineNumber: 1598,
                                                                     columnNumber: 27
                                                                 }, this)),
                                                             isAIThinking && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3919,7 +3919,7 @@ const App = ()=>{
                                                                                 className: "animate-spin rounded-full h-4 w-4 border-b-2 border-purple-600"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1723,
+                                                                                lineNumber: 1726,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3927,47 +3927,47 @@ const App = ()=>{
                                                                                 children: "AI正在思考..."
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                                lineNumber: 1724,
+                                                                                lineNumber: 1727,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                                        lineNumber: 1722,
+                                                                        lineNumber: 1725,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                                    lineNumber: 1721,
+                                                                    lineNumber: 1724,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1720,
+                                                                lineNumber: 1723,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 id: "chat-bottom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                                lineNumber: 1731,
+                                                                lineNumber: 1734,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/main/page.tsx",
-                                                    lineNumber: 1576,
+                                                    lineNumber: 1579,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1575,
+                                                lineNumber: 1578,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1574,
+                                            lineNumber: 1577,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3990,7 +3990,7 @@ const App = ()=>{
                                                         className: "flex-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1741,
+                                                        lineNumber: 1744,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -4001,46 +4001,46 @@ const App = ()=>{
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/main/page.tsx",
-                                                            lineNumber: 1760,
+                                                            lineNumber: 1763,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/main/page.tsx",
-                                                        lineNumber: 1755,
+                                                        lineNumber: 1758,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/main/page.tsx",
-                                                lineNumber: 1740,
+                                                lineNumber: 1743,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/main/page.tsx",
-                                            lineNumber: 1739,
+                                            lineNumber: 1742,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/main/page.tsx",
-                                    lineNumber: 1572,
+                                    lineNumber: 1575,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/main/page.tsx",
-                            lineNumber: 1498,
+                            lineNumber: 1501,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/main/page.tsx",
-                    lineNumber: 1485,
+                    lineNumber: 1488,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/main/page.tsx",
-                lineNumber: 1484,
+                lineNumber: 1487,
                 columnNumber: 7
             }, this)
         ]

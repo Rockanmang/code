@@ -1155,6 +1155,8 @@ const App: React.FC = () => {
           })()}
 
           {/* 页面底部全局AI助手 */}
+          {/* 暂时隐藏全局AI研究助手 */}
+          {false && (
           <Resizable
             defaultSize={{
               width: '100%',
@@ -1302,6 +1304,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </Resizable>
+          )}
         </main>
       </div>
 

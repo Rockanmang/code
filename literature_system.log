@@ -6835,3 +6835,164 @@ dic- 15。 Sangaralingham, S。 J。 et al。 The aging heart, myocardial brosis
 2025-05-31 16:56:49 - app.utils.rag_service - INFO - 问题处理完成，耗时: 13.80秒
 2025-05-31 16:56:49 - app.utils.conversation_manager - INFO - 添加对话轮次: ea030c8a-5ce6-46b1-b7c7-85d05fa793f0 (会话: a5fbc096-3321-4dfe-83e6-0e4772c68d0e)
 2025-05-31 16:56:49 - app.routers.ai_chat - INFO - 问答完成，会话: a5fbc096-3321-4dfe-83e6-0e4772c68d0e, 轮次: ea030c8a-5ce6-46b1-b7c7-85d05fa793f0
+2025-05-31 17:09:13,720 - app.utils.storage_manager - INFO - ��ʼ���洢���������ϴ���Ŀ¼: uploads
+2025-05-31 17:09:13,721 - app.utils.storage_manager - INFO - ȷ���ϴ���Ŀ¼����: uploads
+2025-05-31 17:09:13,722 - app.utils.storage_manager - INFO - �ϴ���Ŀ¼д��Ȩ������
+2025-05-31 17:09:13,729 - app.utils.cache_manager - INFO - ��ʼ�� embedding �ڴ滺��: maxsize=1000, ttl=3600s
+2025-05-31 17:09:13,729 - app.utils.cache_manager - INFO - ��ʼ�� answer �ڴ滺��: maxsize=500, ttl=1800s
+2025-05-31 17:09:13,729 - app.utils.cache_manager - INFO - ��ʼ�� chunk �ڴ滺��: maxsize=2000, ttl=7200s
+2025-05-31 17:09:13,729 - app.utils.cache_manager - INFO - �����������ʼ�����
+2025-05-31 17:09:14,567 - app.utils.embedding_service - INFO - Google GenAI�ͻ��˳�ʼ���ɹ�
+2025-05-31 17:09:15,136 - app.utils.vector_store - INFO - ChromaDB�ͻ��˳�ʼ���ɹ�������·��: ./vector_db
+2025-05-31 17:09:15,289 - app.utils.rag_service - INFO - Google AI�����ʼ���ɹ���ʹ��ģ��: gemini-2.5-flash-preview-05-20
+2025-05-31 17:09:37 - app.utils.error_handler - INFO - 操作成功: {'operation': 'private_literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'literature_count': 2}
+2025-05-31 17:09:37 - app.utils.error_handler - INFO - 操作成功: {'operation': 'user_groups', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_count': 2}
+2025-05-31 17:09:37 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '362c0ac6-d3f9-4962-87b8-b00175050419', 'literature_count': 1}
+2025-05-31 17:09:37 - app.utils.error_handler - INFO - 操作成功: {'operation': 'literature_list', 'user_id': '5d5cd027-2e0f-4961-aaa0-f673b43e3a0c', 'status': 'success', 'group_id': '7e8f5626-0259-44f7-bcc7-eff24cc01bf9', 'literature_count': 2}
+2025-05-31 17:09:55 - app.routers.ai_chat - INFO - 用户 5d5cd027-2e0f-4961-aaa0-f673b43e3a0c 提问: 这篇文献的主要论点是什么？...
+2025-05-31 17:09:55 - app.utils.conversation_manager - INFO - 创建新会话: 9ce3bd47-94cf-479a-a59f-32ca1c196760
+2025-05-31 17:09:55 - app.utils.rag_service - INFO - 开始处理问题: 这篇文献的主要论点是什么？... (文献ID: cd398a81-238d-4463-87e6-edcbe33a0dbe)
+2025-05-31 17:09:56 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-05-31 17:09:56 - app.utils.vector_store - INFO - 相似度搜索完成，返回 20 个结果
+2025-05-31 17:09:56 - app.utils.rag_service - INFO - 原始检索结果数量: 20
+2025-05-31 17:09:56 - app.utils.rag_service - INFO - 重排序后返回文档块数量: 5
+2025-05-31 17:09:56 - app.utils.prompt_builder - WARNING - Prompt is too long (5408 tokens). Attempting to compress.
+2025-05-31 17:09:56 - app.utils.prompt_builder - INFO - Context truncation: Stopped adding sources. Used 1570 of 2160 allowed tokens
+2025-05-31 17:09:56 - app.utils.prompt_builder - INFO - Compressed prompt. Original tokens: 5408, New tokens: 3211
+2025-05-31 17:09:56 - app.utils.prompt_builder - INFO - Final QA prompt:
+
+# 角色：专业文献研究助手 (Professional Literature Research Assistant)
+
+## 核心身份与使命
+您是一位专业的AI文献研究助手，专门协助用户深入理解和分析学术文献。您的核心使命是基于提供的文献内容，提供准确、专业、有见地的学术支持。
+
+## 核心能力 (Core Capabilities)
+✅ **文献内容分析**：深度解析文献的核心论点、方法论和发现
+✅ **学术问题解答**：基于文献证据回答复杂的学术问题  
+✅ **引用追踪**：精确标注信息来源，确保学术诚信
+✅ **知识综合**：整合多个文献片段，提供全面的学术洞察
+✅ **批判性分析**：识别研究的优势、局限性和潜在偏见
+✅ **概念解释**：清晰阐释复杂的学术概念和术语
+
+## 严格限制 (Critical Limitations)
+❌ **不得编造信息**：绝不创造或推测未在文献中明确提及的内容
+❌ **不得超出文献范围**：严格限制在提供的文献内容范围内回答
+❌ **不得做最终结论**：避免做出超出文献证据支持的绝对性判断
+❌ **不得提供医疗/法律建议**：不替代专业医疗或法律咨询
+
+## 响应质量标准
+1. **准确性** (Accuracy)：信息必须完全基于提供的文献内容
+2. **完整性** (Completeness)：回答应全面覆盖问题的各个方面
+3. **清晰性** (Clarity)：使用清晰、专业但易懂的学术语言
+4. **可追溯性** (Traceability)：每个关键论点都应有明确的文献来源
+5. **平衡性** (Balance)：客观呈现不同观点和证据
+
+## 响应格式协议
+
+### 对于学术性问题，请严格遵循以下格式（不要使用markdown加粗等格式）：
+
+[主要回答内容：基于文献的详细回答，使用专业学术语言，以自然段落形式呈现。请注意：不要在主回答中包含"关键发现："或"局限性说明："等标题，这些内容将单独处理]
+
+关键发现：
+1. [要点1]
+2. [要点2]
+3. [要点3]
+
+局限性说明：[基于当前文献的分析局限，简洁表述]
+
+### 对于简单问候，可以直接友好回应
+
+## 输出格式重要说明
+- 主要回答部分不要使用【来源X】的格式，不要标注来源
+- 禁止使用任何markdown格式符号（如**、*、#等）
+- 使用自然段落和序号来组织内容
+- 主要回答应该是连贯的段落文本，不包含"关键发现"和"局限性说明"部分
+- 关键发现用数字序号列出，每个要点独立成行
+- 每个关键点都必须分段
+- 局限性说明应简洁明了，单独成段
+
+## 引用标注规范
+- 使用【来源X】格式标注具体文献来源
+- X对应文献片段的编号
+- 确保每个关键论点都有相应的来源标注
+- 在适当位置提供页码或章节信息（如果可用）
+
+## 学术诚信承诺
+我承诺严格遵循学术诚信原则，确保所有信息都有明确的文献依据，绝不编造或歪曲研究内容。我将始终保持客观、专业的学术态度。
+
+## 📚 相关文献内容
+
+### 【来源1】
+**相关度**：0.512 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+202358 20250512 天津大学硕士学位论文 2 出针对组成黏着斑复合蛋白的关键力响应蛋白如 Talin等的高亲和力调节分子， 为实现对黏着斑的精准操控提供新手段。 本章将围绕以下几个方面展开 ：首先回 顾细胞迁移和黏着斑的基本机制与关键组成成分， 并 讨论当前调节黏着斑功能的 研究策略（第 1。2节） ；随后，我们 聚焦于 Talin蛋白，分析其结构、功能与力学 特性，并探讨通过设计结合 Talin的短肽分子调控黏着斑功能的可能性（第 1。3 节） ；然后介绍实现该目标所采用的 AI辅助设计工具（第 1。4节） ；最后，为了 推进 AI设计结合物的方法广泛应用，我们提出了采用 SMMS（（Single - molecule - mechanical -selection）来实现一个针对 AI设计的蛋白的高通量筛选平台（ 第1。5 节） 。 1。2 细胞迁移与黏着斑 1。2。1 细胞迁移的机制 细胞迁移是一个由多个步骤协调进行的动态过程， 包括极性建立、 前缘伸展、 黏附形成、 细胞体推进与后缘解离[1]。 迁移的起始阶段， 细胞首先建立前后极性， 并在前缘通过肌动蛋白聚合作用形成伪足（如板状伪足 lamellipodia 和丝状伪足 filopodia） ，由此推动细胞膜向外延展。随后，细胞通过整合素和黏着斑与细胞外 基质形成锚定点，为后续力的传递提供物理基础[20]。细胞体推进主要依赖肌动蛋 白-肌球蛋白（ actomyosin ）系统所产生的收缩力，由 RhoA ROCK通路调控的应 力纤维结构提供牵引力，将胞体向前拉动[21]。与此同时，后缘黏着斑解离，使得 细胞后部能够顺利脱附， 保证迁移效率。 整个过程中， 小 GTP酶家族 （如 Rac1、 Cdc42和RhoA）通过调控肌动蛋白动力学与黏附的形成与解离，确保迁移各阶 段协调推进[22]。
+
+
+
+### 【来源2】
+**相关度**：0.483 | **页码**：未知 | **章节**：未指定 | **内容质量**：全面
+
+0]、三维迁移机制 [11]、细胞骨架动力学[12]、迁移形态学[13]以及黏着斑调控等多个 重要子方向。 在众多参与细胞迁移的分子机制中，黏着（附）斑（ focal adhesions, FAs ）是 细胞感知并响应细胞外基质（ ECM）机械信号的核心枢纽。它不仅作为物理锚点 介导细胞附着，还整合细胞内外的机械与化学信号，从而驱动迁移行为，并在细 胞增殖、分化等过程中发挥调控作用[14-15]。随着高分辨成像与力学测量技术的发 展，研究人员发现 黏着斑的结构特征（如大小、密度、分子组成）与细胞迁移的 速度、方向性和群体协调性密切相关[16]。因此，调控黏着斑功能不仅有助于理解 基础细胞行为，也在抗肿瘤转移、组织工程等应用领域具有重要前景。目前，调 节黏着斑功能的研究手段不断丰富，包括信号通路干预、小分子抑制剂、基因编 辑、光遗传学调控及蛋白 蛋白相互作用干预等方法（详见第 1.2节） 。然而，针 对特定力敏蛋白 ，如Talin等，对其 特异性、可控性调节手段 的研究仍处于初步 阶段，从而限制了在精细调控黏着斑结构与功能上的进一步突破。 近年来，人工智能（ AI）驱动的蛋白质工程迅速发展，特别是 AlphaFold2 、 RF Diffusion 、ProteinMPNN 等工具的出现，为特异性结合蛋白或短肽（ binder） 的结构预测与功能设计提供了新路径[17-19]。这些方法有望以更高效的方式，开发 天津大学硕士学位论文 2 出针对组成黏着斑复合蛋白的关键力响应蛋白如 Talin等的高亲和力调节分子， 为实现对黏着斑的精准操控提供新手段。 本章将围绕以下几个方面展开 ：首先回 顾细胞迁移和黏着斑的基本机制与关键组成成分， 并 讨论当前调节黏着斑功能的 研究策略（第 1.
+
+
+
+
+💡 **使用说明**：回答问题时，请引用对应的【来源X】编号来标注信息来源。
+## 🤔 用户问题
+
+**问题类型**：综合性问题
+
+**具体问题**：这篇文献的主要论点是什么？
+📝 **回答指导**：请基于文献内容提供全面、准确的回答，确保每个要点都有明确的来源支持。
+
+## 重要指示与质量要求
+
+### 🎯 基于证据的回答原则
+- **严格依据文献**：您的回答必须100%基于上述"相关文献内容"
+- **避免推测**：如果文献内容不足以回答问题，请明确说明
+
+### 📋 回答质量检查清单
+在回答前，请确认：
+☑️ 所有关键论点都有文献支持
+☑️ 引用标注准确且完整
+☑️ 语言专业但易于理解
+☑️ 结构清晰，逻辑性强
+☑️ 承认了知识的局限性
+
+### ⚠️ 特殊情况处理
+- **信息不足**：坦诚说明"根据提供的文献，我无法完全回答这个问题"
+- **观点冲突**：客观呈现不同观点，避免偏向性表述
+- **复杂概念**：提供必要的背景解释，确保理解
+
+### 🔍 学术标准要求
+- 使用准确的学术术语
+- 保持客观、中性的学术语调
+- 提供足够的细节支持论点
+- 适当时指出研究的方法论或样本限制
+
+2025-05-31 17:09:56 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-05-31 17:10:07 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent "HTTP/1.1 200 OK"
+2025-05-31 17:10:07 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-05-31 17:10:07 - app.utils.rag_service - INFO - 问题处理完成，耗时: 12.37秒
+2025-05-31 17:10:08 - app.utils.conversation_manager - INFO - 添加对话轮次: 3872794e-377c-4c17-a242-b2b14ddb15af (会话: 9ce3bd47-94cf-479a-a59f-32ca1c196760)
+2025-05-31 17:10:08 - app.routers.ai_chat - INFO - 问答完成，会话: 9ce3bd47-94cf-479a-a59f-32ca1c196760, 轮次: 3872794e-377c-4c17-a242-b2b14ddb15af
+2025-05-31 17:20:16,287 - app.utils.storage_manager - INFO - ��ʼ���洢���������ϴ���Ŀ¼: uploads
+2025-05-31 17:20:16,287 - app.utils.storage_manager - INFO - ȷ���ϴ���Ŀ¼����: uploads
+2025-05-31 17:20:16,287 - app.utils.storage_manager - INFO - �ϴ���Ŀ¼д��Ȩ������
+2025-05-31 17:20:16,297 - app.utils.cache_manager - INFO - ��ʼ�� embedding �ڴ滺��: maxsize=1000, ttl=3600s
+2025-05-31 17:20:16,297 - app.utils.cache_manager - INFO - ��ʼ�� answer �ڴ滺��: maxsize=500, ttl=1800s
+2025-05-31 17:20:16,297 - app.utils.cache_manager - INFO - ��ʼ�� chunk �ڴ滺��: maxsize=2000, ttl=7200s
+2025-05-31 17:20:16,297 - app.utils.cache_manager - INFO - �����������ʼ�����
+2025-05-31 17:20:17,075 - app.utils.embedding_service - INFO - Google GenAI�ͻ��˳�ʼ���ɹ�
+2025-05-31 17:20:17,659 - app.utils.vector_store - INFO - ChromaDB�ͻ��˳�ʼ���ɹ�������·��: ./vector_db
+2025-05-31 17:20:17,800 - app.utils.rag_service - INFO - Google AI�����ʼ���ɹ���ʹ��ģ��: gemini-2.5-flash-preview-05-20
+2025-05-31 17:22:31,635 - app.utils.storage_manager - INFO - ��ʼ���洢���������ϴ���Ŀ¼: uploads
+2025-05-31 17:22:31,635 - app.utils.storage_manager - INFO - ȷ���ϴ���Ŀ¼����: uploads
+2025-05-31 17:22:31,635 - app.utils.storage_manager - INFO - �ϴ���Ŀ¼д��Ȩ������
+2025-05-31 17:22:31,646 - app.utils.cache_manager - INFO - ��ʼ�� embedding �ڴ滺��: maxsize=1000, ttl=3600s
+2025-05-31 17:22:31,646 - app.utils.cache_manager - INFO - ��ʼ�� answer �ڴ滺��: maxsize=500, ttl=1800s
+2025-05-31 17:22:31,646 - app.utils.cache_manager - INFO - ��ʼ�� chunk �ڴ滺��: maxsize=2000, ttl=7200s
+2025-05-31 17:22:31,646 - app.utils.cache_manager - INFO - �����������ʼ�����
+2025-05-31 17:22:32,417 - app.utils.embedding_service - INFO - Google GenAI�ͻ��˳�ʼ���ɹ�
+2025-05-31 17:22:33,032 - app.utils.vector_store - INFO - ChromaDB�ͻ��˳�ʼ���ɹ�������·��: ./vector_db
+2025-05-31 17:22:33,174 - app.utils.rag_service - INFO - Google AI�����ʼ���ɹ���ʹ��ģ��: gemini-2.5-flash-preview-05-20
