@@ -20,7 +20,7 @@ class Literature(Base):
     file_type = Column(String, nullable=False)  # 文件类型：pdf/docx/html
     upload_time = Column(DateTime, default=datetime.utcnow, nullable=False)  # 上传时间
     uploaded_by = Column(String, ForeignKey('users.id'), nullable=False)  # 上传用户ID
-    research_group_id = Column(String, ForeignKey('research_groups.id'), nullable=False)  # 所属研究组ID
+    research_group_id = Column(String, ForeignKey('research_groups.id'), nullable=True)  # 所属研究组ID，允许为空支持私人文献
     status = Column(String, default='active', nullable=False)  # 状态：active/deleted
     
     # 软删除相关字段
@@ -38,7 +38,7 @@ class Literature(Base):
     # 与问答会话的一对多关系
     qa_sessions = relationship("QASession", back_populates="literature")
     
-    def __init__(self, title, filename, file_path, file_size, file_type, uploaded_by, research_group_id):
+    def __init__(self, title, filename, file_path, file_size, file_type, uploaded_by, research_group_id=None):
         self.id = str(uuid.uuid4())
         self.title = title
         self.filename = filename
@@ -46,7 +46,7 @@ class Literature(Base):
         self.file_size = file_size
         self.file_type = file_type
         self.uploaded_by = uploaded_by
-        self.research_group_id = research_group_id
+        self.research_group_id = research_group_id  # 可以为None表示私人文献
         self.upload_time = datetime.utcnow()
         self.status = 'active'
         # 软删除字段初始化为None

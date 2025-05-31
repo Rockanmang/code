@@ -7,6 +7,7 @@ import warnings
 # 抑制bcrypt版本警告
 warnings.filterwarnings("ignore", message=".*bcrypt.*", category=UserWarning)
 
+import logging
 from datetime import datetime, timedelta
 from typing import Optional
 
@@ -20,11 +21,14 @@ from app.database import get_db
 from app.models.user import User
 from app import schemas
 
+# 配置日志
+logger = logging.getLogger(__name__)
+
 # 安全配置
-SECRET_KEY = "your-secret-key"  # 与main.py保持一致
+SECRET_KEY = "aicodecode"  # 与main.py保持一致
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60  # Token 有效期（分钟）
-REFRESH_TOKEN_EXPIRE_DAYS = 7  # 刷新令牌有效期（天）
+ACCESS_TOKEN_EXPIRE_MINUTES = 43200  # Token 有效期设置为30天 (30 * 24 * 60 = 43200分钟)
+REFRESH_TOKEN_EXPIRE_DAYS = 90  # 刷新令牌有效期延长到90天
 
 # 密码哈希上下文
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -105,17 +109,26 @@ async def get_current_user(
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         sub: str = payload.get("sub")
         if sub is None:
+            logger.warning("Token payload缺少sub字段")
             raise credentials_exception
-    except JWTError:
+        
+        logger.debug(f"解析token成功，sub: {sub}")
+            
+    except JWTError as e:
+        logger.warning(f"JWT解析失败: {e}")
         raise credentials_exception
     
     # 尝试通过用户ID查找用户（原有系统）
     user = db.query(User).filter(User.id == sub).first()
     if user:
+        logger.debug(f"通过ID找到用户: {user.username}")
         return user
     
     # 如果通过ID找不到，尝试通过手机号查找（新系统）
     user = db.query(User).filter(User.phone_number == sub).first()
     if user is None:
+        logger.warning(f"未找到用户，sub: {sub}")
         raise credentials_exception
+    
+    logger.debug(f"通过手机号找到用户: {user.username}")
     return user

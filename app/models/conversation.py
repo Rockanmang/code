@@ -19,7 +19,7 @@ class QASession(BaseModel):
     
     # 关联信息
     user_id = Column(String, ForeignKey("users.id"), nullable=False)
-    group_id = Column(String(36), ForeignKey("research_groups.id"), nullable=False)
+    group_id = Column(String(36), ForeignKey("research_groups.id"), nullable=True)  # 允许为空，支持私人文献
     literature_id = Column(String(36), ForeignKey("literature.id"), nullable=False)
     
     # 会话信息

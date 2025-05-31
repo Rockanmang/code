@@ -20,9 +20,9 @@ class Config:
     DEBUG: bool = os.getenv("DEBUG", "False").lower() == "true"
     
     # ===== JWT配置 =====
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "aicodecode")
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "30"))
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "43200"))  # 默认30天
     
     # ===== 文件存储配置 =====
     UPLOAD_ROOT_DIR = os.getenv("UPLOAD_DIR", "./uploads")  # 文件存储根目录
@@ -69,11 +69,12 @@ class Config:
     # ===== RAG问答系统配置 =====
     
     # RAG核心参数
-    RAG_MAX_CONTEXT_TOKENS: int = int(os.getenv("RAG_MAX_CONTEXT_TOKENS", "3000"))
+    RAG_MAX_CONTEXT_TOKENS: int = int(os.getenv("RAG_MAX_CONTEXT_TOKENS", "4000"))
     RAG_TOP_K_RETRIEVAL: int = int(os.getenv("RAG_TOP_K_RETRIEVAL", "5"))
     RAG_CONVERSATION_MAX_TURNS: int = int(os.getenv("RAG_CONVERSATION_MAX_TURNS", "10"))
     RAG_CACHE_TTL: int = int(os.getenv("RAG_CACHE_TTL", "3600"))  # 1小时
     RAG_AI_TIMEOUT: int = int(os.getenv("RAG_AI_TIMEOUT", "30"))  # 30秒
+    MAX_CHUNK_LENGTH_FOR_PROMPT = 800 # 每个块在提示词中的最大字符数
     
     # 答案质量控制
     RAG_MIN_CONFIDENCE: float = float(os.getenv("RAG_MIN_CONFIDENCE", "0.3"))

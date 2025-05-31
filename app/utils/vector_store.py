@@ -51,6 +51,9 @@ class VectorStore:
     
     def get_collection_name(self, group_id: str) -> str:
         """获取研究组对应的集合名称"""
+        # 处理私人文献的情况
+        if group_id is None:
+            return f"{settings.VECTOR_DB_COLLECTION_PREFIX}private"
         return f"{settings.VECTOR_DB_COLLECTION_PREFIX}{group_id}"
     
     def create_collection_for_group(self, group_id: str) -> bool:
@@ -72,9 +75,14 @@ class VectorStore:
                 pass
             
             # 创建新集合
+            collection_metadata = {
+                "group_id": group_id if group_id is not None else "private",
+                "created_at": str(int(os.times().elapsed))  # 使用简单的时间戳
+            }
+            
             collection = self.client.create_collection(
                 name=collection_name,
-                metadata={"group_id": group_id, "created_at": str(os.times())}
+                metadata=collection_metadata
             )
             
             logger.info(f"为研究组 {group_id} 创建向量集合: {collection_name}")
@@ -184,10 +192,10 @@ class VectorStore:
             for chunk in chunks_data:
                 metadata = {
                     "literature_id": chunk["literature_id"],
-                    "group_id": chunk["group_id"],
-                    "chunk_index": chunk["chunk_index"],
+                    "group_id": chunk["group_id"] if chunk["group_id"] is not None else "private",
+                    "chunk_index": str(chunk["chunk_index"]),  # 确保是字符串
                     "literature_title": chunk.get("literature_title", ""),
-                    "chunk_length": chunk["chunk_length"]
+                    "chunk_length": str(chunk["chunk_length"])  # 确保是字符串
                 }
                 metadatas.append(metadata)
             
@@ -310,18 +318,20 @@ class VectorStore:
                 logger.warning(f"研究组 {group_id} 的向量集合不存在")
                 return []
             
-            # 构建查询条件
+            # 构建查询条件 - 修复私人文献的group_id处理
+            actual_group_id = group_id if group_id is not None else "private"
+            
             if literature_id:
                 # 如果指定了文献ID，同时过滤group_id和literature_id
                 where_condition = {
                     "$and": [
-                        {"group_id": {"$eq": group_id}},
+                        {"group_id": {"$eq": actual_group_id}},
                         {"literature_id": {"$eq": literature_id}}
                     ]
                 }
             else:
                 # 只过滤group_id
-                where_condition = {"group_id": {"$eq": group_id}}
+                where_condition = {"group_id": {"$eq": actual_group_id}}
             
             # 执行相似度搜索
             results = collection.query(
@@ -331,14 +341,35 @@ class VectorStore:
                 include=["documents", "metadatas", "distances"]
             )
             
+            logger.debug(f"ChromaDB查询参数: n_results={top_k}, where={where_condition}")
+            logger.debug(f"ChromaDB原始结果: {len(results.get('documents', [[]])[0])} 个文档")
+            
             # 格式化结果
             search_results = []
             if results["documents"] and results["documents"][0]:
+                logger.debug("开始处理查询结果...")
                 for i in range(len(results["documents"][0])):
+                    # 修复相似度计算：对于余弦距离，相似度 = 1 - 距离
+                    # 但需要确保结果在合理范围内
+                    distance = results["distances"][0][i]
+                    
+                    # ChromaDB默认使用L2距离，我们需要处理不同的距离度量
+                    # 对于L2距离，我们使用基于距离的相似度计算
+                    if distance <= 0:
+                        similarity = 1.0  # 完全相同
+                    elif distance >= 2.0:
+                        similarity = 0.0  # 完全不相似
+                    else:
+                        # 将L2距离转换为0-1的相似度分数
+                        similarity = max(0.0, 1.0 - (distance / 2.0))
+                    
+                    logger.debug(f"结果 {i}: raw_distance={distance:.4f}, calculated_similarity={similarity:.4f}")
+                    
                     result = {
                         "text": results["documents"][0][i],
                         "metadata": results["metadatas"][0][i],
-                        "similarity": 1 - results["distances"][0][i],  # 转换距离为相似度
+                        "similarity": similarity,  # 现在应该在[0,1]范围内
+                        "raw_distance": distance,  # 保留原始距离用于调试
                         "literature_id": results["metadatas"][0][i]["literature_id"],
                         "chunk_index": results["metadatas"][0][i]["chunk_index"],
                         "literature_title": results["metadatas"][0][i].get("literature_title", "")

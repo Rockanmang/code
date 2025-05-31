@@ -147,8 +147,13 @@ def verify_literature_access(user_id: str, literature_id: str, db: Session) -> b
         if literature.status != 'active':
             return False
         
-        # 验证用户是否为该文献所属研究组的成员
-        return verify_group_membership(user_id, literature.research_group_id, db)
+        # 验证用户权限
+        if literature.research_group_id is None:
+            # 私人文献：只有上传者本人可以访问
+            return literature.uploaded_by == user_id
+        else:
+            # 课题组文献：验证用户是否为该研究组的成员
+            return verify_group_membership(user_id, literature.research_group_id, db)
         
     except Exception as e:
         print(f"验证文献访问权限失败: {e}")
@@ -182,8 +187,15 @@ def get_literature_with_permission(literature_id: str, user_id: str, db: Session
             raise HTTPException(status_code=410, detail="文献已被删除")
         
         # 验证用户权限
-        if not verify_group_membership(user_id, literature.research_group_id, db):
-            raise HTTPException(status_code=403, detail="您无权访问此文献，请确认您是该研究组的成员")
+        # 如果research_group_id为None，说明是私人文献，只需验证上传者是否是当前用户
+        if literature.research_group_id is None:
+            # 私人文献：只有上传者本人可以访问
+            if literature.uploaded_by != user_id:
+                raise HTTPException(status_code=403, detail="您无权访问此私人文献")
+        else:
+            # 课题组文献：验证用户是否为该研究组的成员
+            if not verify_group_membership(user_id, literature.research_group_id, db):
+                raise HTTPException(status_code=403, detail="您无权访问此文献，请确认您是该研究组的成员")
         
         return literature
         
@@ -197,6 +209,7 @@ def get_literature_with_permission(literature_id: str, user_id: str, db: Session
 def verify_file_exists(file_path: str) -> bool:
     """
     验证文件是否存在于磁盘上
+    支持自动检测uploads目录下的文件
     
     Args:
         file_path: 文件路径
@@ -205,7 +218,17 @@ def verify_file_exists(file_path: str) -> bool:
         bool: 文件是否存在
     """
     try:
-        return os.path.exists(file_path) and os.path.isfile(file_path)
+        # 首先尝试直接路径
+        if os.path.exists(file_path) and os.path.isfile(file_path):
+            return True
+        
+        # 如果直接路径不存在，尝试在uploads目录下查找
+        if not file_path.startswith('uploads'):
+            uploads_path = os.path.join('uploads', file_path)
+            if os.path.exists(uploads_path) and os.path.isfile(uploads_path):
+                return True
+                
+        return False
     except Exception as e:
         print(f"验证文件存在失败: {e}")
         return False
@@ -232,3 +255,30 @@ def get_content_type(file_path: str) -> str:
     }
     
     return content_types.get(file_extension, 'application/octet-stream')
+
+def get_correct_file_path(file_path: str) -> str:
+    """
+    获取正确的文件路径
+    如果原路径不存在，尝试在uploads目录下查找
+    
+    Args:
+        file_path: 原始文件路径
+        
+    Returns:
+        str: 正确的文件路径
+    """
+    try:
+        # 首先尝试直接路径
+        if os.path.exists(file_path) and os.path.isfile(file_path):
+            return file_path
+        
+        # 如果直接路径不存在，尝试在uploads目录下查找
+        if not file_path.startswith('uploads'):
+            uploads_path = os.path.join('uploads', file_path)
+            if os.path.exists(uploads_path) and os.path.isfile(uploads_path):
+                return uploads_path
+                
+        return file_path  # 返回原路径，即使不存在
+    except Exception as e:
+        print(f"获取正确文件路径失败: {e}")
+        return file_path

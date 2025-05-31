@@ -8,6 +8,7 @@ import logging
 from typing import Dict, List, Optional, Any, Tuple
 from datetime import datetime
 import traceback
+import re
 
 # 导入相关组件
 from app.utils.embedding_service import embedding_service
@@ -18,7 +19,8 @@ from app.utils.cache_manager import cache_manager
 from app.config import Config
 
 # Google AI 相关导入
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 class RAGService:
     """RAG问答系统核心服务类"""
@@ -44,16 +46,22 @@ class RAGService:
     def _init_google_ai(self):
         """初始化Google AI服务"""
         try:
-            # 配置Google AI
-            genai.configure(api_key=Config.GOOGLE_API_KEY)
+            # 检查API密钥
+            if not Config.GOOGLE_API_KEY:
+                self.logger.error("Google API密钥未配置")
+                self.client = None
+                return
             
-            # 创建生成模型
-            self.model = genai.GenerativeModel('gemini-pro')
+            # 创建Google GenAI客户端
+            self.client = genai.Client(api_key=Config.GOOGLE_API_KEY)
             
-            self.logger.info("Google AI服务初始化成功")
+            # 使用最新的模型
+            self.model_name = Config.GEMINI_MODEL  # gemini-2.0-flash-exp
+            
+            self.logger.info(f"Google AI服务初始化成功，使用模型: {self.model_name}")
         except Exception as e:
             self.logger.error(f"Google AI服务初始化失败: {str(e)}")
-            self.model = None
+            self.client = None
 
     async def process_question(
         self,
@@ -267,6 +275,11 @@ class RAGService:
             List[Dict]: 相关文档块列表
         """
         try:
+            self.logger.debug(f"开始检索相关文档块：literature_id={literature_id}, group_id={group_id}, top_k={top_k}")
+            
+            # 增加检索数量以提高找到高质量文档的概率
+            search_top_k = max(top_k * 3, 20)  # 至少检索20个，或者是目标数量的3倍
+            
             # 使用异步方式检索
             loop = asyncio.get_event_loop()
             chunks = await loop.run_in_executor(
@@ -275,11 +288,25 @@ class RAGService:
                 question_embedding,
                 group_id,
                 literature_id,
-                top_k * 2  # 检索更多候选，然后重排序
+                search_top_k  # 使用更大的检索数量
             )
+            
+            self.logger.info(f"原始检索结果数量: {len(chunks)}")
+            
+            # 记录原始检索结果的详细信息
+            if chunks:
+                for i, chunk in enumerate(chunks[:5]):  # 只记录前5个
+                    self.logger.debug(f"原始chunk {i}: similarity={chunk.get('similarity', 'N/A'):.4f}, "
+                                    f"raw_distance={chunk.get('raw_distance', 'N/A'):.4f}, "
+                                    f"chunk_index={chunk.get('chunk_index', 'N/A')}, "
+                                    f"text_preview='{chunk.get('text', '')[:100]}'...")
+            else:
+                self.logger.warning("没有检索到任何文档块")
             
             # 重排序和过滤
             reranked_chunks = self._rerank_chunks(chunks, top_k)
+            
+            self.logger.info(f"重排序后返回文档块数量: {len(reranked_chunks)}")
             
             return reranked_chunks
             
@@ -299,24 +326,161 @@ class RAGService:
             List[Dict]: 重排序后的文档块
         """
         if not chunks:
+            self.logger.debug("没有文档块需要重排序")
             return []
+        
+        self.logger.debug(f"开始重排序 {len(chunks)} 个文档块，目标返回 {top_k} 个")
+        
+        # 设置多层次的相似度阈值
+        HIGH_SIMILARITY_THRESHOLD = 0.6  # 高相似度阈值
+        MEDIUM_SIMILARITY_THRESHOLD = 0.4  # 中等相似度阈值
+        MIN_SIMILARITY_THRESHOLD = 0.3  # 最低相似度阈值
+        
+        # 首先尝试获取高质量文档
+        high_quality_chunks = []
+        medium_quality_chunks = []
+        low_quality_chunks = []
+        
+        for chunk in chunks:
+            similarity = chunk.get("similarity", 0)
+            text_quality = self._evaluate_text_quality(chunk.get("text", ""))
+            
+            # 根据相似度和文档质量分类
+            if similarity >= HIGH_SIMILARITY_THRESHOLD:
+                high_quality_chunks.append(chunk)
+            elif similarity >= MEDIUM_SIMILARITY_THRESHOLD:
+                # 中等相似度的文档，如果质量高也保留
+                if text_quality >= 0.3:
+                    medium_quality_chunks.append(chunk)
+                else:
+                    self.logger.debug(f"过滤中等相似度低质量文档: similarity={similarity:.3f}, quality={text_quality:.3f}")
+            elif similarity >= MIN_SIMILARITY_THRESHOLD:
+                # 低相似度的文档，只有质量很高才保留
+                if text_quality >= 0.5:
+                    low_quality_chunks.append(chunk)
+                    self.logger.debug(f"保留低相似度高质量文档: similarity={similarity:.3f}, quality={text_quality:.3f}")
+                else:
+                    self.logger.debug(f"过滤低相似度文档: similarity={similarity:.3f}, quality={text_quality:.3f}")
+            else:
+                self.logger.debug(f"过滤超低相似度文档: similarity={similarity:.3f}")
+        
+        # 合并筛选后的文档块，优先级：高>中>低
+        filtered_chunks = high_quality_chunks + medium_quality_chunks + low_quality_chunks
+        
+        if not filtered_chunks:
+            self.logger.warning(f"经过质量和相似度过滤后无可用文档块")
+            # 如果完全没有，则返回原始的最佳几个文档（降级处理）
+            if chunks:
+                self.logger.info("执行降级策略：返回原始最佳文档块")
+                filtered_chunks = sorted(chunks, key=lambda x: x.get("similarity", 0), reverse=True)[:3]
+            else:
+                return []
+        
+        self.logger.debug(f"文档质量分类: 高质量={len(high_quality_chunks)}, 中质量={len(medium_quality_chunks)}, 低质量={len(low_quality_chunks)}")
+        self.logger.debug(f"过滤后保留 {len(filtered_chunks)} 个文档块")
         
         # 基于相似度和其他因素重排序
         scored_chunks = []
-        for chunk in chunks:
+        for i, chunk in enumerate(filtered_chunks):
             similarity = chunk.get("similarity", 0)
-            text_length = len(chunk.get("text", ""))
+            text = chunk.get("text", "")
+            text_length = len(text)
             
-            # 综合评分：相似度 + 长度因子
+            # 评估文档质量（如果还没评估过）
+            if "text_quality" not in chunk:
+                text_quality = self._evaluate_text_quality(text)
+                chunk["text_quality"] = text_quality
+            else:
+                text_quality = chunk["text_quality"]
+            
+            # 综合评分：相似度(50%) + 文档质量(30%) + 长度因子(20%)
             length_factor = min(text_length / 500, 1.0)  # 适中长度加分
-            score = similarity * 0.8 + length_factor * 0.2
+            score = similarity * 0.5 + text_quality * 0.3 + length_factor * 0.2
             
             chunk["final_score"] = score
             scored_chunks.append(chunk)
+            
+            self.logger.debug(f"Chunk {i}: similarity={similarity:.3f}, quality={text_quality:.3f}, "
+                            f"length={text_length}, final_score={score:.3f}")
         
-        # 按评分排序并返回top_k
+        # 按综合得分排序
         scored_chunks.sort(key=lambda x: x["final_score"], reverse=True)
-        return scored_chunks[:top_k]
+        
+        # 返回前top_k个结果
+        final_chunks = scored_chunks[:top_k]
+        
+        # 记录最终选择的文档块信息
+        for i, chunk in enumerate(final_chunks):
+            self.logger.debug(f"Final chunk {i}: final_score={chunk['final_score']:.3f}, "
+                            f"similarity={chunk.get('similarity', 0):.3f}, "
+                            f"chunk_index={chunk.get('chunk_index', 'unknown')}")
+        
+        self.logger.debug(f"重排序完成，返回 {len(final_chunks)} 个高质量文档块")
+        return final_chunks
+    
+    def _evaluate_text_quality(self, text: str) -> float:
+        """
+        评估文本块的质量
+        
+        Args:
+            text: 文本内容
+            
+        Returns:
+            float: 质量分数 (0-1)
+        """
+        if not text:
+            return 0.0
+        
+        quality_score = 0.0
+        text_lower = text.lower()
+        
+        # 检查是否包含高价值的学术内容关键词
+        high_value_keywords = [
+            # 中文关键词
+            '摘要', '结论', '创新', '贡献', '意义', '目的', '方法', '结果', 
+            '讨论', '背景', '研究', '发现', '提出', '证明', '表明', '显示',
+            '分析', '实验', '理论', '模型', '算法', '技术', '系统',
+            
+            # 英文关键词  
+            'abstract', 'conclusion', 'novelty', 'contribution', 'significance',
+            'purpose', 'method', 'result', 'discussion', 'background', 
+            'research', 'finding', 'propose', 'demonstrate', 'show', 'indicate',
+            'analysis', 'experiment', 'theory', 'model', 'algorithm', 'system',
+            'innovation', 'approach', 'framework', 'investigation', 'study'
+        ]
+        
+        # 低价值内容关键词（版权、格式等）
+        low_value_keywords = [
+            'creative commons', 'attribution', 'license', 'copyright', 
+            'permission', 'reproduce', 'distribution', 'doi.org',
+            '版权', '许可', '授权', '转载', '引用格式'
+        ]
+        
+        # 计算高价值关键词匹配度
+        high_value_matches = sum(1 for keyword in high_value_keywords if keyword in text_lower)
+        quality_score += min(high_value_matches * 0.1, 0.4)  # 最多0.4分
+        
+        # 检查低价值内容，降低分数
+        low_value_matches = sum(1 for keyword in low_value_keywords if keyword in text_lower)
+        quality_score -= min(low_value_matches * 0.2, 0.3)  # 最多扣0.3分
+        
+        # 检查文本长度合理性
+        if 100 <= len(text) <= 2000:
+            quality_score += 0.2
+        elif len(text) < 50:
+            quality_score -= 0.2
+            
+        # 检查是否主要是数字和符号（低质量指标）
+        non_alphanumeric_ratio = sum(1 for c in text if not c.isalnum() and not c.isspace()) / len(text)
+        if non_alphanumeric_ratio > 0.3:
+            quality_score -= 0.2
+            
+        # 检查是否包含完整句子
+        sentence_count = len([s for s in text.split('.') if len(s.strip()) > 10])
+        if sentence_count >= 2:
+            quality_score += 0.1
+            
+        return max(0.0, min(1.0, quality_score))
 
     async def _generate_ai_answer(self, prompt: str) -> Optional[str]:
         """
@@ -328,8 +492,8 @@ class RAGService:
         Returns:
             Optional[str]: AI生成的答案
         """
-        if not self.model:
-            self.logger.error("Google AI模型未初始化")
+        if not self.client:
+            self.logger.error("Google AI客户端未初始化")
             return None
         
         try:
@@ -337,23 +501,24 @@ class RAGService:
             loop = asyncio.get_event_loop()
             
             # 生成配置
-            generation_config = genai.types.GenerationConfig(
+            config = types.GenerateContentConfig(
                 temperature=0.3,  # 较低的温度保证准确性
                 top_p=0.8,
                 max_output_tokens=2000,
                 candidate_count=1
             )
             
-            # 异步调用
+            # 使用最新的API格式异步调用
             response = await loop.run_in_executor(
                 None,
-                lambda: self.model.generate_content(
-                    prompt, 
-                    generation_config=generation_config
+                lambda: self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=[prompt],
+                    config=config
                 )
             )
             
-            if response and response.text:
+            if response and hasattr(response, 'text') and response.text:
                 return response.text
             else:
                 self.logger.warning("AI返回空响应")
@@ -395,18 +560,34 @@ class RAGService:
             question: 用户问题
             
         Returns:
-            Dict: 错误响应
+            Dict[str, Any]: 错误响应
         """
-        error_messages = {
-            "invalid_question": "问题格式不正确，请重新输入。",
-            "embedding_failed": "问题理解失败，请重试。",
-            "no_relevant_content": "未找到相关内容，请尝试其他问题。",
-            "ai_generation_failed": "AI服务暂时不可用，请稍后重试。",
-            "system_error": "系统错误，请联系管理员。"
-        }
+        if error_type == "no_content":
+            # 根据问题类型给出不同的建议
+            high_level_questions = [
+                "主要论点", "创新点", "贡献", "研究背景", "理论意义", "应用价值", 
+                "结论", "发现", "意义"
+            ]
+            
+            is_high_level = any(keyword in question for keyword in high_level_questions)
+            
+            if is_high_level:
+                answer = """抱歉，当前检索到的文档片段主要包含技术细节、数据分析和方法描述，缺少能够回答您关于"{}"这类高层次问题的核心内容（如摘要、引言、结论等）。
+
+建议：
+1. 尝试询问更具体的技术问题，如"使用了什么研究方法？"、"实验设计是怎样的？"
+2. 或者重新上传文献，确保包含完整的摘要和结论部分
+
+我可以基于现有内容回答技术细节相关的问题。""".format(question)
+            else:
+                answer = "抱歉，在当前检索到的文档内容中，我无法找到足够相关的信息来回答您的问题。请尝试重新表述问题或询问文献中的其他内容。"
+        else:
+            answer = "处理您的问题时遇到了技术问题，请稍后重试。"
         
         return {
-            "answer": error_messages.get(error_type, "未知错误"),
+            "answer": answer,
+            "key_findings": [],
+            "limitations": "由于处理过程中出现问题，无法提供详细的分析。",
             "sources": [],
             "confidence": 0.1,
             "quality_score": {
@@ -420,7 +601,8 @@ class RAGService:
                 "question": question,
                 "timestamp": datetime.now().isoformat(),
                 "error_type": error_type,
-                "is_error": True
+                "is_fallback": True,
+                "processing_time": 0.0
             }
         }
 
@@ -463,7 +645,7 @@ class RAGService:
             
             # 检查AI服务
             try:
-                if self.model:
+                if self.client:
                     # 简单测试
                     test_response = await self._generate_ai_answer("你好，这是一个测试。请简单回复。")
                     health_status["components"]["ai_service"] = {
@@ -473,7 +655,7 @@ class RAGService:
                 else:
                     health_status["components"]["ai_service"] = {
                         "status": "unhealthy",
-                        "details": "AI模型未初始化"
+                        "details": "AI客户端未初始化"
                     }
             except Exception as e:
                 health_status["components"]["ai_service"] = {

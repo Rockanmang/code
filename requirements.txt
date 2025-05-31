@@ -17,6 +17,7 @@ cryptography>=40.0.0
 # 文件处理
 python-multipart>=0.0.20
 PyPDF2>=3.0.0
+PyMuPDF>=1.23.0
 python-docx>=0.8.0
 reportlab>=4.0.0
 

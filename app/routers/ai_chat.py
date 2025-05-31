@@ -49,8 +49,10 @@ class SourceInfo(BaseModel):
     chunk_index: int = Field(..., description="文档块索引")
 
 class QAResponse(BaseModel):
-    """问答响应模型"""
-    answer: str = Field(..., description="AI回答")
+    """问答响应模型 - 支持新的格式化输出"""
+    answer: str = Field(..., description="主要回答内容")
+    key_findings: List[str] = Field(default=[], description="关键发现列表")
+    limitations: str = Field(default="", description="局限性说明")
     sources: List[SourceInfo] = Field(..., description="引用来源列表")
     confidence: float = Field(..., description="置信度分数")
     session_id: str = Field(..., description="会话ID")
@@ -111,7 +113,7 @@ async def ask_question(
             )
         
         # 检查用户是否有权限访问该文献
-        if not _check_literature_access(current_user.id, literature.research_group_id, db):
+        if not _check_literature_access(current_user.id, literature, db):
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="无权限访问该文献"
@@ -161,24 +163,38 @@ async def ask_question(
         )
         
         # 构建响应
-        sources = [
-            SourceInfo(
-                id=source["source_id"],
-                text=source["text"],
-                similarity=source["similarity"],
-                description=source["description"],
-                chunk_index=source["chunk_index"]
-            )
-            for source in rag_result["sources"]
-        ]
+        sources = []
+        for source in rag_result.get("sources", []):
+            try:
+                source_info = SourceInfo(
+                    id=source.get("source_id", ""),
+                    text=source.get("text", ""),
+                    similarity=float(source.get("similarity", 0.0)),
+                    description=source.get("description", ""),
+                    chunk_index=int(source.get("chunk_index", 0))
+                )
+                sources.append(source_info)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"构建source信息失败: {e}")
+                continue
+        
+        # 确保所有数值字段都有有效值
+        confidence = float(rag_result.get("confidence", 0.0))
+        processing_time = float(rag_result.get("metadata", {}).get("processing_time", 0.0))
         
         response = QAResponse(
-            answer=rag_result["answer"],
+            answer=rag_result.get("answer", "抱歉，无法生成答案"),
+            key_findings=rag_result.get("key_findings", []),
+            limitations=rag_result.get("limitations", ""),
             sources=sources,
-            confidence=rag_result["confidence"],
+            confidence=confidence,
             session_id=session_id,
             turn_id=turn_id,
-            metadata=rag_result["metadata"]
+            metadata={
+                **rag_result.get("metadata", {}),
+                "processing_time": processing_time,
+                "confidence": confidence
+            }
         )
         
         logger.info(f"问答完成，会话: {session_id}, 轮次: {turn_id}")
@@ -211,7 +227,7 @@ async def get_preset_questions(
                 detail="文献不存在"
             )
         
-        if not _check_literature_access(current_user.id, literature.research_group_id, db):
+        if not _check_literature_access(current_user.id, literature, db):
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="无权限访问该文献"
@@ -491,18 +507,24 @@ async def get_service_stats(
         )
 
 # 辅助函数
-def _check_literature_access(user_id: str, group_id: str, db: Session) -> bool:
+def _check_literature_access(user_id: str, literature: Literature, db: Session) -> bool:
     """
-    检查用户是否有权限访问指定研究组的文献
+    检查用户是否有权限访问指定文献
     """
     try:
+        # 如果是私人文献（group_id为None），只需验证文献是否属于该用户
+        if literature.research_group_id is None:
+            # 对于私人文献，直接检查上传者是否为当前用户
+            return literature.uploaded_by == user_id
+        
+        # 对于课题组文献，检查用户是否是课题组成员
         from app.models.research_group import UserResearchGroup
         from sqlalchemy import and_
         
         member = db.query(UserResearchGroup).filter(
             and_(
                 UserResearchGroup.user_id == user_id,
-                UserResearchGroup.group_id == group_id
+                UserResearchGroup.group_id == literature.research_group_id
             )
         ).first()
         

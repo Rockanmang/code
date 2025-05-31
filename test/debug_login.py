@@ -61,7 +61,7 @@ def test_jwt_creation():
         from jose import jwt
         from datetime import datetime, timedelta
         
-        SECRET_KEY = "your-secret-key"
+        SECRET_KEY = "aicodecode"
         ALGORITHM = "HS256"
         
         # 创建测试token
@@ -106,7 +106,7 @@ def test_login_logic():
             return False
         
         # 创建token
-        SECRET_KEY = "your-secret-key"
+        SECRET_KEY = "aicodecode"
         ALGORITHM = "HS256"
         ACCESS_TOKEN_EXPIRE_MINUTES = 30
         

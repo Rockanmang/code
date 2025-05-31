@@ -1,5 +1,7 @@
 import sys
 import logging
+import asyncio
+import os
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form, status, Body
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,7 +12,7 @@ from app.models.user import User
 from app.models.research_group import ResearchGroup, UserResearchGroup
 from app.models.literature import Literature
 from app.auth import verify_password, get_current_user, create_access_token, authenticate_user_by_phone, create_refresh_token, get_password_hash
-from app.utils.auth_helper import require_group_membership, verify_group_membership
+from app.utils.auth_helper import require_group_membership, verify_group_membership, get_correct_file_path
 from app.utils.file_handler import validate_upload_file, generate_file_path, save_uploaded_file, get_file_info
 from app.utils.text_extractor import extract_metadata_from_file
 from app.utils.error_handler import (
@@ -25,14 +27,47 @@ from app.utils.auth_helper import verify_literature_access, get_literature_with_
 from app.routers import ai_chat
 
 # 配置日志
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('literature_system.log'),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
+import os
+
+# 设置环境变量强制使用UTF-8编码
+os.environ['PYTHONIOENCODING'] = 'utf-8'
+
+# 配置日志处理器
+def setup_logging():
+    """设置日志配置"""
+    # 创建格式化器
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+    
+    # 配置文件处理器（使用UTF-8编码）
+    file_handler = logging.FileHandler(
+        'literature_system.log', 
+        mode='a', 
+        encoding='utf-8',
+        errors='ignore'  # 忽略编码错误
+    )
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.INFO)
+    
+    # 配置控制台处理器
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(formatter)
+    console_handler.setLevel(logging.INFO)
+    
+    # 配置根日志记录器
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.INFO)
+    root_logger.handlers.clear()  # 清除现有处理器
+    root_logger.addHandler(file_handler)
+    root_logger.addHandler(console_handler)
+    
+    # 防止重复日志
+    root_logger.propagate = False
+
+setup_logging()
+
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="文献管理系统", description="AI驱动的协作文献管理平台", version="1.0.0")
@@ -57,10 +92,10 @@ from app.routers import cache_admin
 app.include_router(cache_admin.router)
 
 # JWT 配置
-SECRET_KEY = "your-secret-key"  # 替换为随机字符串，例如 "mysecretkey123"
+SECRET_KEY = "aicodecode"  # 替换为随机字符串，例如 "mysecretkey123"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
-REFRESH_TOKEN_EXPIRE_DAYS = 7
+ACCESS_TOKEN_EXPIRE_MINUTES = 43200  # Token 有效期设置为30天 (30 * 24 * 60 = 43200分钟)
+REFRESH_TOKEN_EXPIRE_DAYS = 90  # 刷新令牌有效期延长到90天
 
 @app.get("/")
 def read_root():
@@ -121,6 +156,74 @@ def create_group(name: str, institution: str, description: str, research_area: s
     except Exception as e:
         log_error("group_create", e, current_user.id, {"group_name": name})
         raise HTTPException(status_code=500, detail="创建研究组失败")
+
+@app.get("/groups/info/{invitation_code}")
+def get_group_by_invitation_code(invitation_code: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    根据邀请码获取课题组信息
+    """
+    try:
+        group = db.query(ResearchGroup).filter(ResearchGroup.invitation_code == invitation_code).first()
+        if not group:
+            raise HTTPException(status_code=404, detail="无效的邀请码")
+        
+        return {
+            "id": group.id,
+            "name": group.name,
+            "institution": group.institution,
+            "description": group.description,
+            "research_area": group.research_area
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("group_info", e, current_user.id, {"invitation_code": invitation_code})
+        raise HTTPException(status_code=500, detail="获取课题组信息失败")
+
+@app.post("/groups/join-by-code")
+def join_group_by_code(invitation_code: str = Form(...), db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    通过邀请码直接加入课题组
+    """
+    try:
+        group = db.query(ResearchGroup).filter(ResearchGroup.invitation_code == invitation_code).first()
+        if not group:
+            log_error("group_join_by_code", Exception("无效的邀请码"), current_user.id, {
+                "provided_code": invitation_code
+            })
+            raise HTTPException(status_code=400, detail="无效的邀请码")
+        
+        existing = db.query(UserResearchGroup).filter(
+            UserResearchGroup.user_id == current_user.id,
+            UserResearchGroup.group_id == group.id
+        ).first()
+        if existing:
+            log_error("group_join_by_code", Exception("用户已加入该课题组"), current_user.id, {"group_id": group.id})
+            raise HTTPException(status_code=400, detail="用户已加入该课题组")
+        
+        membership = UserResearchGroup(user_id=current_user.id, group_id=group.id)
+        db.add(membership)
+        db.commit()
+        
+        log_success("group_join_by_code", current_user.id, {
+            "group_id": group.id,
+            "group_name": group.name
+        })
+        
+        return {
+            "message": "成功加入课题组",
+            "group": {
+                "id": group.id,
+                "name": group.name,
+                "institution": group.institution
+            }
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("group_join_by_code", e, current_user.id, {"invitation_code": invitation_code})
+        raise HTTPException(status_code=500, detail="加入研究组失败")
 
 @app.post("/groups/join")
 def join_group(group_id: str, invitation_code: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
@@ -274,6 +377,118 @@ async def upload_literature(
         log_error("literature_upload", e, current_user.id, operation_info)
         raise handle_file_upload_error(e, file.filename, current_user.id)
 
+@app.post("/literature/upload/private", response_model=FileUploadResponse)
+async def upload_private_literature(
+    file: UploadFile = File(...),
+    title: Optional[str] = Form(None),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    上传文献到个人库
+    """
+    operation_info = {
+        "filename": file.filename,
+        "user_id": current_user.id,
+        "file_size": None
+    }
+    
+    try:
+        # 1. 验证文件
+        is_valid, error_msg = validate_upload_file(file)
+        if not is_valid:
+            logger.warning(f"文件验证失败: {error_msg}")
+            raise ValidationError(error_msg)
+        
+        # 2. 获取文件信息
+        file_info = get_file_info(file)
+        operation_info["file_size"] = file_info["file_size"]
+        
+        # 3. 生成存储路径（使用用户ID作为目录）
+        full_path, relative_path = generate_file_path(f"private_{current_user.id}", file.filename)
+        
+        # 4. 安全保存文件到磁盘
+        def save_file():
+            return save_uploaded_file(file, full_path)
+        
+        save_success = safe_file_operation("file_save", save_file)
+        if not save_success:
+            raise FileUploadError("文件保存失败")
+        
+        # 5. 提取元数据
+        final_title = title if title else file.filename
+        try:
+            metadata = extract_metadata_from_file(full_path, file.filename)
+            if not title and metadata.get("title"):
+                final_title = metadata.get("title")
+        except Exception as e:
+            logger.warning(f"元数据提取失败，使用默认标题: {e}")
+        
+        # 6. 创建数据库记录（research_group_id 设为 None 表示私人文献）
+        try:
+            # 临时修改Literature模型的创建方式来支持私人文献
+            literature = Literature(
+                title=final_title,
+                filename=file.filename,
+                file_path=relative_path,
+                file_size=file_info["file_size"],
+                file_type=file_info["file_type"],
+                uploaded_by=current_user.id,
+                research_group_id=None  # 私人文献不属于任何课题组
+            )
+            
+            db.add(literature)
+            db.commit()
+            db.refresh(literature)
+            
+        except Exception as e:
+            # 如果数据库操作失败，尝试删除已保存的文件
+            try:
+                import os
+                if os.path.exists(full_path):
+                    os.remove(full_path)
+            except:
+                pass
+            raise e
+        
+        # 7. 记录成功日志
+        log_success("private_literature_upload", current_user.id, {
+            "literature_id": literature.id,
+            "title": final_title,
+            "filename": file.filename,
+            "file_size": file_info["file_size"]
+        })
+        
+        # 8. 启动异步向量生成（私人文献）
+        try:
+            from app.utils.async_processor import async_processor
+            task_id = async_processor.process_literature_async(literature.id)
+            logger.info(f"私人文献 {literature.id} 异步向量生成已启动，任务ID: {task_id}")
+        except Exception as e:
+            logger.warning(f"私人文献向量生成启动失败，但不影响上传: {e}")
+        
+        # 9. 返回上传结果
+        return FileUploadResponse(
+            message="文献上传成功，正在后台生成AI向量",
+            literature_id=literature.id,
+            title=final_title,
+            filename=file.filename,
+            file_size=file_info["file_size"]
+        )
+        
+    except (ValidationError, PermissionError, FileUploadError) as e:
+        # 处理已知的业务异常
+        raise handle_file_upload_error(e, file.filename, current_user.id)
+    
+    except HTTPException:
+        # 重新抛出HTTP异常
+        raise
+    
+    except Exception as e:
+        # 处理未知异常
+        log_error("private_literature_upload", e, current_user.id, operation_info)
+        raise handle_file_upload_error(e, file.filename, current_user.id)
+
 @app.get("/literature/public/{group_id}", response_model=LiteratureListResponse)
 def get_group_literature(
     group_id: str,
@@ -329,6 +544,52 @@ def get_group_literature(
     except Exception as e:
         log_error("literature_list", e, current_user.id, {"group_id": group_id})
         raise HTTPException(status_code=500, detail="获取文献列表失败")
+
+@app.get("/literature/private", response_model=LiteratureListResponse)
+def get_private_literature(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    获取当前用户的私人文献列表
+    """
+    try:
+        # 1. 查询该用户的所有私人文献（research_group_id 为 None）
+        literature_query = db.query(Literature, User).join(
+            User, Literature.uploaded_by == User.id
+        ).filter(
+            Literature.uploaded_by == current_user.id,
+            Literature.research_group_id.is_(None),
+            Literature.status == 'active'
+        ).order_by(Literature.upload_time.desc())
+        
+        literature_records = literature_query.all()
+        
+        # 2. 构建响应数据
+        literature_list = []
+        for lit, uploader in literature_records:
+            literature_list.append(LiteratureListItem(
+                id=lit.id,
+                title=lit.title,
+                filename=lit.filename,
+                file_size=lit.file_size,
+                file_type=lit.file_type,
+                upload_time=lit.upload_time,
+                uploader_name=uploader.username
+            ))
+        
+        log_success("private_literature_list", current_user.id, {
+            "literature_count": len(literature_list)
+        })
+        
+        return LiteratureListResponse(
+            total=len(literature_list),
+            literature=literature_list
+        )
+        
+    except Exception as e:
+        log_error("private_literature_list", e, current_user.id)
+        raise HTTPException(status_code=500, detail="获取私人文献列表失败")
 
 @app.get("/user/groups")
 def get_user_groups(
@@ -536,8 +797,11 @@ async def view_literature_file(
             })
             raise HTTPException(status_code=404, detail="文件不存在，可能已被移动或删除")
         
+        # 2.5 获取正确的文件路径
+        correct_file_path = get_correct_file_path(literature.file_path)
+        
         # 3. 获取正确的Content-Type
-        content_type = get_content_type(literature.file_path)
+        content_type = get_content_type(correct_file_path)
         
         # 4. 记录访问日志
         log_success("file_view", current_user.id, {
@@ -548,7 +812,7 @@ async def view_literature_file(
         
         # 5. 返回文件响应
         return FileResponse(
-            path=literature.file_path,
+            path=correct_file_path,
             media_type=content_type,
             filename=literature.filename,
             headers={
@@ -640,8 +904,11 @@ async def download_literature_file(
         if not verify_file_exists(literature.file_path):
             raise HTTPException(status_code=404, detail="文件不存在，可能已被移动或删除")
         
+        # 2.5 获取正确的文件路径
+        correct_file_path = get_correct_file_path(literature.file_path)
+        
         # 3. 获取正确的Content-Type
-        content_type = get_content_type(literature.file_path)
+        content_type = get_content_type(correct_file_path)
         
         # 4. 记录下载日志
         log_success("file_download", current_user.id, {
@@ -652,7 +919,7 @@ async def download_literature_file(
         
         # 5. 返回文件响应（强制下载）
         return FileResponse(
-            path=literature.file_path,
+            path=correct_file_path,
             media_type=content_type,
             filename=literature.filename,
             headers={
@@ -954,3 +1221,114 @@ def refresh_token(
         expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+@app.get("/groups/{group_id}/info")
+def get_group_info(group_id: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    获取课题组详细信息
+    """
+    try:
+        # 验证用户是否为该课题组成员
+        require_group_membership(current_user.id, group_id, db)
+        
+        group = db.query(ResearchGroup).filter(ResearchGroup.id == group_id).first()
+        if not group:
+            raise HTTPException(status_code=404, detail="课题组不存在")
+        
+        return {
+            "id": group.id,
+            "name": group.name,
+            "institution": group.institution,
+            "description": group.description,
+            "research_area": group.research_area
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("group_info_detail", e, current_user.id, {"group_id": group_id})
+        raise HTTPException(status_code=500, detail="获取课题组信息失败")
+
+@app.get("/groups/{group_id}/members")
+def get_group_members(group_id: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    获取课题组成员列表
+    """
+    try:
+        # 验证用户是否为该课题组成员
+        require_group_membership(current_user.id, group_id, db)
+        
+        # 查询课题组成员
+        members_query = db.query(User, UserResearchGroup).join(
+            UserResearchGroup, User.id == UserResearchGroup.user_id
+        ).filter(UserResearchGroup.group_id == group_id).all()
+        
+        members_list = []
+        for user, membership in members_query:
+            members_list.append({
+                "id": user.id,
+                "username": user.username,
+                "phone_number": user.phone_number
+            })
+        
+        log_success("group_members", current_user.id, {
+            "group_id": group_id,
+            "member_count": len(members_list)
+        })
+        
+        return {
+            "group_id": group_id,
+            "members": members_list,
+            "total": len(members_list)
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("group_members", e, current_user.id, {"group_id": group_id})
+        raise HTTPException(status_code=500, detail="获取课题组成员失败")
+
+@app.post("/groups/{group_id}/leave")
+def leave_group(group_id: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    退出课题组
+    """
+    try:
+        # 验证用户是否为该课题组成员
+        membership = db.query(UserResearchGroup).filter(
+            UserResearchGroup.user_id == current_user.id,
+            UserResearchGroup.group_id == group_id
+        ).first()
+        
+        if not membership:
+            raise HTTPException(status_code=404, detail="您不是该课题组成员")
+        
+        # 检查课题组是否还有其他成员
+        other_members = db.query(UserResearchGroup).filter(
+            UserResearchGroup.group_id == group_id,
+            UserResearchGroup.user_id != current_user.id
+        ).count()
+        
+        if other_members == 0:
+            # 如果是最后一个成员，可以选择删除课题组或保留空课题组
+            # 这里选择保留空课题组，管理员可以后续清理
+            pass
+        
+        # 删除成员关系
+        db.delete(membership)
+        db.commit()
+        
+        log_success("group_leave", current_user.id, {
+            "group_id": group_id,
+            "remaining_members": other_members
+        })
+        
+        return {
+            "message": "成功退出课题组",
+            "group_id": group_id
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        log_error("group_leave", e, current_user.id, {"group_id": group_id})
+        raise HTTPException(status_code=500, detail="退出课题组失败")

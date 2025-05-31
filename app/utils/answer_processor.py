@@ -60,7 +60,7 @@ class AnswerProcessor:
             confidence = self._calculate_confidence(parsed_answer, sources, context_chunks)
             
             # 格式化答案
-            formatted_answer = self._format_answer(parsed_answer["answer"])
+            formatted_answer = self._format_answer(parsed_answer["main_answer"])
             
             # 质量检验
             quality_score = self._assess_answer_quality(formatted_answer, sources, question)
@@ -68,6 +68,8 @@ class AnswerProcessor:
             # 构建结果
             result = {
                 "answer": formatted_answer,
+                "key_findings": parsed_answer["key_findings"],
+                "limitations": parsed_answer["limitations"],
                 "sources": sources,
                 "confidence": confidence,
                 "quality_score": quality_score,
@@ -84,51 +86,141 @@ class AnswerProcessor:
             if self._validate_answer(result):
                 return result
             else:
-                return self._create_fallback_answer(question, "validation_failed")
-                
+                # return self._create_fallback_answer(question, "validation_failed")
+                return result
         except Exception as e:
             print(f"答案处理出错: {str(e)}")
             return self._create_fallback_answer(question, "processing_error")
 
-    def _parse_answer_structure(self, raw_answer: str) -> Dict[str, str]:
+    def _clean_ai_response(self, response: str) -> str:
         """
-        解析答案结构
+        清理AI回答文本
         
         Args:
-            raw_answer: 原始答案
+            response: 原始AI回答
             
         Returns:
-            Dict: 解析后的答案结构
+            str: 清理后的文本
+        """
+        if not response:
+            return ""
+
+        text = response
+
+        # 1. Normalize newlines (to \n)
+        text = text.replace('\r\n', '\n').replace('\r', '\n')
+
+        # 2. Strip leading/trailing whitespace from the whole response
+        text = text.strip()
+        
+        # 3. Reduce multiple spaces/tabs to single spaces, but preserve newlines.
+        # This will not affect newlines, only horizontal spacing.
+        text = re.sub(r'[ \t]+', ' ', text)
+        
+        # 4. Collapse 3 or more newlines into exactly two (for paragraph separation)
+        # and leave single newlines as they are.
+        text = re.sub(r'\n{3,}', '\n\n', text)
+        
+        # 5. Remove preamble like "Okay, here's the answer based on the context:"
+        #    The previous regex for this might have been too aggressive.
+        #    A more targeted removal might be needed if specific preambles are common.
+        #    For now, let's assume the AI starts relatively clean or the prompt guides it.
+        #    Example of a more specific preamble removal if needed later:
+        #    known_preambles = [
+        #        "好的，这是基于您提供文献的分析结果：\n", 
+        #        "Okay, here is the information based on the document provided:\n"
+        #    ]
+        #    for preamble in known_preambles:
+        #        if text.startswith(preamble):
+        #            text = text[len(preamble):]
+        #            break
+            
+        return text
+
+    def _parse_answer_structure(self, answer_text: str) -> Dict[str, Any]:
+        """
+        解析AI回答的结构化内容 - 智能按顺序分割回答
+        
+        Args:
+            answer_text: AI回答文本
+            
+        Returns:
+            Dict: 解析后的结构化内容
         """
         parsed = {
-            "answer": "",
-            "sources": "",
-            "confidence": "",
-            "reasoning": ""
+            "main_answer": "",
+            "key_findings": [],
+            "limitations": "",
+            "sources": [],
+            "confidence": "中"
         }
+        cleaned_answer = self._clean_ai_response(answer_text)
+
+        kf_keyword = "关键发现："
+        lim_keyword = "局限性说明："
+
+        # Start with the full cleaned answer as the potential main_answer
+        current_main_text = cleaned_answer
+        key_findings_section_text = ""
+        limitations_section_text = ""
+
+        # Step 1: Try to find and extract Limitations section
+        # Search from the end or assume it's after key findings if both exist
+        lim_start_index = current_main_text.rfind(lim_keyword) # Use rfind to get the last occurrence
+
+        if lim_start_index != -1:
+            # Check if "关键发现:" appears before this "局限性说明:"
+            # to avoid incorrectly splitting if "局限性说明:" is mentioned within key findings.
+            kf_check_index = current_main_text.rfind(kf_keyword, 0, lim_start_index)
+            
+            # Only treat as actual limitations section if it's the last major section
+            # or if there's no KF section, or KF is clearly before it.
+            # This logic assumes KF, if present, comes before the final LIMITATIONS.
+            
+            # A simpler approach: if "局限性说明：" is found, assume text after it is limitations.
+            # And text before it is a candidate for main_answer + key_findings.
+            limitations_section_text = current_main_text[lim_start_index + len(lim_keyword):].strip()
+            current_main_text = current_main_text[:lim_start_index].strip()
+
+        # Step 2: Try to find and extract Key Findings section from the (potentially shortened) current_main_text
+        kf_start_index = current_main_text.rfind(kf_keyword) # Use rfind for the last "关键发现:"
         
-        # 提取答案部分
-        answer_match = re.search(r'\*\*答案：?\*\*\s*(.*?)(?=\*\*|$)', raw_answer, re.DOTALL)
-        if answer_match:
-            parsed["answer"] = answer_match.group(1).strip()
+        if kf_start_index != -1:
+            key_findings_section_text = current_main_text[kf_start_index + len(kf_keyword):].strip()
+            current_main_text = current_main_text[:kf_start_index].strip() # This becomes the final main_answer
+
+        parsed["main_answer"] = current_main_text.strip()
+        parsed["limitations"] = limitations_section_text.strip()
+
+        if key_findings_section_text:
+            # Regex to find items like "1. ...", "2. ...", etc.
+            # It captures text after "number." up to the next "number." or end of string.
+            findings_matches = re.findall(r'\d+\.\s*(.*?)(?=\s*\d+\.\s*|$)', key_findings_section_text, re.DOTALL)
+            if findings_matches:
+                parsed["key_findings"] = [f.strip(" 。.") for f in findings_matches if f.strip(" 。.")]
+            else:
+                # Fallback if no "1. item" structure is found, split by sentences or newlines.
+                # This is for cases where findings are not numbered but are distinct points.
+                potential_findings = re.split(r'[。\n]', key_findings_section_text)
+                parsed["key_findings"] = [
+                    f.strip() for f in potential_findings if f.strip() and len(f.strip()) > 5 # Avoid very short fragments
+                ][:5] # Limit to a max of 5 findings in fallback
+
+        # Extract sources from the original full cleaned_answer to ensure all references are caught
+        source_numbers = re.findall(r'【来源(\d+)】', cleaned_answer)
+        parsed["sources"] = list(set(source_numbers))
         
-        # 提取引用来源部分
-        sources_match = re.search(r'\*\*引用来源：?\*\*\s*(.*?)(?=\*\*|$)', raw_answer, re.DOTALL)
-        if sources_match:
-            parsed["sources"] = sources_match.group(1).strip()
-        
-        # 提取置信度部分
-        confidence_match = re.search(r'\*\*置信度：?\*\*\s*(.*?)(?=\*\*|$)', raw_answer, re.DOTALL)
-        if confidence_match:
-            parsed["confidence"] = confidence_match.group(1).strip()
-        
-        # 如果没有找到结构化的答案，使用整个内容作为答案
-        if not parsed["answer"]:
-            parsed["answer"] = raw_answer.strip()
-        
+        # Evaluate confidence based on sources
+        if len(parsed["sources"]) >= 3:
+            parsed["confidence"] = "高"
+        elif len(parsed["sources"]) >= 1:
+            parsed["confidence"] = "中"
+        else:
+            parsed["confidence"] = "低"
+            
         return parsed
 
-    def _extract_sources(self, parsed_answer: Dict[str, str], context_chunks: List[Dict]) -> List[Dict]:
+    def _extract_sources(self, parsed_answer: Dict[str, Any], context_chunks: List[Dict]) -> List[Dict]:
         """
         提取引用来源
         
@@ -142,11 +234,15 @@ class AnswerProcessor:
         sources = []
         
         # 从答案文本中查找引用标记
-        answer_text = parsed_answer["answer"]
-        source_text = parsed_answer["sources"]
+        answer_text = parsed_answer["main_answer"]
+        key_findings_text = " ".join(parsed_answer["key_findings"]) if parsed_answer["key_findings"] else ""
+        limitations_text = parsed_answer["limitations"]
+        
+        # 合并所有文本来查找引用
+        all_text = f"{answer_text} {key_findings_text} {limitations_text}"
         
         # 查找【来源X】标记
-        source_refs = re.findall(r'【来源(\d+)】', answer_text + source_text)
+        source_refs = re.findall(r'【来源(\d+)】', all_text)
         
         for ref_num in source_refs:
             try:
@@ -154,15 +250,12 @@ class AnswerProcessor:
                 if 0 <= source_index < len(context_chunks):
                     chunk = context_chunks[source_index]
                     
-                    # 提取引用描述
-                    ref_description = self._extract_source_description(source_text, ref_num)
-                    
                     source_info = {
                         "source_id": ref_num,
                         "chunk_index": chunk.get("chunk_index", source_index),
                         "text": chunk.get("text", "").strip()[:500],  # 限制长度
                         "similarity": chunk.get("similarity", 0),
-                        "description": ref_description,
+                        "description": f"来源{ref_num}的相关内容",
                         "page_number": chunk.get("page_number"),
                         "section": chunk.get("section")
                     }
@@ -186,31 +279,9 @@ class AnswerProcessor:
         
         return sources
 
-    def _extract_source_description(self, source_text: str, ref_num: str) -> str:
-        """
-        提取引用来源的描述
-        
-        Args:
-            source_text: 来源文本
-            ref_num: 引用编号
-            
-        Returns:
-            str: 来源描述
-        """
-        # 查找对应的来源描述
-        pattern = rf'【来源{ref_num}】[：:]?\s*(.*?)(?=【来源|\n|$)'
-        match = re.search(pattern, source_text)
-        if match:
-            description = match.group(1).strip()
-            # 清理描述文本
-            description = re.sub(r'^[-•·]\s*', '', description)  # 移除列表标记
-            return description[:200]  # 限制长度
-        
-        return f"来源{ref_num}的相关内容"
-
     def _calculate_confidence(
         self, 
-        parsed_answer: Dict[str, str], 
+        parsed_answer: Dict[str, Any], 
         sources: List[Dict],
         context_chunks: List[Dict]
     ) -> float:
@@ -239,7 +310,7 @@ class AnswerProcessor:
             confidence_score = (confidence_score + source_factor) / 2
         
         # 3. 基于答案长度和结构调整
-        answer_text = parsed_answer["answer"]
+        answer_text = parsed_answer["main_answer"]
         if answer_text:
             # 长度适中的答案更可信
             length_factor = self._calculate_length_factor(len(answer_text))
@@ -332,13 +403,13 @@ class AnswerProcessor:
 
     def _format_answer(self, answer_text: str) -> str:
         """
-        格式化答案文本
+        格式化答案文本 - 只返回主要回答部分
         
         Args:
-            answer_text: 原始答案文本
+            answer_text: 主要回答文本（已经在_parse_answer_structure中分离）
             
         Returns:
-            str: 格式化后的答案
+            str: 格式化后的主要回答
         """
         if not answer_text:
             return "抱歉，无法生成答案。"
@@ -347,20 +418,33 @@ class AnswerProcessor:
         formatted = re.sub(r'\s+', ' ', answer_text)  # 标准化空白字符
         formatted = re.sub(r'\n\s*\n', '\n\n', formatted)  # 规范化段落间距
         
-        # 移除重复的标点符号
-        formatted = re.sub(r'[。！？]{2,}', '。', formatted)
-        formatted = re.sub(r'[,，]{2,}', '，', formatted)
+        # 去掉开头的"答案："前缀
+        formatted = re.sub(r'^答案：\s*', '', formatted, flags=re.IGNORECASE)
+        formatted = re.sub(r'^\*\*答案：?\*\*\s*', '', formatted, flags=re.IGNORECASE)
         
-        # 确保适当的长度
-        if len(formatted) > self.max_answer_length:
-            # 在句号处截断
-            truncate_pos = formatted.rfind('。', 0, self.max_answer_length)
-            if truncate_pos > self.max_answer_length * 0.8:
-                formatted = formatted[:truncate_pos + 1]
-            else:
-                formatted = formatted[:self.max_answer_length] + "..."
+        # 移除markdown格式符号
+        formatted = re.sub(r'\*\*([^*]+)\*\*', r'\1', formatted)  # 移除粗体
+        formatted = re.sub(r'\*([^*]+)\*', r'\1', formatted)  # 移除斜体
+        formatted = re.sub(r'^#+\s*', '', formatted, flags=re.MULTILINE)  # 移除标题符号
         
-        return formatted.strip()
+        # 移除任何残留的关键发现和局限性说明标记
+        formatted = re.sub(r'\n\s*关键发现：?.*?$', '', formatted, flags=re.DOTALL | re.IGNORECASE)
+        formatted = re.sub(r'\n\s*局限性说明：?.*?$', '', formatted, flags=re.DOTALL | re.IGNORECASE)
+        formatted = re.sub(r'^关键发现：?.*?$', '', formatted, flags=re.MULTILINE | re.IGNORECASE)
+        formatted = re.sub(r'^局限性说明：?.*?$', '', formatted, flags=re.MULTILINE | re.IGNORECASE)
+        
+        # 移除引用标记（这些会在sources中单独处理）
+        formatted = re.sub(r'【来源\d+】', '', formatted)
+        
+        # 清理多余的空行
+        formatted = re.sub(r'\n{3,}', '\n\n', formatted)
+        formatted = formatted.strip()
+        
+        # 如果清理后内容为空，返回默认消息
+        if not formatted or len(formatted.strip()) < 10:
+            return "抱歉，无法生成有效的回答内容。"
+        
+        return formatted
 
     def _assess_answer_quality(self, answer: str, sources: List[Dict], question: str) -> Dict[str, float]:
         """
@@ -477,6 +561,8 @@ class AnswerProcessor:
         
         return {
             "answer": fallback_messages.get(error_type, "抱歉，无法处理您的问题。"),
+            "key_findings": [],
+            "limitations": "由于处理过程中出现问题，无法提供详细的分析。",
             "sources": [],
             "confidence": 0.1,
             "quality_score": {"relevance": 0.1, "completeness": 0.1, "accuracy": 0.1, "clarity": 0.1, "citation": 0.1},
